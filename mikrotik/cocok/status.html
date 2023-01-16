@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Pragma" content="No-Cache">
+	<meta http-equiv="Cache-Control" content="No-Cache,Must-Revalidate,No-Store">
+	<meta name="Robots" content="NoIndex">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="icon" href="img/favicon.png">
+    <title>WareonG / Hotspot</title>    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<style>
+	body { background-color: #f5f5f5;}
+	@media (min-width: 1200px) {
+	.col-5 { width: 20%;}
+	}
+</style>
+	
+  </head>
+<body>
+<header>
+		<nav class="navbar navbar-inverse navbar-fixed-top secondmenu">
+				<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar top-bar"></span>
+						<span class="icon-bar middle-bar"></span>
+						<span class="icon-bar bottom-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+						<img alt="Code Kece" src="img/football5starlogo.png" class="img-responsive">
+					</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="nav navbar-nav">
+					<li class="a"><a  class="a" href="../cocok/login.html"><i class="icon-home icon-black"></i>  Dashboard <span class="sr-only">(current)</span></a></li>		
+                        <li class="a"><a href="status.html"><i class="icon-pencil icon-black"></i>Status</a></li>
+                        <li class="a"><a href="logout.html"><i class="icon-pencil icon-black"></i>keluar</a></li>
+					</ul>										
+				</div><!-- /.navbar-collapse -->	
+			</div>				
+		</nav>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center"> <b class="logo">
+    </div>
+  </div>
+</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12" id="a">
+        <div class="card">
+		<form action="$(link-logout)" name="logout" onSubmit="return openLogout()">
+		<div class="col-md-6 col-xs-12 userlog1">
+		<table border="0">
+			
+			<tr><td>IP address &nbsp;</td><td>: $(ip)</td></tr>
+			<tr><td>MAC Address &nbsp;</td><td>: $(mac)</td></tr>
+			<tr><td>Sisa Waktu &nbsp;</td><td>: $(session-timeout)$(if session-timeout == '')Unlimited$(endif)</td></tr>
+			<tr><td>Sisa Quota &nbsp;</td><td>: $(if limit-bytes-out)
+				<script language=javascript>
+					var quota = $(limit-bytes-out)/1000
+					document.write(quota);
+					</script>
+				KiB</td></tr>
+			$(endif)
+			$(if limit-bytes-out == '')Unlimited$(endif)
+			 	<tr><td>Bytes up/down &nbsp;</td><td>: $(bytes-in-nice) / $(bytes-out-nice)</td></tr>
+				<tr><td>Bytes total &nbsp;</td><td>: $(bytes-total-nice)</td></tr>
+				$(if session-time-left)
+				<tr><td>Lama Uptime &nbsp;</td><td>: $(uptime)</td></tr>
+				$(else)
+				<tr><td>Terhubung &nbsp;</td><td>: $(uptime)</td></tr>
+				$(endif)
+				$(if blocked == 'yes')
+				<tr><td>Status &nbsp;</td><td style="color: #FF8080">: <a href="$(link-advert)" target="hotspot_advert">Advertisement</a> required</td></tr>
+				$(elif refresh-timeout)
+				<tr><td>Status refresh &nbsp;</td><td>: $(refresh-timeout)</td></tr>
+				$(endif)
+
+			</table>
+			</div>
+			<div class="col-md-6 col-xs-12">			
+			<div class="userlog">			
+			<span>
+		$(if login-by == 'trial')
+		<h2>Welcome <br/><br/><b style="color:orange"><i>trial user!</i></b></h2>
+		$(elif login-by-mac != 'yes')
+		<h2>SELAMAT DATANG<br/><br/><b style="color:blue;"> $(username)!</b></h2>
+		$(endif)			
+			</span>
+			</div>
+			</div>
+			$(if login-by-mac != 'yes')
+			</p>
+			<button type="submit" class="btn btn-lg btn-success btn-block btn-signin">Logout</button>
+			$(endif)
+		</form>	
+		  </div>
+      </div>
+
+    </div>
+    </div>
+  </div>
+
+  <div class="container" id="c">
+    <div class="col-lg-3 col-5">
+      <div class="game-league"> <a class="english"> <img src="img/english.png" class="img-responsive"> <span>Play Now</span> </a>   </div>
+    </div>
+    <div class="col-lg-3 col-5">
+      <div class="game-league"> <a class="italy"> <img src="img/italy.png" class="img-responsive"> <span>Play Now</span> </a> </div>
+    </div>
+    <div class="col-lg-3 col-5">
+      <div class="game-league"> <a class="spain"> <img src="img/spain.png" class="img-responsive"> <span>Play Now</span> </a> </div>
+    </div>
+    <div class="col-lg-3 col-5">
+      <div class="game-league"> <a class="jerman"> <img src="img/jerman.png" class="img-responsive"> <span>Play Now</span> </a> </div>
+    </div>
+    <div class="col-lg-3 col-5">
+      <div class="game-league"> <a class="italy"> <img src="img/champions2.png" class="img-responsive"> <span>Play Now</span> </a> </div>
+    </div>
+  </div>
+
+
+<footer class="footer">
+    <p>© 2016 KM.NET <br><a href="#">Copyrights All rights reserved.</a></p>
+</footer>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>	  
+</body>
+</html>

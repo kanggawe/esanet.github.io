@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Wanantara Hotspot - LOGIN</title>
+<meta name="keywords" content="Tomato HTML CSS Template, free download, red, light gray, mini site" />
+<meta name="description" content="Tomato Template is a free HTML CSS layout provided by templatemo.com" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="css/coda-slider.css" type="text/css" charset="utf-8" />
+
+<script src="js/jquery-1.2.6.js" type="text/javascript"></script>
+<script src="js/jquery.scrollTo-1.3.3.js" type="text/javascript"></script>
+<script src="js/jquery.localscroll-1.2.5.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.serialScroll-1.2.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/coda-slider.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+$(if chap-id)
+	<form name="sendin" action="$(link-login-only)" method="post">
+		<input type="hidden" name="username" />
+		<input type="hidden" name="password" />
+		<input type="hidden" name="dst" value="$(link-orig)" />
+		<input type="hidden" name="popup" value="true" />
+	</form>
+	
+	<script type="text/javascript" src="/md5.js"></script>
+	<script type="text/javascript">
+	<!--
+	    function doLogin() {
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+		document.sendin.submit();
+		return false;
+	    }
+	//-->
+	</script>
+$(endif)
+
+<div id="templatemo_wrapper">
+	<div id="templatemo_top">
+    	<ul id="social_box">
+ 	    <li><a href="#"><img src="images/support.png" alt="facebook" /></a></li>
+	    <li><a href="#"><img src="images/powered.png" alt="facebook" /></a></li>
+	    <li><a href="#"><img src="images/youtube.png" alt="facebook" /></a></li>
+	    <li><a href="#"><img src="images/facebook.png" alt="facebook" /></a></li>
+            <li><a href="#"><img src="images/twitter.png" alt="twitter" /></a></li>
+            <li><a href="#"><img src="images/linkedin.png" alt="linkin" /></a></li>
+            
+            <li><a href="#"><img src="images/myspace.png" alt="myspace" /></a></li>                
+        </ul>
+    </div>
+    
+  <div id="slider"> 
+	<div id="header">
+            
+            	<div id="sitetite">
+                	<h1><img src="images/templatemo_logo.png" alt="free css template" /></a></h1>
+            	</div> <!-- end of site_title -->
+            
+                <ul class="navigation">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#services">Internet</a></li>
+                    <li><a href="#gallery">Voucher</a></li>
+                    <li><a href="#contactus">Hubungi</a></li>
+     			 </ul>
+                
+		  </div>
+    <div class="scroll">
+      <div class="scrollContainer">
+        <div class="panel" id="home">
+        
+          <h2>Selamat Datang Pelanggan! | Internet 24 Jam Nonstop</h2>
+          <body>
+<fieldset>
+		
+			<legend>Silahkan Masuk Pelanggan!</legend>
+<div align="center">Jika Anda Menggunakan Handphone <a href="mobile/login?"title="Login Untuk Handphone">Klik Disini</a>
+			</label>
+	<form name="login" action="$(link-login-only)" method="post"
+$(if chap-id) onSubmit="return doLogin()" $(endif)>
+	<input type="hidden" name="dst" value="$(link-orig)" />
+	<input type="hidden" name="popup" value="true" />
+
+		
+			<div align="center">
+			  <legend>Masukan User Name & Password Anda!</legend>
+	    </div>
+			<label for="login">
+			<div align="center"><strong>User name</strong></div>
+			</label>
+			<div align="center">
+			 			<input id="field1" type="text" name="username" value="$(username)" />
+	    </div>
+			<div class="clear"></div>
+			
+			<label for="password">
+			<div align="center"><strong>Password</strong></div>
+			</label>
+			<div align="center">
+			  <p>
+		      <td ><input id="field2" name="password" type="password"  /></td>
+		      <td width=" valign="bottom" align="center"><div align="center">
+	          <input type="hidden" name="login" value="login"> 
+			      <input type="submit" value=" Masuk" width= height=>
+<div align="center">
+          $(if error)<br/><blink> <font color="red"><script type="text/javascript">
+		       var error = "$(error)";
+		       if (error == "credit limit reached")
+		       {
+		       document.write("Maaf, Masa Aktif Voucher Anda Sudah Habis | ");
+		       }
+if (error == "uptime limit reached")
+		       {
+		       document.write("Maaf, Waktu Internet Voucher Anda Sudah Habis | ");
+		       }
+if (error == "download limit reached")
+		       {
+		       document.write("Kuota Voucher Anda Telah Habis | ");
+}
+if (error == "no valid profile found")
+		       {
+		       document.write("Maaf, Voucher Anda Sudah Habis Masa Aktif | ");
+		       }
+if (error == "invalid password")
+		       {
+		       document.write("Password Yang Anda Masukan Salah, Hubungi Kami Atau Coba Lagi | ");
+		       }
+if (error == "simultaneous session limit reached")
+		       {
+		       document.write("Username $(username) Sebelumnya Sudah Login atau Sedang Aktif Hubungi Kami Atau Tunggu 5 Menit dan Coba Lagi");
+		       }
+		       else {
+			       document.write("$(error)");
+		       }       
+		       </script></font> </blink>$(endif)
+	            </div></td>
+		</div>
+</br>
+			
+			<div align="center">$(if trial == 'yes') Belum Punya Voucher? Coba Secara Gratis! <a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)" title="Gratis Selama 10 Menit">Klik Disini</a>$(endif)
+			</label>
+			
+			<div class="clear"></div>
+			
+				
+	        </div>
+		</fieldset>
+	</form>
+	</body>
+
+          <div class="cleaner_h40"></div>
+          
+          <div class="col_w240">
+          	<h3><blink>Cara Untuk Masuk<blink></h3>
+            <p>Gesek Voucher Anda, Masukan Username Dan Password, Setelah Di Masukan Tekan Enter Atau Klik Tombok Masuk</p>
+            
+           
+          </div>
+          <div class="col_w240">
+          	<h3><blink>Info Wanantara Hotspot<blink></h3>
+            <p>Untuk Info Voucher <a href="#gallery"> Klik Disini</a> Atau contact kami <a href="#contactus" title="Info & Harga Voucher">Klik Disini</a> </p>
+            
+          
+          	
+          </div>
+          <div class="col_w300last_col">
+          	<h3><blink>Pemberitahuan<blink></h3>
+           <p>Kami Juga Melayani Perawatan & Perbaikan PC/Laptop, Undangan, Desain, Editing & Pembuatan Baliho, X-Banner Dll</p>
+            <blockquote>
+                
+            </blockquote>
+          </div>
+        </div>
+        
+        
+        <div class="panel" id="services">
+        	<div class="col_w540">
+            <h2>Definisi Internet</h2>
+                <p><em>Internet Singkatan Dari ( Interconnected Computer Networks )</em></p>
+                            <p align="justify">Internet Adalah, merupakan sekumpulan jaringan komputer yang menghubungkan situs akademik, pemerintahan, komersial, organisasi, maupun perorangan. Internet menyediakan akses untuk layanan telekomnunikasi dan sumber daya informasi untuk jutaan pemakainya yang tersebar di seluruh dunia. Layanan internet meliputi komunikasi langsung (email, chat), diskusi (Usenet News, email, milis), sumber daya informasi yang terdistribusi (World Wide Web, Gopher), remote login dan lalu lintas file (Telnet, FTP), dan aneka layanan lainnya.
+
+Jaringan yang membentuk internet bekerja berdasarkan suatu set protokol standar yang digunakan untuk menghubungkan jaringan komputer dan mengalamati lalu lintas dalam jaringan. Protokol ini mengatur format data yang diijinkan, penanganan kesalahan (error handling), lalu lintas pesan, dan standar komunikasi lainnya. Protokol standar pada internet dikenal sebagai TCP/IP (Transmission Control Protocol/Internet Protocol). Protokol ini memiliki kemampuan untuk bekerja diatas segala jenis komputer, tanpa terpengaruh oleh perbedaan perangkat keras maupun sistem operasi yang digunakan.
+
+Sebuah sistem komputer yang terhubung secara langsung ke jaringan memiliki nama domain dan alamat IP (Internet Protocol) dalam bentuk numerik dengan format tertentu sebagai pengenal. Internet juga memiliki gateway ke jaringan dan layanan yang berbasis protokol lainnya.</p>
+                
+               
+            </div>
+            <div class="col_w240 last_col">
+                <h3>Mengapa Harus Internet?</h3>
+                <div class="image_wrapper"><img src="images/templatemo_image_03.jpg" alt="image 7" /></div>
+                <blockquote>
+                    <p>Karena, Internet adalah Media Sarana Komunikasi & Pengetahuan Yang Berkembang Cepat. dari internet kita dapat menemukan segala informasi, baik yang bersifat mendidik atau yang sebaliknya. Dulu Buku Adalah Jendela Dunia, Sekarang Internet Adalah Jendela Dunia. Berinternet Serasa Dunia Ada Di Gengaman Kita.</p>
+                </blockquote>
+              </div>
+        </div>
+        
+        <div class="panel" id="gallery">
+        	<h2><blink>Voucher Yang Kami Sediakan<blink></h2>
+            <div id="gallery_box">
+            <ul>
+                <li>
+                    <a href="images/gallery/voucher1hari-large.jpg"><img src="images/gallery/image_01.jpg" alt="template" /></a>
+                    <p>Voucher 1 Hari,  Rp. 5.000</a></p>
+                    
+                </li>
+                <li>
+                    <a href="images/gallery/voucher1minggu-large.jpg"><img src="images/gallery/image_02.jpg"/></a>
+                    <p>Voucher 1 Minggu,  Rp. 20.000</a></p>
+                    
+                </li>
+                <li>
+                    <a href="images/gallery/voucher1bulan-large.jpg"><img src="images/gallery/image_03.jpg" alt="html css template" /></a>
+                    <p>Voucher 1 Bulan,  Rp. 70.000 </a></p>
+                    
+                </li>
+            </ul>
+            
+            <div class="cleaner"></div>
+            
+            </div>
+        </div>
+        
+        <div class="panel" id="contactus">
+            <div class="col_w540">
+                <div id="contact_form">
+                <h4>Silakan Hubungi Kami</h4>
+<br/>
+                
+                <object id="pingboxc0acj4rulng0W" type="application/x-shockwave-flash" data="" width="490" height="390"><param name="movie" value="http://wgweb.msg.yahoo.com/badge/Pingbox.swf" /><param name="allowScriptAccess" value="always" /><param name="flashvars" value="wid=Gvp0KxKoV2OELnIh4LHXNFxa1qFord4.05DN1B8-" /></object>
+                
+                </div>
+            </div>
+        
+            <div class="col_w240 last_col">
+            	
+                <h4><blink>Contact<blink></h4>
+                
+                <div class="cleaner_h20"></div>
+                
+                <h6>Wanantara Hotspot</h6>
+                Telkomsel : 0822 1777 8800<br />
+		Three : 0895 0420 8008<br />
+<h6>Buka Setiap Hari</h6>
+                Jam Kerja :<br />
+                08:00 s/d 21:00<br />
+                                
+                <div class="cleaner_h20"></div>
+                
+                <h6>Kantor</h6>
+                -<br />
+                -<br />
+		-<br />
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+    <div id="templatemo_footer">
+    	Copyright © 2016 Wanantara Hotspot All Rights Reserved</a> | Designed by admin@wanantarahotspot</a>
+    </div>
+    
+</div>
+</body>
+</html>

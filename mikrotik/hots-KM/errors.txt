@@ -1,0 +1,11 @@
+internal-error = Maaf.. terjadi internal error ($(error-orig))
+config-error = Maaf.. terdapat configuration error ($(error-orig))
+not-logged-in = Maaf.. Anda tidak dalam status Login (ip $(ip))
+ippool-empty = Maaf.. Ip pool sudah penuh !!shutting-down = Maaf.. Servis Hotspot KM Net sedang maintenance/dimatikan.
+user-session-limit = Maaf.. user $(username) sedang digunakan...license-session-limit = Maaf.. Batas limit Anda mencukupi ($(error-orig))wrong-mac-username = Maaf.. invalid username ($(username)): Mohon gunakan MAC Address Anda.
+chap-missing = Maaf.. Web browser tidak mengirim respons (coba lagi, enable JS)
+invalid-username = Maaf... User / Password Salah !!invalid-mac = user $(username), Maaf.. tidak diperbolehkan login dari MAC address ini.
+uptime-limit = user $(username), Maaf.. Voucher Anda sudah habis !!
+traffic-limit = user $(username), Maaf.. sudah mencapai batas traffic !!radius-timeout = Gagal koneksi ke Server KM Net..!!
+auth-in-progress = Sedang di authetikansi, mohon menunggu..
+radius-reply = $(error-orig)

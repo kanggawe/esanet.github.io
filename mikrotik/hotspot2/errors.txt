@@ -1,0 +1,35 @@
+internal-error = internal error ($(error-orig))
+
+config-error = configuration error ($(error-orig))
+
+not-logged-in = Anda belum login (ip $(ip))
+
+ippool-empty = Tidak dapat mengalokasikan identitas IP
+
+shutting-down = Starnet Hotspot dalam perawatan
+
+user-session-limit = Maaf $(username) sedang digunakan / sedang aktif
+
+Simultaneous-Use = Username ($(username)) sedang digunakan / sedang aktif
+
+license-session-limit = Batas sesi telah tercapai ($(error-orig))
+
+wrong-mac-username = invalid username ($(username)): MAC address ini bukan milik anda
+
+chap-missing = Refresh browser Anda atau aktifkan Javascript, dan coba lagi
+
+invalid-username = Maaf, Username atau Password Anda salah
+
+invalid-mac = user $(username) is not allowed to log in from this MAC address
+
+uptime-limit = Maaf, user $(username) telah mencapai batas maksimal waktu penggunaan, silahkan menghubungi staf Starnet Hotspot
+
+traffic-limit = Maaf, user $(username) telah mencapai batas maksimal Kuota
+
+radius-timeout = Tidak ada respon dari server Starnet Hotspot
+
+auth-in-progress = Ajuan Anda sedang di proses
+
+invalid password = Password Salah
+
+radius-reply = $(error-orig)

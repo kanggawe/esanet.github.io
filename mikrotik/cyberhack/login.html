@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="ImageToolbar" content="No">
+	<meta name="MSSmartTagsPreventParsing" content="True">
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Pragma" content="No-Cache">
+	<meta http-equiv="Cache-Control" content="No-Cache,Must-Revalidate,No-Store">
+	<meta name="Robots" content="NoIndex">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mico Soft/ Hotspot</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/respondewek.css" rel="stylesheet" type="text/css"/>
+	<style>
+.middle .box-type{
+	min-width:100%;
+	float:left;
+	margin:5px 12px 12px 0px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-ms-border-radius:3px;
+	-o-border-radius:3px;
+	-khtml-border-radius:3px;
+	box-shadow:1px 1px 1px #000;
+	-moz-box-shadow:1px 1px 1px #000;
+	-webkit-box-shadow:1px 1px 1px #000;
+	-ms-box-shadow:1px 1px 1px #000;
+	-o-box-shadow:1px 1px 1px #000;
+	-khtml-box-shadow:1px 1px 1px #000;
+}
+
+.middle .box-type .images, .box-little-pop .images{	
+	float:left;
+	width:30%;
+	height:100px;
+	text-align:center;
+	
+	color:#FFF;
+	border-radius: 3px 0px 0px 3px;
+	-moz-border-radius: 3px 0px 0px 3px;
+	-ms-border-radius: 3px 0px 0px 3px;
+	-webkit-border-radius: 3px 0px 0px 3px;
+	-khtml-border-radius: 3px 0px 0px 3px;
+	-o-border-radius: 3px 0px 0px 3px;
+	overflow:hidden;
+}
+.middle .box-type .images img	, .box-little-pop .images img{	
+	margin:6px 0px 0px 0px;
+}
+.middle .box-type .desc{	
+	float:left;
+	width:70%;
+	height:100px;
+	padding:0px 15px 15px 15px;
+}
+.middle .box-type .desc h3{	
+	font-size:20px;
+}
+.middle .box-type .desc p{
+	color:#666666;
+	font-size: 12px;
+}
+
+.yellow .images  {background:#f39c12; }
+.yellow h3 ,.yellow h2  {color:#f39c12}
+.orange .images  {background:#00a2e9; }
+.orange h3,.orange h2  {color:#d35400}
+.red .images  {background:#c0392b; }
+.red h3 ,.red h2  {color:#c0392b}
+.green .images  {background:#27ae60; }
+.green h3  ,.green h2  {color:#27ae60}
+.blue .images  {background:#2d8bca; }
+.blue h3 ,.blue h2 {color:#2d8bca}
+.violet .images{background:#8e44ad; }
+.violet h3,.violet h2 {color:#8e44ad}
+
+.middle .box-type .images:hover img {
+    -moz-animation: animation2 .6s linear;
+    -webkit-animation: animation2 .6s linear;
+}
+
+
+
+@keyframes animation2 {
+    0% {
+        margin-top: -180px;
+    }
+
+    50% {
+        margin-top: 10px;
+    }
+
+    75% {
+        margin-top: -15px;
+    }
+
+    100% {
+        margin-top: 0;
+    };
+}
+
+
+
+@-moz-keyframes animation2 {
+    0% {
+        margin-top: -180px;
+    }
+
+    50% {
+        margin-top: 10px;
+    }
+
+    75% {
+        margin-top: -15px;
+    }
+
+    100% {
+        margin-top: 0;
+    };
+}
+
+
+@-webkit-keyframes animation2 {
+    0% {
+        margin-top: -180px;
+    }
+
+    50% {
+        margin-top: 10px;
+    }
+
+    75% {
+        margin-top: -15px;
+    }
+
+    100% {
+        margin-top: 0;
+    };
+}
+	</style>	
+	
+  </head>
+<body>
+<header>
+ <!-- Awal Bagian menu Navigasi atas -->
+		<nav class="navbar navbar-inverse navbar-fixed-bottom">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar top-bar"></span>
+						<span class="icon-bar middle-bar"></span>
+						<span class="icon-bar bottom-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+						<img alt="Kang Bajuri In Design" src="img/logo.png" class="img-responsive">
+					</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="nav navbar-nav navbar-right">
+					<li><a href="about.html">PAKET INTERNET</a></li>
+					<li class="active"><a href="login.html">LOGIN <span class="sr-only">(current)</span></a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+
+<!-- Ahir Bagian menu Navigasi atas -->
+</header>
+<div class="container lowgin">
+<!--awal area login-->
+<!-- ujian cobaan -->
+ <div class="col-md-4 " id="login-area">
+            <center>
+			
+            <h2 class="lg" style="color:red">LOGIN HOTSPOT</h2>
+
+            	<!--starmik-->
+					<form class="form-signin" name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
+                    <input type="hidden" name="dst" value="$(link-orig)" />
+
+					<input type="hidden" name="popup" value="true" />
+					<div id="form-login">
+					<div id="form-field-wrap">
+					<div id="form-field" >
+					<input type="text" autocomplete="off" class=" form-control txt" id="username-login" name="username" placeholder="Username"><br />
+					</div>
+					<div id="form-field" class="password-login">
+					<input autocomplete="off" type="text" class="form-control txt"  id="pass-login" name="password" placeholder="Password"><br />
+					</div>
+					</div>
+					<!--div id="login-btn" >
+					<button class="btn btn-primary form-control">LOG-IN HOTSPOT</button>	
+					</div-->
+                    <div id="registration-btn" class="text-center">
+
+                      <button type="submit" class="btn btn-primary" >About Me</button>
+                      $(if trial == 'yes') <a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)"><button type="button" class="btn btn-primary">Coba Gratis</button></a>$(endif)
+                      
+                    </div>
+					</div>
+<!--end mik-->                    
+<br/>
+			         	$(if error)
+						<div class="alert alert-danger alert-dismissible" role="alert" style="font-size:12px; align:justify;">
+							<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+							<strong style="color: red">Error!</strong> 
+							<script type="text/javascript">
+									var error = "$(error)";
+									if (error == "simulaneous session limit reached"){
+										document.write("simulaneous session limit reached");
+										}
+										else if (error == "invalid password"){
+										document.write("Oups Kata Sandi Salah")
+										}else if (error == "no valid profile found"){
+										document.write("Oups tidak ditemukan profile")
+										}else if (error.search("not found")!=-1){
+										document.write("Oups, user $(username) tidak ada di database kami")
+										}else document.write("$(error)")
+									</script>.
+						</div>
+						$(endif)
+						
+<script type="text/javascript">
+<!--
+  document.login.username.focus();
+//-->
+</script>
+
+<!--end mik-->
+            </center>
+            </form>
+		</div>
+
+ <div class="col-md-8 kanan" id="login-are">
+
+			<div class="middle">    
+							<div class="row">
+								<div class="col-md-6">
+									<div class="box-type yellow">
+										<div class="images">
+											<div>
+												<img src="img/ico/message-ico.png" />
+											</div>
+											<span>Daftar Baru</span>
+										</div>
+										<div class="desc">
+											<h3>Rp. 2.000</h3>
+											<p class="default">
+												Durasi 2 Jam / 1 Hari / Speed up 512k
+											</p>
+										</div>
+									</div>
+								
+								</div>
+								<div class="col-md-6">
+								
+								
+									<div class="box-type orange">
+										<div class="images">
+											<div>
+												<img src="img/ico/screen-ico.png" />
+											</div>
+											<span>Langganan</span>
+										</div>
+										<div class="desc">
+											<h3>Rp. 5.000</h3>
+											<p class="default">
+												Durasi 5 Jam / Aktif 3 Hari / Speed up 512k
+											</p>
+										</div>
+									</div>
+								
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+								
+									<div class="box-type red last">
+										<div class="images">
+											<div>
+												<img src="img/ico/vid-ico.png" />
+											</div>
+											<span>Streaming</span>
+										</div>
+										<div class="desc">
+											<h3>Rp. 10.000</h3>
+											<p class="default">
+												Durasi 15 Jam / Aktif 7 Hari / Speed up 512k											</p>
+										</div>
+									</div>
+								
+								</div>
+								<div class="col-md-6">
+								
+									<div class="box-type green">
+										<div class="images">
+											<div>
+												<img src="img/ico/game-ico.png" />
+											</div>
+											<span>Games</span>
+										</div>
+										<div class="desc">
+											<h3>Rp. 25.000</h3>
+											<p class="default">
+												Kuota 750Mb / Aktif 1 Hari / Speed up 512kb
+
+											</p>
+										</div>
+									</div>
+								
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-6">
+								
+									<div class="box-type blue">
+										<div class="images">
+											<div>
+												<img src="img/ico/cloud-ico.png" />
+											</div>
+											<span>Download</span>
+										</div>
+										<div class="desc">
+											<h3>Rp. 50.000</h3>
+											<p class="default">
+												Unlimited / 30 Hari / Speed up 512 Kbps											</p>
+										</div>
+									</div>
+								
+								</div>
+								<div class="col-md-6">
+								
+									<div class="box-type violet">
+										<div class="images">
+											<div>
+												<img src="img/ico/infinity-ico.png" />
+											</div>
+											<span>Share</span>
+										</div>
+										<div class="desc">
+											<h3>Rp. 150.000</h3>
+											<p class="default">
+												 Kouta 3Gb / Aktif 30 Hari / Speed up 1 Mbps
+
+											</p>
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+																
+						</div>
+
+ </div>
+
+
+		<!-- akir ujian cobaan -->
+ <!-- ahir area login -->
+ 			<div class="row ">
+            <div class="col-md-12">
+                <div id="carousel-example" class="carousel slide" data-ride="carousel">                 
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="container center">
+							    <!-- Slide 1 -->
+                                <div class="col-md-6 col-md-offset-3 slide-custom">
+                                    <h4 class="text-center" style="color:#fff">By Cyberhack .Inc this expedition Login page Mikrotik, this is free lisensi</h4>                        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="container center">
+							   <!-- Slide 2 -->
+                                <div class="col-md-6 col-md-offset-3 slide-custom">
+                                    <h5>Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc elit onec molestie.</h5>                                 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="container center">
+							   <!-- Slide 3 -->
+                                <div class="col-md-6 col-md-offset-3 slide-custom">
+                                    <h6>Sed ultricies, libero ut adipiscing fringilla, ante elit luctus lorem, a egestas dui metus a arcu condimentum.</h6>                                   
+                                </div>
+                            </div>
+                        </div>
+						<div class="item">
+                            <div class="container center">
+							   <!-- Slide 3 -->
+                                <div class="col-md-6 col-md-offset-3 slide-custom">
+                                    <h6>empat ultricies, libero ut adipiscing fringilla, ante elit luctus lorem, a egestas dui metus a arcu condimentum.</h6>                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>				
+            </div>
+        </div>	  	
+
+<h3 class="text-center">Call Us: +6282324660655</h3>
+
+ <!-- ahir area login -->	
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+</div>
+		 $(if chap-id)
+	<form name="sendin" action="$(link-login-only)" method="post">
+		<input type="hidden" name="username" />
+		<input type="hidden" name="password" />
+		<input type="hidden" name="dst" value="$(link-orig)" />
+		<input type="hidden" name="popup" value="true" />
+	</form>
+	
+	<script type="text/javascript" src="/md5.js"></script>
+	<script type="text/javascript">
+	<!--
+	    function doLogin() {
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+		document.sendin.submit();
+		return false;
+	    }
+	//-->
+	</script>
+$(endif)
+</body>
+</html>
+ 
+	

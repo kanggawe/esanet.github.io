@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Login Version - Ramadhan</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+<script language="JavaScript">
+	<!--
+	$(if advert-pending == 'yes')
+		var popup = '';
+		function focusAdvert() {
+		if (window.focus) popup.focus();
+		}
+		function openAdvert() {
+		popup = open('$(link-advert)', 'hotspot_advert', '');
+		setTimeout("focusAdvert()", 1000);
+		}
+	$(endif)
+		function openLogout() {
+		if (window.name != 'hotspot_status') return true;
+			open('$(link-logout)', 'hotspot_logout', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=280,height=250');
+		window.close();
+		return false;
+		}
+	//-->
+	</script>
+</head>
+<body class="body" $(if advert-pending == 'yes') onLoad="openAdvert()" $(endif)>
+<div class="container">
+<div class="col-md-12 col-sm-12 col-xs-12 header">
+<div class="visible-xs visible-sm" aria-hidden="true">
+      <a href="login.html"><img src="img/header1.png"/></a>
+   </div>
+   <div class="hidden-xs hidden-sm">      
+   <img src="img/vcr.png"/></a>
+   <!--center> <h1><span style="color:#f00; text-align:center;  font-weight:bold;">INTERNET ACCESS 24 HOURS </span> <span style="color:#Fff; font-weight:bold;"></span></h1></center-->
+   </div>
+</div>
+		</div>
+<div class="container">
+		<center>	
+		$(if login-by == 'trial')
+		<h2>Welcome <b style="color:yellow"><i>trial user!</i></b></h2>
+		$(elif login-by-mac != 'yes')
+		<h2>Welcome...<b style="color:blue;"> $(username)!</b></h2>
+		$(endif)
+		
+		 $(if session-timeout == '1s')
+		<br><div><font color=red><b>Sorry, Your time is over</b></font></div><br>
+		 $(endif)
+		 $(if limit-bytes-out == '1')
+		<br><div><font color=red><b>Sorry, Quota is depleted</b></font></div><br>
+		 $(endif)
+ 		<p>You're ready connected to the internet.</p></center>
+		<form action="$(link-logout)" name="logout" onSubmit="return openLogout()">
+			<table border="0">
+			
+			<tr><td>IP address &nbsp;</td><td>: $(ip)</td></tr>
+			<tr><td>MAC Address &nbsp;</td><td>: $(mac)</td></tr>
+			<tr><td>Sisa Waktu &nbsp;</td><td>: $(session-timeout)$(if session-timeout == '')Unlimited$(endif)</td></tr>
+			<tr><td>Sisa Quota &nbsp;</td><td>: $(if limit-bytes-out)
+				<script language=javascript>
+					var quota = $(limit-bytes-out)/1000
+					document.write(quota);
+					</script>
+				KiB</td></tr>
+			$(endif)
+			$(if limit-bytes-out == '')Unlimited$(endif)
+			 	<tr><td>Bytes up/down &nbsp;</td><td>: $(bytes-in-nice) / $(bytes-out-nice)</td></tr>
+				<tr><td>Bytes total &nbsp;</td><td>: $(bytes-total-nice)</td></tr>
+				$(if session-time-left)
+				<tr><td>Lama Uptime &nbsp;</td><td>: $(uptime)</td></tr>
+				$(else)
+				<tr><td>Terhubung &nbsp;</td><td>: $(uptime)</td></tr>
+				$(endif)
+				$(if blocked == 'yes')
+				<tr><td>Status &nbsp;</td><td style="color: #FF8080">: <a href="$(link-advert)" target="hotspot_advert">Advertisement</a> required</td></tr>
+				$(elif refresh-timeout)
+				<tr><td>Status refresh &nbsp;</td><td>: $(refresh-timeout)</td></tr>
+				$(endif)
+
+			</table>
+			$(if login-by-mac != 'yes')
+			</p>
+			<button type="submit" class="btn btn-success">Logout</button>
+			$(endif)
+		</form>	
+	
+	<script type="text/javascript" src="/md5.js"></script>
+	<script type="text/javascript">
+
+	</div>
+	
+<div class="container">
+<footer class="footer">
+    <p>© 2016 KM.NET <br><a href="#">Copyrights All rights reserved.</a></p>
+</footer>
+</div>
+<div id="running-text"><marquee scrolldelay="100" onmouseover="this.stop();" onmouseout="this.start();"><strong style="font-size: 14px;"><strong><strong><strong style="font-size: 14px;"><strong><strong>:::: Follow twitter @Kangbajuri ::::</strong></strong><strong>:::: Follow IG @Kangbajuri.id ::::</strong></strong> Untuk melihat koleksi Login Page Mikrotik jika anda berminat Hubungi melalui email bagencocok@gmail.com :::: Info pemasangan iklan di Login Page yang kami buat, silahkan hubungi email  bagencocok@gmail.com atau telepon 081223221752 :::<strong><strong style="font-size: 14px;"><strong><strong></strong></strong></strong><strong> </strong></strong></strong></strong></strong></marquee></div>
+  <script src='js/jquery-1.7.1.min.js'></script>
+  <script src='js/bootstrap.min.js'></script>
+</body>
+</html>

@@ -1,0 +1,460 @@
+<html>
+<head>
+<title>KR HOTSPOT</title>
+
+<link rel="shortcut icon" href="1.png" />
+	$(if refresh-timeout)
+	<meta http-equiv="refresh" content="$(refresh-timeout-secs)">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	$(endif)
+<style type="text/css">
+<!--
+textarea,input,select {
+	background-color: #FDFBFB;
+	border: 1px #BBBBBB solid;
+	padding: 2px;
+	margin: 1px;
+	font-size: 14px;
+	color: #808080;
+}
+
+.tabula{
+border-width: 1px; 
+border-collapse: collapse; 
+border-color: #c1c1c1; 
+background-color: transparent;
+font-family: verdana;
+font-size: 11px;
+}
+
+.yaya { 
+ background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+
+color: #737373; font-size: 12px; font-family: verdana; }
+
+a, a:link, a:visited, a:active { color: #AAAAAA; text-decoration: none; font-size: 12px; }
+a:hover { border-bottom: 1px dotted #c1c1c1; color: #AAAAAA; }
+img {border: none;}
+td { font-size: 12px; padding: 4px;}
+
+@font-face {
+font-family: ‘Josefin Sans’;
+src: url(http://fonts.googleapis.com/css?family=Josefin+Sans);
+}
+
+h1 {
+color: #fff;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
+        letter-spacing: 5px;
+        font: 40px 'MisoRegular';
+}
+.mukri {
+-webkit-border-radius: 5px;
+border-radius: 5px; 
+}
+table a:link {
+	color: #000;
+	font-weight: bold;
+	text-decoration:none;
+}
+table a:visited {
+	color: #999999;
+	font-weight:bold;
+	text-decoration:none;
+}
+table a:active,
+table a:hover {
+	color: #bd5a35;
+	text-decoration:underline;
+}
+table {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000;
+	font-size:12px;
+	text-shadow: 1px 1px 0px #fff;
+	background: #73880a; /* Old browsers */
+background: -moz-linear-gradient(top,  #73880a 0%, #73880a 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#73880a), color-stop(100%,#73880a)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #73880a 0%,#73880a 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #73880a 0%,#73880a 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #73880a 0%,#73880a 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #73880a 0%,#73880a 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73880a', endColorstr='#73880a',GradientType=0 ); /* IE6-9 */
+
+	margin:20px;
+	border:#fff 1px solid;
+
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+
+	-moz-box-shadow: 0 1px 2px #d1d1d1;
+	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+	box-shadow: 0 1px 2px #d1d1d1;
+}
+table th {
+	padding:21px 25px 22px 25px;
+	border-top:1px solid #fafafa;
+	border-bottom:1px solid #e0e0e0;
+
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+	background: #a9e4f7; /* Old browsers */
+background: -moz-linear-gradient(top,  #a9e4f7 0%, #0fb4e7 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a9e4f7), color-stop(100%,#0fb4e7)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #a9e4f7 0%,#0fb4e7 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #a9e4f7 0%,#0fb4e7 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #a9e4f7 0%,#0fb4e7 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #a9e4f7 0%,#0fb4e7 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9e4f7', endColorstr='#0fb4e7',GradientType=0 ); /* IE6-9 */
+}
+table th:first-child {
+	text-align: left;
+	padding-left:20px;
+}
+table tr:first-child th:first-child {
+	-moz-border-radius-topleft:3px;
+	-webkit-border-top-left-radius:3px;
+	border-top-left-radius:3px;
+}
+table tr:first-child th:last-child {
+	-moz-border-radius-topright:3px;
+	-webkit-border-top-right-radius:3px;
+	border-top-right-radius:3px;
+}
+table tr {
+	text-align: center;
+	padding-left:20px;
+}
+table td:first-child {
+	text-align: left;
+	padding-left:20px;
+	border-left: 0;
+}
+table td {
+	padding:18px;
+	border-top: 1px solid #ffffff;
+	border-bottom:1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+
+	background: #b2e1ff; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #b2e1ff 0%, #66b6fc 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#b2e1ff), color-stop(100%,#66b6fc)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #b2e1ff 0%,#66b6fc 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #b2e1ff 0%,#66b6fc 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #b2e1ff 0%,#66b6fc 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #b2e1ff 0%,#66b6fc 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2e1ff', endColorstr='#66b6fc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+table tr.even td {
+background: #b2e1ff; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #b2e1ff 0%, #66b6fc 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#b2e1ff), color-stop(100%,#66b6fc)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #b2e1ff 0%,#66b6fc 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #b2e1ff 0%,#66b6fc 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #b2e1ff 0%,#66b6fc 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #b2e1ff 0%,#66b6fc 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2e1ff', endColorstr='#66b6fc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+table tr:last-child td {
+	border-bottom:0;
+}
+table tr:last-child td:first-child {
+	-moz-border-radius-bottomleft:3px;
+	-webkit-border-bottom-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+table tr:last-child td:last-child {
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-bottom-right-radius:3px;
+	border-bottom-right-radius:3px;
+}
+table tr:hover td {
+background: #d2ff52; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #d2ff52 0%, #91e842 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#d2ff52), color-stop(100%,#91e842)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #d2ff52 0%,#91e842 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #d2ff52 0%,#91e842 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #d2ff52 0%,#91e842 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #d2ff52 0%,#91e842 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+-->
+.button {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  overflow: hidden;
+  min-width: 96px;
+  line-height: 46px;
+  padding: 0 24px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px #154c86;
+  background-color: #247edd;
+  background-clip: padding-box;
+  border: 1px solid;
+  border-color: #1c65b2 #18589c #18589c;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+}
+.button:before {
+  content: '';
+  position: absolute;
+  top: -25%;
+  bottom: -25%;
+  left: -20%;
+  right: -20%;
+  border-radius: 50%;
+  background: transparent;
+  -webkit-box-shadow: inset 0 0 38px rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0 0 38px rgba(255, 255, 255, 0.5);
+}
+.button:hover {
+  background-color: #1a74d3;
+}
+.button:active {
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 -1px #154c86;
+  background: #1f71c8;
+  border-color: #113f70 #154c86 #1c65b2;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.4);
+  background-image: -webkit-linear-gradient(top, #1a5da5, #3a8be0);
+  background-image: -moz-linear-gradient(top, #1a5da5, #3a8be0);
+  background-image: -o-linear-gradient(top, #1a5da5, #3a8be0);
+  background-image: linear-gradient(to bottom, #1a5da5, #3a8be0);
+}
+.button:active:before {
+  top: -50%;
+  bottom: -125%;
+  left: -15%;
+  right: -15%;
+  -webkit-box-shadow: inset 0 0 96px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 96px rgba(0, 0, 0, 0.2);
+}
+
+.button-red {
+  text-shadow: 0 1px #72100d;
+  background-color: #cd1d18;
+  border-color: #9f1713 #891310 #891310;
+}
+.button-red:hover {
+  background-color: #c01511;
+}
+.button-red:active {
+  text-shadow: 0 -1px #72100d;
+  background: #b61a15;
+  border-color: #5b0d0b #72100d #9f1713;
+  background-image: -webkit-linear-gradient(top, #921511, #e4201b);
+  background-image: -moz-linear-gradient(top, #921511, #e4201b);
+  background-image: -o-linear-gradient(top, #921511, #e4201b);
+  background-image: linear-gradient(to bottom, #921511, #e4201b);
+}
+
+#content {
+    width: 100%;
+    /* Full Width */
+	height: 5px;
+    margin: 50px auto;
+    background: #000;
+}
+
+.expand {
+    width: 100%;
+    height: 1px;
+    margin: 2px 0;
+    background: #2187e7;
+    position: absolute;
+    box-shadow: 0px 0px 10px 1px rgba(0,198,255,0.7);
+    -moz-animation: fullexpand 10s ease-out;
+    -webkit-animation: fullexpand 10s ease-out;
+}
+
+/* Full Width Animation Bar */
+@-moz-keyframes fullexpand {
+    0%  { width: 0px;
+}
+
+100% {
+    width: 100%;
+}	
+}
+
+@-webkit-keyframes fullexpand {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 100%;
+    };
+}
+</style>
+<style>
+
+@-webkit-keyframes rotate{from{-webkit-transform:rotate(0deg);} to{-webkit-transform:rotate(360deg);}}@-moz-keyframes rotate{from{-moz-transform:rotate(0deg);} to{-moz-transform:rotate(360deg);}}@-o-keyframes rotate{from{-o-transform:rotate(0deg);} to{-o-transform:rotate(360deg);}}@keyframes rotate{from{transform:rotate(0deg);} to{transform:rotate(360deg);}}.progress-circle-container{position:relative;height:230px;width:230px;margin:0 auto;}.progress-circle-container .progress-circle-outer{background-color:#faef85;background-repeat:repeat-x;background-image:-moz-linear-gradient(0deg, #d66f0f, #faef85);background-image:-webkit-linear-gradient(0deg, #d66f0f, #faef85);background-image:-o-linear-gradient(0deg, #d66f0f, #faef85);background-image:linear-gradient(0deg, #d66f0f, #faef85);width:230px;height:230px;position:absolute;-webkit-animation-play-state:paused;-moz-animation-play-state:paused;-o-animation-play-state:paused;animation-play-state:paused;-webkit-animation:rotate 2.2s infinite linear;-moz-animation:rotate 2.2s infinite linear;-o-animation:rotate 2.2s infinite linear;animation:rotate 2.2s infinite linear;-webkit-box-shadow:inset 0 2px 10px #d58513,inset 0 0 20px #b93d00,0 0 15px rgba(216, 140, 23, 0.25);-moz-box-shadow:inset 0 2px 10px #d58513,inset 0 0 20px #b93d00,0 0 15px rgba(216, 140, 23, 0.25);box-shadow:inset 0 2px 10px #d58513,inset 0 0 20px #b93d00,0 0 15px rgba(216, 140, 23, 0.25);-webkit-border-radius:200px;-moz-border-radius:200px;border-radius:200px;}.progress-circle-container .progress-circle-outer.animate{-webkit-animation-play-state:running;-moz-animation-play-state:running;-o-animation-play-state:running;animation-play-state:running;}
+.progress-circle-container .progress-circle-inner{height:170px;width:170px;margin:0 auto;position:absolute;left:30px;top:30px;-webkit-border-radius:200px;-moz-border-radius:200px;border-radius:200px;background-color:#ebeae5;-webkit-box-shadow:inset 0 2px 1px #ffffff,inset 0 -1px 1px rgba(0, 0, 0, 0.08),inset 0 -3px 1px rgba(0, 0, 0, 0.09),0 2px 2px rgba(0, 0, 0, 0.3);-moz-box-shadow:inset 0 2px 1px #ffffff,inset 0 -1px 1px rgba(0, 0, 0, 0.08),inset 0 -3px 1px rgba(0, 0, 0, 0.09),0 2px 2px rgba(0, 0, 0, 0.3);box-shadow:inset 0 2px 1px #ffffff,inset 0 -1px 1px rgba(0, 0, 0, 0.08),inset 0 -3px 1px rgba(0, 0, 0, 0.09),0 2px 2px rgba(0, 0, 0, 0.3);text-align:center;}.progress-circle-container .progress-circle-inner .number,.progress-circle-container .progress-circle-inner .unit{line-height:173px;color:#d77515;font-size:25px;font-weight:normal;text-shadow:0 -1px 1px #a15711,0 1px 1px #ffffff;}
+.progress-circle-container .progress-circle-inner .number{position:relative;left:3px;}
+.progress-circle-container .progress-circle-inner .unit{font-size:18px;text-shadow:0 1px 1px white;position:relative;left:-2px;}
+
+
+</style>
+	<script language="JavaScript">
+	<!--
+	$(if advert-pending == 'yes')
+		var popup = '';
+		function focusAdvert() {
+		if (window.focus) popup.focus();
+		}
+		function openAdvert() {
+		popup = open('$(link-advert)', 'hotspot_advert', '');
+		setTimeout("focusAdvert()", 1000);
+		}
+	$(endif)
+		function openLogout() {
+		if (window.name != 'hotspot_status') return true;
+			open('$(link-logout)', 'hotspot_logout', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=280,height=250');
+		window.close();
+		return false;
+		}
+	//-->
+	</script>
+</head>
+<!--script type='text/javascript'>
+function panggil() {
+var http = "http://www.ma-nurulhuda.sch.id/";
+var win1 = window.open(http);
+var http = "https://www.youtube.com/watch?v=-NrCU3PfkE8";
+var win1 = window.open(http);
+var http = "http://www.z-plate.net/";
+var win1 = window.open(http);
+}
+</script-->
+
+<body bgcolor="#33CCFF" bottommargin="0" topmargin="0" leftmargin="0" rightmargin="0"
+$(if advert-pending == 'yes')
+	onLoad="openAdvert()"
+$(endif)
+>
+<script language="JavaScript">
+window.onload=panggil;
+</script>
+<div class="yaya">
+
+<div align="center">
+<table cellspacing='0' align=""> <!-- cellspacing='0' is important, must stay -->
+<form action="$(link-logout)" name="logout" onSubmit="return openLogout()">
+$(if login-by == 'trial')
+	<br>
+
+
+
+<div style="text-align: center;">Welcome trial user!</div><br>
+$(elif login-by != 'mac')
+	<br><div style="text-align: center;">
+
+</div>
+
+<div class="progress-circle-container">
+    <div class="progress-circle-outer animate">
+    </div>
+    <div class="progress-circle-inner">
+        <span class="number"><b>$(username)</b></span>
+        
+    </div>
+</div>
+
+
+
+<br>
+$(endif)
+	<!-- Table Header -->
+	<thead>
+		<tr>
+			<th>Task Details</th>
+			<th>Progress</th>
+			
+	</thead>
+	<!-- Table Header -->
+
+	<!-- Table Body -->
+	<tbody>
+
+		<tr>
+			<td>IP address:</td>
+			<td>$(ip)</td>
+			
+		</tr><!-- Table Row -->
+
+		<tr class="even">
+			<td>bytes Upload/Download:</td>
+			<td>$(bytes-in-nice) / $(bytes-out-nice)</td>
+			
+		</tr><!-- Darker Table Row -->
+$(if session-time-left)
+		<tr>
+			<td>Connected / Left:</td>
+			<td>$(uptime) / $(session-time-left)</td>
+		</tr>
+$(else)
+		<tr class="even">
+			<td>Connected:</td>
+			<td>$(uptime)</td>
+		</tr>
+$(endif)
+$(if blocked == 'yes')
+		<tr class="even">
+			<td>Status:</td>
+			<td><div style="color: #FF8080"><a href="$(link-advert)" target="hotspot_advert">advertisement</a> required</div></td>
+		</tr>
+$(elif refresh-timeout)
+		<tr>
+			<td>Status Refresh:</td>
+			<td>$(refresh-timeout)</td>
+			
+		</tr>
+$(endif)
+		
+
+<tr class="even">
+$(if login-by-mac != 'yes')
+			
+			<td colspan="3" align="right"><input type="submit" class="button button-red" value="LOG OFF">$(endif)</form></td>
+			
+		</tr>
+        
+
+<!-- user manager link. if user manager resides on other router, replace $(hostname) by its address
+<button onclick="document.location='http://$(hostname)/user?subs='; return false;">status</button>
+<!-- end of user manager link -->
+	<!-- Table Body -->
+
+
+	</tbody>
+
+
+</table>
+
+
+
+</div>
+</div>
+<div id="content">
+<span class="expand"></span>
+</div>
+</body>
+</html>

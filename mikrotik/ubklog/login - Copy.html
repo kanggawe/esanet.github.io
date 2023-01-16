@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://ubk.kemdikbud.go.id/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <title>Ujian Berbasis Komputer (UBK) 2016/2017</title>
+    <meta name="generator" content="Bootply">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<script>var base_url = '/';</script>
+
+	<link rel="icon" type="image/png" href="./img/logo.png">
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- Magnific-popup lightbox -->
+    <link href="./css/magnific-popup.min.css" rel="stylesheet">
+    <link href="./css/magnify.min.css" rel="stylesheet">
+    <!-- Simple text rotator -->
+    <link href="./css/simpletextrotator.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="./css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <!-- Animate css -->
+    <link href="./css/animate.min.css" rel="stylesheet">
+    <!-- Bootstrap Datepicker CSS -->
+    <link href="./css/bootstrap-datepicker3.min.css" rel="stylesheet" media="screen">
+
+    <!-- Custom styles CSS -->
+    <link href="./css/custom.min.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- Preloader -->
+		<div id="preloader" style="display: inline-table;">
+			<div id="preloader-status" style="display: none;">
+				<div id="preloader-msg">Loading Website</div>
+			</div>
+		</div>
+		
+		<header class="masthead">
+			<div class="container bg">
+				<div class="row">
+					<div class="col col-sm-2 col-md-1">
+						<img src="./img/logo.png" class="logo hidden-xs">
+					</div>
+					<div class="col col-sm-10 col-md-11">
+						<h4 class="title">
+							<p class="wow bounceInDown visible" style="visibility: visible; animation-name: bounceInDown;">KEMENTERIAN PENDIDIKAN DAN KEBUDAYAAN</p>
+							<p class="wow bounceInDown visible" style="visibility: visible; animation-name: bounceInDown;">PUSAT PENILAIAN PENDIDIKAN</p>
+							<p class="subtitle wow bounceInUp" data-wow-delay="0.2s" style="text-transform: uppercase; visibility: visible; animation-delay: 0.2s; animation-name: bounceInUp;">Ujian Berbasis Komputer (UBK) 2016/2017</p>
+						</h4>	
+						<ul class="nav-right visible-lg">
+							<li><a href="https://ubk.kemdikbud.go.id/index.php">Home</a></li>
+							<li><a href="http://www.kemdikbud.go.id/" target="_blank">Kemdikbud</a></li>
+							<li><a href="http://litbang.kemdikbud.go.id/" target="_blank">Balitbang</a></li>
+							<li><a href="http://spasial.data.kemdikbud.go.id/unbk/" target="_blank">Spasial UNBK</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<nav class="navbar navbar-static" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+						<span class="fa fa-bars"></span>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="login.html"><i class="fa fa-home"></i>Home</a></li>
+						<li><a href="status.html"><i class="fa fa-info-circle"></i>Tentang</a></li>
+						<li><a href="logout.html"><i class="fa fa-briefcase"></i>Persyaratan</a></li>
+						<li><a href="#"><i class="fa fa-calendar"></i>Jadwal</a></li>
+						<li><a href="#"><i class="fa fa-building-o"></i>Daftar Sekolah</a></li>
+					</ul>
+					<ul class="nav navbar-right navbar-nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>
+							<ul class="dropdown-menu" style="padding:12px;">
+								<form class="form-inline">
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="Search">
+										<div class="input-group-btn">
+											<button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+										</div>
+									</div>
+								</form>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Begin Body -->
+		<div class="container">
+			<div class="row">
+				<div class="col col-sm-4 col-md-3">
+					<div id="sidebar wow zoomInUp">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h5 class="panel-title">Login</h5>
+							</div>
+							<div class="panel-body">
+								<form action="https://ubk.kemdikbud.go.id/controller/auth/login" method="post" name="fmLogin" id="fmLogin">
+									<div class="form-group">
+										<label for="username">Username</label>
+										<input type="text" class="form-control" id="username" name="username" placeholder="Username">
+									</div>
+									<div class="form-group">
+										<label for="password">Password</label>
+										<input type="password" class="form-control" id="password" name="password" placeholder="Password">
+									</div>
+									<div class="form-group">
+										<img src="./css/show" id="siimage" width="100%">
+									</div>
+									<div class="form-group">
+										<label for="secure">Kode Pengaman</label>
+										<input type="text" class="form-control" id="secure" name="secure" placeholder="Kode Pengaman">
+									</div>
+									
+									<button type="button" class="btn btn-success btn-login" id="btnLogin">Masuk</button><br><br>
+									<a class="btn btn-info" style="width:100%" href="http://spasial.data.kemdikbud.go.id/unbk/" target="_blank">
+										Spasial UNBK
+									</a>
+								</form>
+								<br>
+								<div class="alert alert-danger fade in" id="error" style="display:none;">
+									<button type="button" class="close">x</button>
+									<span class="error"></span>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h5 class="panel-title">Jadwal Kegiatan</h5>
+							</div>
+							<div class="panel-body">
+								<div class="section-content">
+									<div class="event-item">
+										<p class="date-label">
+											<span class="month">OKT</span>
+											<span class="date-number">2016</span>
+										</p>
+										<div class="details">
+											<h2 class="title">Pendataan Sekolah</h2>
+											<p class="time"><i class="fa fa-calendar-o"></i>1 Oktober 2016</p>
+											<p class="location"><i class="fa fa-calendar"></i>31 Oktober 2016</p>                            
+										</div>
+									</div>
+									<div class="event-item">
+										<p class="date-label">
+											<span class="month">NOV</span>
+											<span class="date-number">2016</span>
+										</p>
+										<div class="details">
+											<h2 class="title">Penetapan Sekolah</h2>
+											<p class="time"><i class="fa fa-calendar-o"></i>7 November 2016</p>
+											<p class="location"><i class="fa fa-calendar"></i>-</p>                            
+										</div>
+									</div>
+									<div class="event-item">
+										<p class="date-label">
+											<span class="month">NOV</span>
+											<span class="date-number">2016</span>
+										</p>
+										<div class="details">
+											<h2 class="title">Verifikasi Data Siswa</h2>
+											<p class="time"><i class="fa fa-calendar-o"></i>1 November 2016</p>
+											<p class="location"><i class="fa fa-calendar"></i>10 November 2016</p>                            
+										</div>
+									</div>
+									<div class="event-item">
+										<p class="date-label">
+											<span class="month">NOV</span>
+											<span class="date-number">2016</span>
+										</p>
+										<div class="details">
+											<h2 class="title">Simulasi I (SMP/SMA)</h2>
+											<p class="time"><i class="fa fa-calendar-o"></i>21 November 2016</p>
+											<p class="location"><i class="fa fa-calendar"></i>25 Nevember 2016</p>                            
+										</div>
+									</div>
+									<div class="event-item">
+										<p class="date-label">
+											<span class="month">NOV</span>
+											<span class="date-number">2016</span>
+										</p>
+										<div class="details">
+											<h2 class="title">Simulasi I (SMK)</h2>
+											<p class="time"><i class="fa fa-calendar-o"></i>28 November 2016</p>
+											<p class="location"><i class="fa fa-calendar"></i>1 Desember 2016</p>                            
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-sm-8 col-md-9">
+					<div class="panel">
+						<div class="panel-body">
+							
+		<div class="pengantar">
+			<div id="carousel-example-generic" class="carousel slide">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2" class="active"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<!-- First slide -->
+					<div class="item">
+						<img src="./img/slide-03.png" alt="Peninjauan Menteri Pendidikan dan Kebudayaan">
+						<div class="carousel-caption right">
+							<span data-animation="animated bounceInLeft" class="">
+								Statistik UNBK 2016
+							</span>
+							<h1 data-animation="animated fadeInDownBig" class="">
+								984 Sekolah Jenjang SMP/MTs
+							</h1>
+							<h2 data-animation="animated fadeInDownBig" class="">
+								1.298 Sekolah Jenjang SMA/MA/SMTK/SMAK
+							</h2>
+							<h3 data-animation="animated fadeInDownBig" class="">
+								2.100 Sekolah Jenjang SMK
+							</h3>
+							<h4 data-animation="animated fadeInUpBig" class="">
+								16.477 Server Sekolah
+							</h4>
+							<h5 data-animation="animated fadeInUpBig" class="">
+								922.447 Peserta
+							</h5>
+						</div>
+					</div>
+					<!-- Second slide -->
+					<div class="item skyblue">
+						<img src="./img/slide-02.png" alt="Pelaksanaan UNBK">
+						<div class="carousel-caption right">
+							<span data-animation="animated fadeInDownBig" class="text-right">
+								Apa Itu UNBK ?
+							</span>
+							<h1 data-animation="animated fadeInUpBig" class="text-right">
+								 Ujian Nasional Berbasis Komputer (UNBK) disebut juga Computer Based Test (CBT) adalah sistem pelaksanaan ujian nasional dengan menggunakan komputer sebagai media ujiannya. Dalam pelaksanaannya, UNBK berbeda dengan sistem ujian nasional berbasis kertas atau Paper Based Test (PBT) yang selama ini sudah berjalan. 
+							</h1>
+						</div>
+					</div>
+					<!-- Third slide -->
+					<div class="item darkerskyblue active">
+						<img src="./img/slide-01.png" alt="Pelaksanaan UNBK">
+						<div class="carousel-caption left">
+							<span data-animation="animated fadeInDownBig" class="text-left">
+								Pelaksanaan UNBK
+							</span>
+							<h1 data-animation="animated fadeInLeftBig" class="text-left">
+								 Penyelenggaraan UNBK saat ini menggunakan sistem semi-online yaitu soal dikirim dari server pusat secara online melalui jaringan (sinkronisasi) ke server lokal (sekolah), kemudian ujian siswa dilayani oleh server lokal (sekolah) secara offline. Selanjutnya hasil ujian dikirim kembali dari server lokal (sekolah) ke server pusat secara online (upload). 
+							</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+		</div>
+		<div class="pengantar">
+			<h5 class="post-title">
+				<span>STATISTIK 2017</span>
+			</h5>
+			<div class="statistik row">
+				<div class="col-sm-3">
+					<div class="panel panel-default smp">
+						<div class="panel-body">
+							<div class="column">
+								<span class="title">SMP/MTs</span>
+								<span class="jumlah">11309</span>
+								<span class="desc">sekolah</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="panel panel-default sma">
+						<div class="panel-body">
+							<div class="column">
+								<span class="title">SMA/MA</span>
+								<span class="jumlah">9666</span>
+								<span class="desc">sekolah</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="panel panel-default smk">
+						<div class="panel-body">
+							<div class="column">
+								<span class="title">SMK</span>
+								<span class="jumlah">9838</span>
+								<span class="desc">sekolah</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="panel panel-default" style="background: #ffc184">
+						<div class="panel-body">
+							<div class="column">
+								<span class="title">Total</span>
+								<span class="jumlah">30813</span>
+								<span class="desc">sekolah</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<h5 class="post-title">
+			<span>Grafik Ujian Berbasis Komputer (UBK)</span>
+		</h5>
+		<div style="padding: 5px; background: #e8e8e8">
+			<select id="jenjang">
+				<option value="">Semua Jenjang</option>
+				<option value="P">SMP/MTs</option>
+				<option value="U">SMA/MA</option>
+				<option value="K">SMK</option>
+			</select>
+			<select id="prop">
+				<option value="">Nasional</option>
+				<option value="01">01. DKI JAKARTA</option><option value="02">02. JAWA BARAT</option><option value="03">03. JAWA TENGAH</option><option value="04">04. DI YOGYAKARTA</option><option value="05">05. JAWA TIMUR</option><option value="06">06. ACEH</option><option value="07">07. SUMATERA UTARA</option><option value="08">08. SUMATERA BARAT</option><option value="09">09. RIAU</option><option value="10">10. JAMBI</option><option value="11">11. SUMATERA SELATAN</option><option value="12">12. LAMPUNG</option><option value="13">13. KALIMANTAN BARAT</option><option value="14">14. KALIMANTAN TENGAH</option><option value="15">15. KALIMANTAN SELATAN</option><option value="16">16. KALIMANTAN TIMUR</option><option value="17">17. SULAWESI UTARA</option><option value="18">18. SULAWESI TENGAH</option><option value="19">19. SULAWESI SELATAN</option><option value="20">20. SULAWESI TENGGARA</option><option value="21">21. MALUKU</option><option value="22">22. BALI</option><option value="23">23. NUSA TENGGARA BARAT</option><option value="24">24. NUSA TENGGARA TIMUR</option><option value="25">25. PAPUA</option><option value="26">26. BENGKULU</option><option value="27">27. MALUKU UTARA</option><option value="28">28. BANGKA BELITUNG</option><option value="29">29. GORONTALO</option><option value="30">30. BANTEN</option><option value="31">31. KEPULAUAN RIAU</option><option value="32">32. SULAWESI BARAT</option><option value="33">33. PAPUA BARAT</option><option value="34">34. KALIMANTAN UTARA</option><option value="91">91. SEKOLAH INDONESIA
+			</option></select>
+		</div>
+		<div id="chart" data-highcharts-chart="0"><div class="highcharts-container" id="highcharts-0" style="position: relative; overflow: hidden; width: 820px; height: 1790px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="820" height="1790"><desc>Created with Highcharts 4.0.1</desc><defs><clippath id="highcharts-1"><rect x="0" y="0" width="1633" height="653"></rect></clippath></defs><rect x="0" y="0" width="820" height="1790" strokeWidth="0" fill="#FFFFFF" class=" highcharts-background"></rect><g class="highcharts-button" style="cursor:default;" stroke-linecap="round" transform="translate(786,10)"><title>Chart context menu</title><rect x="0.5" y="0.5" width="24" height="22" strokeWidth="1" fill="white" stroke-width="1" stroke="none" rx="2" ry="2"></rect><path fill="#E0E0E0" d="M 6 6.5 L 20 6.5 M 6 11.5 L 20 11.5 M 6 16.5 L 20 16.5" stroke="#666" stroke-width="3" zIndex="1"></path><text x="0" zIndex="1" style="color:black;fill:black;" y="13"></text></g><g class="highcharts-grid" zIndex="1"></g><g class="highcharts-grid" zIndex="1"><path fill="none" d="M 483.5 53 L 483.5 1686" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 810.5 53 L 810.5 1686" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 156.5 53 L 156.5 1686" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 221.5 53 L 221.5 1686" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 287.5 53 L 287.5 1686" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 352.5 53 L 352.5 1686" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 417.5 53 L 417.5 1686" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 548.5 53 L 548.5 1686" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 613.5 53 L 613.5 1686" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 678.5 53 L 678.5 1686" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 744.5 53 L 744.5 1686" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path></g><g class="highcharts-axis" zIndex="2"><path fill="none" d="M 157 100.5 L 147 100.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 146.5 L 147 146.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 193.5 L 147 193.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 240.5 L 147 240.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 286.5 L 147 286.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 333.5 L 147 333.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 380.5 L 147 380.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 426.5 L 147 426.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 473.5 L 147 473.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 520.5 L 147 520.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 566.5 L 147 566.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 613.5 L 147 613.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 660.5 L 147 660.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 706.5 L 147 706.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 753.5 L 147 753.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 800.5 L 147 800.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 846.5 L 147 846.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 893.5 L 147 893.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 939.5 L 147 939.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 986.5 L 147 986.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 1033.5 L 147 1033.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 1079.5 L 147 1079.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 1126.5 L 147 1126.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 1173.5 L 147 1173.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 1219.5 L 147 1219.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 1266.5 L 147 1266.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 1313.5 L 147 1313.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 1359.5 L 147 1359.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 1406.5 L 147 1406.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 1453.5 L 147 1453.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 1499.5 L 147 1499.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 1546.5 L 147 1546.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 1593.5 L 147 1593.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 1639.5 L 147 1639.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 1686.5 L 147 1686.5" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 157 52.5 L 147 52.5" stroke="#C0D0E0" stroke-width="1" opacity="undefined"></path><path fill="none" d="M 156.5 53 L 156.5 1686" stroke="#C0D0E0" stroke-width="1" zIndex="7" visibility="visible"></path></g><g class="highcharts-axis" zIndex="2"><text x="483.5" zIndex="7" text-anchor="middle" transform="translate(0,0)" class=" highcharts-yaxis-title" style="color:#707070;fill:#707070;" visibility="visible" y="1728"><tspan>Persentase Sekolah</tspan></text></g><g class="highcharts-series-group" zIndex="3"><g class="highcharts-series highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(810,1686) rotate(90) scale(-1,1) scale(1 1)" style="" width="653" height="1633" clip-path="url(#highcharts-1)"><rect x="1595.5" y="-0.5" width="28" height="1" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="1548.5" y="-0.5" width="28" height="404" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="1501.5" y="-0.5" width="28" height="314" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="1455.5" y="653.5" width="28" height="1" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="1408.5" y="-0.5" width="28" height="315" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="1361.5" y="-0.5" width="28" height="385" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="1315.5" y="-0.5" width="28" height="495" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="1268.5" y="-0.5" width="28" height="475" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="1221.5" y="-0.5" width="28" height="555" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="1175.5" y="-0.5" width="28" height="500" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="1128.5" y="-0.5" width="28" height="496" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="1081.5" y="-0.5" width="28" height="528" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="1035.5" y="-0.5" width="28" height="585" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="988.5" y="-0.5" width="28" height="601" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="941.5" y="-0.5" width="28" height="475" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="895.5" y="-0.5" width="28" height="421" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="848.5" y="-0.5" width="28" height="550" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="802.5" y="-0.5" width="28" height="577" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="755.5" y="-0.5" width="28" height="464" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="708.5" y="-0.5" width="28" height="633" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="662.5" y="-0.5" width="28" height="596" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="615.5" y="-0.5" width="28" height="451" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="568.5" y="-0.5" width="28" height="507" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="522.5" y="-0.5" width="28" height="617" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="475.5" y="-0.5" width="28" height="516" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="428.5" y="-0.5" width="28" height="538" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="382.5" y="-0.5" width="28" height="578" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="335.5" y="-0.5" width="28" height="230" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="288.5" y="-0.5" width="28" height="421" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="242.5" y="-0.5" width="28" height="439" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="195.5" y="-0.5" width="28" height="517" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="148.5" y="-0.5" width="28" height="599" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="102.5" y="-0.5" width="28" height="577" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="55.5" y="-0.5" width="28" height="360" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect><rect x="8.5" y="-0.5" width="28" height="27" stroke="#FFFFFF" fill="#c3c3c3" rx="0" ry="0" stroke-width="1"></rect></g><g class="highcharts-markers" visibility="visible" zIndex="0.1" transform="translate(810,1686) rotate(90) scale(-1,1) scale(1 1)" width="653" height="1633" clip-path="none"></g><g class="highcharts-series highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(810,1686) rotate(90) scale(-1,1) scale(1 1)" style="" width="653" height="1633" clip-path="url(#highcharts-1)"><rect x="1595.5" y="-0.5" width="28" height="37" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="1548.5" y="403.5" width="28" height="47" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="1501.5" y="313.5" width="28" height="99" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="1455.5" y="1.5" width="28" height="234" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="1408.5" y="314.5" width="28" height="100" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="1361.5" y="384.5" width="28" height="79" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="1315.5" y="494.5" width="28" height="46" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="1268.5" y="474.5" width="28" height="91" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="1221.5" y="554.5" width="28" height="23" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="1175.5" y="499.5" width="28" height="49" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="1128.5" y="495.5" width="28" height="59" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="1081.5" y="527.5" width="28" height="25" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="1035.5" y="584.5" width="28" height="14" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="988.5" y="600.5" width="28" height="18" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="941.5" y="474.5" width="28" height="69" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="895.5" y="420.5" width="28" height="48" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="848.5" y="549.5" width="28" height="24" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="802.5" y="576.5" width="28" height="12" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="755.5" y="463.5" width="28" height="48" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="708.5" y="632.5" width="28" height="0" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="662.5" y="595.5" width="28" height="13" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="615.5" y="450.5" width="28" height="42" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="568.5" y="506.5" width="28" height="34" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="522.5" y="616.5" width="28" height="0" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="475.5" y="515.5" width="28" height="47" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="428.5" y="537.5" width="28" height="19" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="382.5" y="577.5" width="28" height="24" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="335.5" y="229.5" width="28" height="166" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="288.5" y="420.5" width="28" height="55" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="242.5" y="438.5" width="28" height="52" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="195.5" y="516.5" width="28" height="40" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="148.5" y="598.5" width="28" height="22" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="102.5" y="576.5" width="28" height="13" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="55.5" y="359.5" width="28" height="59" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect><rect x="8.5" y="26.5" width="28" height="26" stroke="#FFFFFF" fill="#7cb5ec" rx="0" ry="0" stroke-width="1"></rect></g><g class="highcharts-markers" visibility="visible" zIndex="0.1" transform="translate(810,1686) rotate(90) scale(-1,1) scale(1 1)" width="653" height="1633" clip-path="none"></g><g class="highcharts-series highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(810,1686) rotate(90) scale(-1,1) scale(1 1)" style="" width="653" height="1633" clip-path="url(#highcharts-1)"><rect x="1595.5" y="36.5" width="28" height="617" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="1548.5" y="450.5" width="28" height="203" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="1501.5" y="412.5" width="28" height="241" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="1455.5" y="235.5" width="28" height="418" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="1408.5" y="414.5" width="28" height="239" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="1361.5" y="463.5" width="28" height="190" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="1315.5" y="540.5" width="28" height="113" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="1268.5" y="565.5" width="28" height="88" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="1221.5" y="577.5" width="28" height="76" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="1175.5" y="548.5" width="28" height="105" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="1128.5" y="554.5" width="28" height="99" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="1081.5" y="552.5" width="28" height="101" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="1035.5" y="598.5" width="28" height="55" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="988.5" y="618.5" width="28" height="35" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="941.5" y="543.5" width="28" height="110" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="895.5" y="468.5" width="28" height="185" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="848.5" y="573.5" width="28" height="80" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="802.5" y="588.5" width="28" height="65" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="755.5" y="511.5" width="28" height="142" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="708.5" y="632.5" width="28" height="21" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="662.5" y="608.5" width="28" height="45" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="615.5" y="492.5" width="28" height="161" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="568.5" y="540.5" width="28" height="113" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="522.5" y="616.5" width="28" height="37" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="475.5" y="562.5" width="28" height="91" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="428.5" y="556.5" width="28" height="97" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="382.5" y="601.5" width="28" height="52" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="335.5" y="395.5" width="28" height="258" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="288.5" y="475.5" width="28" height="178" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="242.5" y="490.5" width="28" height="163" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="195.5" y="556.5" width="28" height="97" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="148.5" y="620.5" width="28" height="33" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="102.5" y="589.5" width="28" height="64" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="55.5" y="418.5" width="28" height="235" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect><rect x="8.5" y="52.5" width="28" height="601" stroke="#FFFFFF" fill="#90ed7d" rx="0" ry="0" stroke-width="1"></rect></g><g class="highcharts-markers" visibility="visible" zIndex="0.1" transform="translate(810,1686) rotate(90) scale(-1,1) scale(1 1)" width="653" height="1633" clip-path="none"></g></g><text x="410" text-anchor="middle" class="highcharts-title" zIndex="4" style="color:#333333;font-size:18px;fill:#333333;width:756px;" y="25"><tspan>Persentase Sekolah UNBK</tspan></text><g class="highcharts-legend" zIndex="7" transform="translate(184,1754)"><g zIndex="1"><g><g class="highcharts-legend-item" zIndex="1" transform="translate(8,3)"><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" zIndex="2"><tspan>Sekolah Pelaksana</tspan></text><rect x="0" y="4" width="16" height="12" zIndex="3" fill="#90ed7d"></rect></g><g class="highcharts-legend-item" zIndex="1" transform="translate(160.09375,3)"><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" zIndex="2"><tspan>Pelaksanaan di Sekolah Lain</tspan></text><rect x="0" y="4" width="16" height="12" zIndex="3" fill="#7cb5ec"></rect></g><g class="highcharts-legend-item" zIndex="1" transform="translate(369.921875,3)"><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" zIndex="2"><tspan>Non UNBK</tspan></text><rect x="0" y="4" width="16" height="12" zIndex="3" fill="#c3c3c3"></rect></g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels" zIndex="7"><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="79.82857142857142" opacity="1"><tspan>DKI JAKARTA</tspan></text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="126.48571428571427" opacity="1"><tspan>JAWA BARAT</tspan></text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="173.1428571428571" opacity="1"><tspan>JAWA TENGAH</tspan></text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="219.79999999999995" opacity="1"><tspan>DI YOGYAKARTA</tspan></text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="266.4571428571428" opacity="1"><tspan>JAWA TIMUR</tspan></text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="313.11428571428564" opacity="1">ACEH</text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="359.7714285714287" opacity="1"><tspan>SUMATERA UTARA</tspan></text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="406.42857142857156" opacity="1"><tspan>SUMATERA BARAT</tspan></text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="453.0857142857144" opacity="1">RIAU</text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="499.74285714285725" opacity="1">JAMBI</text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="546.4000000000001" opacity="1"><tspan>SUMATERA SELATAN</tspan></text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="593.0571428571429" opacity="1">LAMPUNG</text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="639.7142857142858" opacity="1"><tspan>KALIMANTAN BARAT</tspan></text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="686.3714285714286" opacity="1"><tspan>KALIMANTAN TENGAH</tspan></text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="733.0285714285715" opacity="1"><tspan>KALIMANTAN SELATAN</tspan></text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="779.6857142857143" opacity="1"><tspan>KALIMANTAN TIMUR</tspan></text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="826.3428571428572" opacity="1"><tspan>SULAWESI UTARA</tspan></text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="873" opacity="1"><tspan>SULAWESI TENGAH</tspan></text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="919.6571428571428" opacity="1"><tspan>SULAWESI SELATAN</tspan></text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="966.3142857142857" opacity="1"><tspan>SULAWESI TENGGARA</tspan></text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="1012.9714285714288" opacity="1">MALUKU</text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="1059.6285714285716" opacity="1">BALI</text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="1106.2857142857142" opacity="1"><tspan>NUSA TENGGARA BARAT</tspan></text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="1152.942857142857" opacity="1"><tspan>NUSA TENGGARA TIMUR</tspan></text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="1199.6000000000001" opacity="1">PAPUA</text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="1246.257142857143" opacity="1">BENGKULU</text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="1292.9142857142858" opacity="1"><tspan>MALUKU UTARA</tspan></text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="1339.5714285714287" opacity="1"><tspan>BANGKA BELITUNG</tspan></text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="1386.2285714285715" opacity="1">GORONTALO</text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="1432.8857142857144" opacity="1">BANTEN</text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="1479.5428571428572" opacity="1"><tspan>KEPULAUAN RIAU</tspan></text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="1526.2" opacity="1"><tspan>SULAWESI BARAT</tspan></text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="1572.857142857143" opacity="1"><tspan>PAPUA BARAT</tspan></text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="1619.5142857142857" opacity="1"><tspan>KALIMANTAN UTARA</tspan></text><text x="142" text-anchor="end" style="width:251px;color:#606060;cursor:default;font-size:11px;fill:#606060;" y="1666.1714285714286" opacity="1"><tspan>SEKOLAH INDONESIA</tspan></text></g><g class="highcharts-axis-labels highcharts-yaxis-labels" zIndex="7"><text x="157" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="1706" opacity="1">0</text><text x="483.5" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="1706" opacity="1">50</text><text x="809.546875" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="1706" opacity="1">100</text><text x="222.3" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="1706" opacity="1">10</text><text x="287.6" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="1706" opacity="1">20</text><text x="352.9" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="1706" opacity="1">30</text><text x="418.2" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="1706" opacity="1">40</text><text x="548.8" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="1706" opacity="1">60</text><text x="614.1" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="1706" opacity="1">70</text><text x="679.4" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="1706" opacity="1">80</text><text x="744.7" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" y="1706" opacity="1">90</text></g><g class="highcharts-tooltip" zIndex="8" style="cursor:default;padding:0;white-space:nowrap;" transform="translate(0,-9999)"><path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" stroke-width="5" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" transform="translate(1, 1)"></path><path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" stroke-width="3" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" transform="translate(1, 1)"></path><path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" stroke-width="1" isShadow="true" stroke="black" stroke-opacity="0.15" transform="translate(1, 1)"></path><path fill="rgba(249, 249, 249, .85)" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" stroke-width="1"></path><text x="8" zIndex="1" style="font-size:12px;color:#333333;fill:#333333;" y="21"></text></g><text x="810" text-anchor="end" zIndex="8" style="cursor:pointer;color:#909090;font-size:9px;fill:#909090;" y="1785"></text></svg></div></div>
+		Last Update : 27-02-2017 10:02:38
+	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+    <!-- Javascript -->
+	<!-- jQuery -->
+	<script src="./js/jquery-1.11.2.min.js"></script>
+	<script src="./js/jquery.form.min.js"></script>
+	<script src="./js/jquery.maskedinput.min.js"></script>
+
+	<!-- Bootstrap JS -->
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/highcharts.js"></script>
+	<script src="./js/highcharts-3d.js"></script>
+	<script src="./js/highcharts-exporting.js"></script>
+	<!-- Keyboard -->
+	<script src="./js/bootstrap-datepicker.min.js"></script>
+	<!-- WOW - Reveal Animations When You Scroll -->
+	<script src="./js/wow.min.js"></script>
+	<!-- Custom Scripts -->
+	<script src="./js/custom.min.js"></script>
+	
+		<script>
+			$(function () {
+				$('#prop').change(function(){ getChart(); });
+				$('#jenjang').change(function(){ getChart(); });
+				
+				function getChart() {
+					var kd_prop = $('#prop').val();
+					var jenjang = $('#jenjang').val();
+
+					$.ajax({
+						dataType: 'json',
+						type: 'POST',
+						url:base_url + 'controller/public/chart',
+						data:{ jenjang:jenjang, kd_prop: kd_prop },
+						success: function(a){
+							$('#chart').highcharts({
+								chart: {
+									type: 'bar',
+									height: a.height,
+								},
+								title: {
+									text: 'Persentase Sekolah UNBK'
+								},
+								xAxis: {
+									categories: a.prop
+								},
+								yAxis: {
+									min: 0,
+									title: {
+										text: 'Persentase Sekolah'
+									}
+								},
+								legend: {
+									reversed: true
+								},
+								plotOptions: {
+									series: {
+										pointPadding: 0,
+										groupPadding: 0.2,
+										stacking: 'percent',
+									}
+								},
+								series: [{
+									name: 'Non UNBK',
+									data: a.non,
+									color: '#c3c3c3',
+								}, {
+									name: 'Pelaksanaan di Sekolah Lain',
+									data: a.gabung,
+									color: '#7cb5ec',
+								}, {
+									name: 'Sekolah Pelaksana',
+									data: a.pelaksana,
+									color: '#90ed7d',
+								}]
+							});
+						}
+					});
+				}
+
+				getChart();
+			});
+		</script>
+	
+
+
+</body></html>

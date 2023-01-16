@@ -1,0 +1,33 @@
+internal-error = Internal error ($(error-orig))
+
+config-error = Configuration error ($(error-orig))
+
+not-logged-in = Anda belum login (ip $(ip))
+
+ippool-empty = Tidak dapat mengalokasikan identitas IP
+
+shutting-down = KM Hotspot dalam perawatan
+
+user-not-found = Maaf $(username) tidak terdaftar
+
+user-session-limit = Maaf $(username) sudah digunakan
+
+license-session-limit = Batas sesi telah tercapai ($(error-orig))
+
+wrong-mac-username = invalid username ($(username)): MAC address ini bukan milik anda
+
+chap-missing = Tutup browser Anda atau aktifkan Javascript, dan coba lagi
+
+invalid-username = Maaf, User ID atau Password Anda salah
+
+invalid-mac = User $(username) tidak boleh LogIn di Komputer ini
+
+uptime-limit = Maaf, user $(username) telah mencapai batas maksimal waktu penggunaan, silahkan menghubungi Staf KM Hotspot - 085730041058
+
+traffic-limit = Maaf, user $(username) telah mencapai batas maksimal trafik bandwidth
+
+radius-timeout = ID anda salah / Anda blom Melunasi Tagihan Bulanan
+
+auth-in-progress = Ajuan Anda sedang di proses
+
+radius-reply = $(error-orig)

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Pragma" content="No-Cache">
+	<meta http-equiv="Cache-Control" content="No-Cache,Must-Revalidate,No-Store">
+	<meta name="Robots" content="NoIndex">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="icon" href="img/favicon.png">
+    <title>Kemerdekaan / By e Media</title>    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<style>
+	body { background-color: #f5f5f5;}
+	@media (min-width: 1200px) {
+	.col-5 { width: 20%;}
+	}
+</style>
+<!--
+/************************************************************************/
+/******************** COPYRIGHT MADE IN INDONESUA ***********************/
+/* 																	   **/
+/* NamaFile: namafile.php 											   **/
+/* Penulis : M. Irahim Bajuri 										   **/
+/* website : kangbajuri.id 											   **/
+/* Tanggal : 25-10-2016   											   **/
+/* Lisensi : Gratis dengan meyertakan script ini   					   **/
+/*																	   **/
+/******************** COPYRIGHT MADE IN INDONESUA ***********************/
+/************************************************************************/
+-->
+  </head>
+<body>
+<header>
+		<nav class="navbar navbar-inverse navbar-fixed-top secondmenu">
+				<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar top-bar"></span>
+						<span class="icon-bar middle-bar"></span>
+						<span class="icon-bar bottom-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+						<img alt="Code Kece" src="img/football5starlogo.png" class="img-responsive">
+					</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="nav navbar-nav">
+					<li class="a"><a  class="a" href="../cocok/login.html"><i class="icon-home icon-black"></i>  Dashboard <span class="sr-only">(current)</span></a></li>		
+                        <li class="a"><a href="status.html"><i class="icon-pencil icon-black"></i>Status</a></li>
+                        <li class="a"><a href="logout.html"><i class="icon-pencil icon-black"></i>keluar</a></li>
+					</ul>										
+				</div><!-- /.navbar-collapse -->	
+			</div>				
+		</nav>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center"> <b class="logo">
+    </div>
+  </div>
+</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" id="a">
+        <div class="card card-container">
+					<form class="form-signin" name="login" action="$(link-login-only)" method="post"
+					    $(if chap-id) onSubmit="return doLogin()" $(endif)>
+				<h1>Login</h1>
+						<input type="hidden" name="dst" value="$(link-orig)" />
+						<input type="hidden" name="popup" value="true" />
+					<input class="form-control" name="username" type="text" value="$(username)"/>
+					<input class="form-control" name="password" type="password" />	
+				<button class="btn btn-lg btn-primary btn-block btn-signin" type="submit" style="height: 40px; line-height: 1; margin-bottom: 2px;">Login</button>
+			</form>
+		  <div class="z">
+		         	$(if error)
+						<div class="alert alert-danger alert-dismissible" role="alert" style="font-size:12px; align:justify;">
+							<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+							<strong style="color: red">Error!</strong> 
+							<script type="text/javascript">
+		       var error = "$(error)";
+		       if (error == "credit limit reached")
+		       {
+		       document.write("Maaf, Masa Aktif Voucher Anda Sudah Habis | ");
+		       }
+if (error == "uptime limit reached")
+		       {
+		       document.write("Maaf, Waktu Internet Voucher Anda Sudah Habis | ");
+		       }
+if (error == "download limit reached")
+		       {
+		       document.write("Kuota Voucher Anda Telah Habis | ");
+}
+if (error == "no valid profile found")
+		       {
+		       document.write("Maaf, Voucher Anda Sudah Habis Masa Aktif | ");
+		       }
+if (error == "invalid password")
+		       {
+		       document.write("Password Yang Anda Masukan Salah, Hubungi Kami Atau Coba Lagi | ");
+		       }
+if (error == "simultaneous session limit reached")
+		       {
+		       document.write("Username $(username) Sebelumnya Sudah Login atau Sedang Aktif Hubungi Kami Atau Tunggu 5 Menit dan Coba Lagi");
+		       }
+		       else {
+			       document.write("$(error)");
+		       }       
+		       </script>.
+						</div>
+						$(endif)
+
+		  </div>
+		  </div>
+      </div>
+      <div class="col-md-8" id="b">
+        <div class="center-block"><img src="img/football5stat-live-kuis.jpg" class="img-responsive"></div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="container" id="c">
+    <div class="col-lg-3 col-5">
+      <div class="game-league"> <a class="english"> <img src="img/english.png" class="img-responsive"> <span>Play Now</span> </a>   </div>
+    </div>
+    <div class="col-lg-3 col-5">
+      <div class="game-league"> <a class="italy"> <img src="img/italy.png" class="img-responsive"> <span>Play Now</span> </a> </div>
+    </div>
+    <div class="col-lg-3 col-5">
+      <div class="game-league"> <a class="spain"> <img src="img/spain.png" class="img-responsive"> <span>Play Now</span> </a> </div>
+    </div>
+    <div class="col-lg-3 col-5">
+      <div class="game-league"> <a class="jerman"> <img src="img/jerman.png" class="img-responsive"> <span>Play Now</span> </a> </div>
+    </div>
+    <div class="col-lg-3 col-5">
+      <div class="game-league"> <a class="italy"> <img src="img/champions2.png" class="img-responsive"> <span>Play Now</span> </a> </div>
+    </div>
+  </div>
+
+
+<footer class="footer">
+    <p>© 2016 KM.NET <br><a href="#">Copyrights All rights reserved.</a></p>
+</footer>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>	
+ $(if chap-id)
+	<form name="sendin" action="$(link-login-only)" method="post">
+		<input type="hidden" name="username" />
+		<input type="hidden" name="password" />
+		<input type="hidden" name="dst" value="$(link-orig)" />
+		<input type="hidden" name="popup" value="true" />
+	</form>
+	
+	<script type="text/javascript" src="/md5.js"></script>
+	<script type="text/javascript">
+	    function doLogin() {
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+		document.sendin.submit();
+		return false;
+	    }
+	</script>
+$(endif)	
+<script type="text/javascript">
+<!--
+  document.login.username.focus();
+//-->
+</script>	
+</body>
+</html>

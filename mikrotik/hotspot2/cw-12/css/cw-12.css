@@ -1,0 +1,244 @@
+/*---------------------------------------------------------BEGIN---------------------------------------------------*/
+/*WOODTECH v.1.0 (Hotspot login mikrotik)*/
+/*Copyright : cw-12, Forummikrotik.com & Junkers :)*/
+/*Boleh dimodifikasi dan disebarluaskan, sepanjang mencantumkan credit!*/
+/*Themes ini menggunakan beberapa library :
+	- jquery
+	- jquery-ui
+	- jquery-example
+	- grid system 960.gs
+	- subtlepatterns.com
+(credits & respect to all creator mentioned above)
+*/
+/*Tested on ROS4.17 only, browser FF12,IE9 other not yet!*/
+/*Use at your own risk*/
+/*----------------------------------------------------------END---------------------------------------------------*/
+
+
+body{
+	background: url("../img/pattern.png") repeat;
+	font: 85%/0.9 Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+/*font*/
+h1{
+	font-size: 26px;
+}
+
+#wrapper{
+	width: 500px;
+	/*border: 1px solid #ccc;*/
+	margin: 0 auto;
+	height: 500px;
+	margin-top: 50px;
+	display:none;
+}
+#login-container{
+	/*margin-top: 20%;*/
+	margin: 0 auto;
+	height: 450px;
+	width: 450px;
+	/*border: 1px solid #ccc;*/
+	background: #1E90FF;
+	box-shadow: 0 0 10px #000;
+	-moz-box-shadow: 0 0 10px #000;
+	-webkit-box-shadow: 0 0 10px #000;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+#username{
+	width: 180px;
+	background-color:#222222;	
+	height: 30px;
+	border: none;
+}
+#password{
+	width: 180px;
+	background-color:#222222;	
+	height: 30px;
+	border: none;
+}
+#head{
+	width: 450px;
+	height: 50px;
+}	
+#title{
+	text-shadow: 1px 1px 1px #000;
+	color: #fff;
+	font-size: 12px;	
+	margin: 2px 0px 0px 17px;
+	float: left;
+}
+
+#middle{
+	width: 450px;
+	height: 350px;	
+	border-top: 1px solid #1A1A1A;
+	border-bottom: 1px solid #1A1A1A;
+	background: url("../img/middle.png") repeat;
+}
+#middle-content{
+	/*border: 1px solid #ccc;*/
+	margin-top: 60px;
+	
+}
+#uname-blok{
+	width: 80%;
+	height: 75px;
+	margin: 0 auto;
+	background: transparent;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;	
+	box-shadow: inset 0 0 10px #fff;
+	-moz-box-shadow: inset 0 0 10px #fff;
+	-webkit-box-shadow: inset 0 0 10px #fff;
+	border:1px solid #E7E7E8;
+}
+#uname-blok input{
+	margin-left: 30px;
+	margin-top:18px;
+	height: 35px;
+	width: 60%;
+	font-size: 20px;
+	/*box-shadow: inset 0 0 10px #000000;*/
+	float:left;
+	border: none;
+	background: #1E90FF;
+	color: #fff;	
+}
+#uname-blok img{
+	/*margin: 20px 0px 0px 10px;*/
+	float:left;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+#pass-blok{
+	width: 80%;
+	height: 75px;
+	margin: 0 auto;
+	background: transparent;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;	
+	box-shadow: inset 0 0 10px #fff;
+	-moz-box-shadow: inset 0 0 10px #fff;
+	-webkit-box-shadow: inset 0 0 10px #fff;
+	border:1px solid #E7E7E8;	
+}
+#pass-blok input{
+	margin-left: 30px;
+	margin-top:18px;
+	height: 35px;
+	width: 60%;
+	font-size: 20px;
+	/*box-shadow: inset 0 0 10px #000000;*/
+	float:left;
+	border: none;
+	background: #1E90FF;
+	color: #fff;
+}
+#pass-blok img{
+	/*margin: 20px 0px 0px 10px;*/
+	float:left;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+#submit-blok{
+	width: 80%;
+	height: 60px;
+	margin: 0 auto;
+	background: transparent;
+	margin-top: 20px;
+}
+#submit-blok input{
+	width: 100%;
+	height: 55px;
+	border: 1px solid #1A1A1A;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: inset 0 0 10px #000000;
+	-moz-box-shadow: inset 0 0 10px #000000;
+	-webkit-box-shadow: inset 0 0 10px #000000;
+	font-size: 20px;
+	cursor: pointer;
+	background: #1E90FF;
+	text-shadow: 1px 1px 1px #000;
+	color: #fff;
+}
+#error{
+	margin: 0px 20px 0px 20px;
+	color: red;
+	font-size: 12px;
+}
+#bottom{
+	width: 450px;
+	height: 50px;	
+}
+#aturan-makan{
+	text-shadow: 1px 1px 1px #000;
+	color: #fff;
+	font-size: 12px;	
+	margin: -3px 0px 0px 0px;
+	text-align:center;
+}
+#aturan-makan a{
+	text-decoration: none;
+	color: white;
+	text-shadow: 1px 1px 1px #000;
+}
+#shadow{
+	width: 434px;
+	height: 15px;
+	margin: 0 auto;
+	background: url("../img/shadow.png");
+}
+#pamer{
+	margin-top: 10px;
+	text-shadow: 1px 1px 1px #ccc;
+}
+#tos-dialog{
+	display:none;
+}
+#price{
+	margin-top: 20px;
+	border: 1px dotted #ccc;
+	float: left;
+	width: 100%;
+	background: #ccc;
+	border-radius: 5px;
+}
+.clear{
+	width: 100%;	
+	padding: 10px 0px 10px 0px;
+	
+}
+/*status.html*/
+#wrapper-status{
+	width: 500px;
+	/*border: 1px solid #ccc;*/
+	margin: 0 auto;
+	height: 300px;
+	margin-top: 50px;
+}
+.blok{
+	height: 400px;
+	width: 450px;
+	/*border: 1px solid #ccc;*/
+	background: #07446B;
+	box-shadow: 0 0 10px #000;
+
+	-moz-box-shadow: 0 0 10px #000;
+	-webkit-box-shadow: 0 0 10px #000;
+	border-radius: 10px;
+
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	background: url("../img/middle.png");
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}

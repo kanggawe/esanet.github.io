@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>OZON Hotspot By KM NETWORK</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="assets/images/bi.gif">
+
+		<link rel="stylesheet" id="main-css" href="assets/css/main.css" type="text/css" media="all">
+		<link rel="stylesheet" id="plugins-css" href="assets/css/plugins.css" type="text/css" media="all">
+		<link rel="stylesheet" id="responsive-css" href="assets/css/media.css" type="text/css" media="all">
+		<link rel="stylesheet" id="style-css" href="assets/css/style.css" type="text/css" media="all">
+		
+    <script src="assets/js/apane.min.js"></script>
+
+	</head>
+<body onload="initTimer();">
+$(if chap-id)
+	<form name="sendin" action="$(link-login-only)" method="post">
+		<input type="hidden" name="username" />
+		<input type="hidden" name="password" />
+		<input type="hidden" name="dst" value="$(link-orig)" />
+		<input type="hidden" name="popup" value="true" />
+	</form>
+	
+	<script type="text/javascript" src="/md5.js"></script>
+	<script type="text/javascript">
+	<!--
+	    function doLogin() {
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+		document.sendin.submit();
+		return false;
+	    }
+	//-->
+	</script>
+$(endif)            
+        <div class="boxed-wrap clearfix">
+	    <div id="header-wrapper">
+                         <div class="topbara">
+  <div class="inner">
+        <div class="top-left-content">
+                                     </div> <!--tb left-->
+       
+</div>
+ </div>   <!--topbar-->
+             <header class="header">
+                <div class="inner">
+                    <div class="logo">
+                    <a href="#">
+		                 <img src="assets/images/bgatas.png" alt="Baitul Maal Al-Muttaqin">
+                             <img class="mom_retina_logo" src="assets/images/logo.png" alt="Baitul Maal Al-Muttaqin">  </a>
+                    </div>
+                                        <div class="header-right">
+                                  		<div class="mom-ads-wrap">
+	<div class="mom-ads " style="">
+		<div class="mom-ads-inner">
+		</div>
+	</div>	<!--Mom ads-->
+	</div>
+                    </div> <!--header right-->
+                <div class="clear"></div>
+                </div>
+            </header>
+	    	    </div> <!--header wrap-->
+ <nav id="navigation" itemtype="http://schema.org/SiteNavigationElement" itemscope="itemscope" role="navigation" class="dd-effect-slide ">
+ </nav> <!--Navigation-->
+          
+		  <!--content-->
+
+	    <div class="boxed-content-wrapper clearfix">
+            <div class="nav-shaddow"></div>
+            <div class="inner">
+        <div class="breaking-news">
+    <div class="the_ticker">
+    <div class="bn-title"><span>KM NETWORK</span></div>
+    <div class="news-ticker">
+        <div class="tickercontainer"><div class="mask"><marquee behavior="alternate" style="font-weight:bold;font-family: monospace;font-style: italic;font-size: x-large;font-variant: initial;font-stretch: semi-condensed;color: #fff;">SELAMAT DATANG DI OZON Hotspot</marquee></div></div>
+    </div> <!--news ticker-->
+    </div>
+	 
+            <script>
+ function showTimer() {
+  var time=new Date();
+  var hour=time.getHours();
+  var minute=time.getMinutes();
+  var second=time.getSeconds();
+  if(hour<10)   hour  ="0"+hour;
+  if(minute<10) minute="0"+minute;
+  if(second<10) second="0"+second;
+  var st=hour+":"+minute+":"+second;
+  document.getElementById("timer").innerHTML=st; 
+ }
+ function initTimer() {
+  setInterval(showTimer,1000);
+ }
+          </script>
+             <span class="current_time" id="timer">10:27:33</span>
+        
+        </div> <!--breaking news-->
+            </div>    <div class="inner">
+                                        <div class="category-title">
+                                        </div>
+  <div class="vc_row wpb_row vc_row-fluid">
+		<div class="vc_col-sm-8 wpb_column vc_column_container">
+		<div class="wpb_wrapper">
+	
+			<!--div class="feature-slider base-box "-->
+				 <div class="panel" id="home">
+	  <center> <h2>Internet Access 24 Jam Nonstop</h2></center>
+<fieldset>
+<div align="center">
+
+					$(if error)
+						<div class="alert alert-danger alert-dismissible" role="alert" style="font-size:16px; alig:justify;">
+							<strong style="color: red">Error!</strong> 
+							<script type="text/javascript">
+									var error = "$(error)";
+									if (error == "simulaneous session limit reached"){
+										document.write("simulaneous session limit reached");
+										}
+										else if (error == "invalid password"){
+										document.write("Oups Kata Sandi Salah")
+										}else if (error == "no valid profile found"){
+										document.write("Oups tidak ditemukan profile")
+										}else if (error.search("not found")!=-1){
+										document.write("Oups, user $(username) tidak ada di database kami")
+										}else document.write("$(error)")
+									</script>.
+						</div>
+						$(endif)
+
+	<form name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
+		<input type="hidden" name="dst" value="$(link-orig)" />
+		<input type="hidden" name="popup" value="true" />
+
+		
+			<div align="center">
+			  <legend>Masukan User Name &amp; Password Anda!</legend>
+	    </div>
+			<label for="login">
+			<div align="center"><strong>User name</strong></div>
+			</label>
+			<div align="center">
+			 			<input id="field1"class="input" type="text" name="username" value="$(username)"/>
+	    </div>
+			<div class="clear"></div>
+			
+			<label for="password">
+			<div align="center"><strong>Password</strong></div>
+			</label>
+			<div align="center">
+			  <p>
+		      <input id="field2" class="input" name="password" type="password">
+		      </p><div align="center">
+	          <input type="hidden" name="login" value="login"> 
+			      <button type="submit" class="download"value=" Masuk" width="height=">MASUK</button>
+			<div align="center">
+          
+	            </div>
+		</div>
+<br>
+			<div align="center">
+			<div class="clear"></div>
+	        </div>
+		</div></form></div>
+		</fieldset>
+		
+          
+
+      </div>
+                <!!/div> <!--fearure slider-->
+		</div>
+	</div>
+	<div class="vc_col-sm-4 wpb_column vc_column_container">
+		<div class="wpb_wrapper">
+					<div class="mom-ads-wrap">
+	<div class="mom-ads " style="">
+		<div class="mom-ads-inner">
+				<div class="mom-ad" data-id="2599" style="width:300px; height:289px; ">
+					<img src="assets/images/bi.gif" alt="Jadi Donatur" class="disappear appear">
+		 	</div><!--mom ad-->
+			</div>
+	</div>	<!--Mom ads-->
+	</div>
+
+		</div>
+	</div>
+</div>
+
+</div> <!--main inner-->
+      </div> <!--content boxed wrapper-->
+
+             
+            <div class="copyrights-area">
+                <div class="inner">
+                    <p class="copyrights-text">@ 2018  <a href="#"><img src="assets/images/power.png"></a></p>
+                                    </div>
+            </div>
+            <div class="clear"></div>
+        </div> <!--Boxed wrap-->
+
+<script type="text/javascript">
+<!--
+  document.login.username.focus();
+//-->
+</script>
+
+</body></html>

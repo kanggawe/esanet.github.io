@@ -1,0 +1,116 @@
+<html>
+<head>
+	<title>H&N</title>
+	$(if refresh-timeout)
+	<meta http-equiv="refresh" content="$(refresh-timeout-secs)">
+	$(endif)
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+	<link rel="shortcut icon" href="favicon.ico" />
+	
+	<!-- Bootstrap core CSS -->	 
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" /> 
+
+	<link href="css/gayakami.css" rel="stylesheet">   
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="js/lib/jquery-1.7.1.min.js"></script>
+	
+	<style>
+		body {
+			color: #fff;
+			font-family: 'Museo';
+		}
+	</style>
+
+	<script language="JavaScript">
+	<!--
+	$(if advert-pending == 'yes')
+		var popup = '';
+		function focusAdvert() {
+		if (window.focus) popup.focus();
+		}
+		function openAdvert() {
+		popup = open('$(link-advert)', 'hotspot_advert', '');
+		setTimeout("focusAdvert()", 1000);
+		}
+	$(endif)
+		function openLogout() {
+		if (window.name != 'hotspot_status') return true;
+			open('$(link-logout)', 'hotspot_logout', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=280,height=250');
+		window.close();
+		return false;
+		}
+	//-->
+	</script>
+</head>
+<body $(if advert-pending == 'yes') onLoad="openAdvert()" $(endif)>
+	<div class="container">
+		<div class="row">
+					<div class="col-sm-12">
+						<center><img src="img/logo.png" class="img-responsive"/></center>
+						<div class="section-title">
+							<div class="divider">
+								
+							</div>
+						</div>	
+					</div>
+			<div class="col-md-12">
+			<div class="col-sm-2">
+			</div>
+			<div class="col-sm-8">
+					<center>	
+		$(if login-by == 'trial')
+		<h2>Welcome <b style="color:yellow"><i>trial user!</i></b></h2>
+		$(elif login-by-mac != 'yes')
+		<h2>Welcome...<b style="color:blue;"> $(username)!</b></h2>
+		$(endif)
+		
+		 $(if session-timeout == '1s')
+		<br><div><font color=red><b>Sorry, Your time is over</b></font></div><br>
+		 $(endif)
+		 $(if limit-bytes-out == '1')
+		<br><div><font color=red><b>Sorry, Quota is depleted</b></font></div><br>
+		 $(endif)
+ 		<p>You're ready connected to the internet.</p></center>
+		<form action="$(link-logout)" name="logout" onSubmit="return openLogout()">
+			<table border="0">
+			
+			<tr><td>IP address &nbsp;</td><td>: $(ip)</td></tr>
+			<tr><td>MAC Address &nbsp;</td><td>: $(mac)</td></tr>
+			<tr><td>Sisa Waktu &nbsp;</td><td>: $(session-timeout)$(if session-timeout == '')Unlimited$(endif)</td></tr>
+			<tr><td>Sisa Quota &nbsp;</td><td>: $(if limit-bytes-out)
+				<script language=javascript>
+					var quota = $(limit-bytes-out)/1000
+					document.write(quota);
+					</script>
+				KiB</td></tr>
+			$(endif)
+			$(if limit-bytes-out == '')Unlimited$(endif)
+			 	<tr><td>Bytes up/down &nbsp;</td><td>: $(bytes-in-nice) / $(bytes-out-nice)</td></tr>
+				<tr><td>Bytes total &nbsp;</td><td>: $(bytes-total-nice)</td></tr>
+				$(if session-time-left)
+				<tr><td>Lama Uptime &nbsp;</td><td>: $(uptime)</td></tr>
+				$(else)
+				<tr><td>Terhubung &nbsp;</td><td>: $(uptime)</td></tr>
+				$(endif)
+				$(if blocked == 'yes')
+				<tr><td>Status &nbsp;</td><td style="color: #FF8080">: <a href="$(link-advert)" target="hotspot_advert">Advertisement</a> required</td></tr>
+				$(elif refresh-timeout)
+				<tr><td>Status refresh &nbsp;</td><td>: $(refresh-timeout)</td></tr>
+				$(endif)
+
+			</table>
+			$(if login-by-mac != 'yes')
+			</p>
+			<button type="submit" class="btn btn-success">Logout</button>
+			$(endif)
+		</form>	
+			</div>
+			<div class="col-sm-2">
+			</div>
+		</div>
+		</div>
+		</div>
+
+	
+</body>
+</html>

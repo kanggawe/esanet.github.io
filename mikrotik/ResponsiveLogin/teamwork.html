@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>KM HOTSPOT | KM NETWORK</title>
+		<meta name="description" content="Responsive Retina-Friendly Menu with different, size-dependent layouts" />
+		<meta name="keywords" content="responsive menu, retina-ready, icon font, media queries, css3, transition, mobile" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="img/favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/gayae.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+
+<script>
+var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
+                "mp3": "audio/mpeg",
+                "mp4": "audio/mp4",
+                "ogg": "audio/ogg",
+                "wav": "audio/wav"
+}
+function createsoundbite(sound){
+                var html5audio=document.createElement('audio')
+                if (html5audio.canPlayType){ //check support for HTML5 audio
+                                for (var i=0; i<arguments.length; i++){
+                                                var sourceel=document.createElement('source')
+                                                sourceel.setAttribute('src', arguments[i])
+                                                if (arguments[i].match(/\.(\w+)$/i))
+                                                                sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+                                                html5audio.appendChild(sourceel)
+                                }
+                                html5audio.load()
+                                html5audio.playclip=function(){
+                                                html5audio.pause()
+                                                html5audio.currentTime=0
+                                                html5audio.play()
+                                }
+                                return html5audio
+                }
+                else{
+                                return {playclip:function(){throw new Error("Your browser doesn't support HTML5 audio unfortunately")}}
+                }
+}
+//Initialize two sound clips with 1 fallback file each:
+var mouseoversound=createsoundbite("sms.wav", " boink.mp3")
+var clicksound=createsoundbite("sms.wav", " boink.mp3")
+</script>
+
+		
+	</head>
+	<body>
+		<div class="container">	
+			<!-- Codrops top bar -->
+			<header>
+				<h1>KANG BAJURI HOTSPOT <span>The Best Your Connecting</span></h1>	
+			</header>
+			<div class="main clearfix">
+				<nav id="menu" class="nav">					
+					<ul>
+						<li>
+							<a href="login.html" onmouseover="mouseoversound.playclip()">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-home"></i>
+								</span>
+								<span>Home</span>
+							</a>
+						</li>
+						<li>
+							<a href="status.html" onmouseover="mouseoversound.playclip()">
+								<span class="icon"> 
+									<i aria-hidden="true" class="icon-services"></i>
+								</span>
+								<span>Services</span>
+							</a>
+						</li>
+						<li>
+							<a href="logout.html" onmouseover="mouseoversound.playclip()">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-portfolio"></i>
+								</span>
+								<span>Portfolio</span>
+							</a>
+						</li>
+						<li>
+							<a href="paket.html" onmouseover="mouseoversound.playclip()">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-blog"></i>
+								</span>
+								<span>Blog</span>
+							</a>
+						</li>
+						<li>
+							<a href="teamwork.html" onmouseover="mouseoversound.playclip()">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-team"></i>
+								</span>
+								<span>The team</span>
+							</a>
+						</li>
+						<li>
+							<a href="contact.html" onmouseover="mouseoversound.playclip()">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-contact"></i>
+								</span>
+								<span>Contact</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div><!-- /container -->
+
+		<div class="containera">
+		<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12 login">
+								
+		<div class="col-md-4 col-sm-6 col-xs-12 a">
+								<h1>General Manager</h1>
+						<h3><p>M. Ibrahim Bajuri</p></h3>
+		</div>
+		<div class="col-md-4 col-sm-6 col-xs-12 b">
+								<h1>Unit Teknisi</h1>
+						<h3><p>M. Ibrahim Bajuri</p></h3>
+		</div>
+								
+		<div class="col-md-4 col-sm-12 col-xs-12 c">
+								<h1>Unit Pelaksana</h1>
+						<h3><p>M. Ibrahim Bajuri</p></h3>
+
+		</div>
+		</div>
+		</div>
+		</div>
+
+<footer class="footer">
+    <p>© 2016 KM.NET <br><a href="#">Copyrights All rights reserved.</a></p>
+</footer>
+
+<div id="running-text"><marquee scrolldelay="100" onmouseover="this.stop();" onmouseout="this.start();"><strong style="font-size: 14px;"><strong><strong><strong style="font-size: 14px;"><strong><strong>:::: Follow twitter @Kangbajuri ::::</strong></strong><strong>:::: Follow IG @Kangbajuri.id ::::</strong></strong> Untuk melihat koleksi Login Page Mikrotik jika anda berminat Hubungi melalui email bagencocok@gmail.com :::: Info pemasangan iklan di Login Page yang kami buat, silahkan hubungi email  bagencocok@gmail.com atau telepon 081223221752 :::<strong>:::: website http://www.kangbajuri.id ::::</strong><strong><strong style="font-size: 14px;"><strong><strong></strong></strong></strong><strong> </strong></strong></strong></strong></strong></marquee></div>
+
+		<script>
+			//  The function to change the class
+			var changeClass = function (r,className1,className2) {
+				var regex = new RegExp("(?:^|\\s+)" + className1 + "(?:\\s+|$)");
+				if( regex.test(r.className) ) {
+					r.className = r.className.replace(regex,' '+className2+' ');
+			    }
+			    else{
+					r.className = r.className.replace(new RegExp("(?:^|\\s+)" + className2 + "(?:\\s+|$)"),' '+className1+' ');
+			    }
+			    return r.className;
+			};	
+
+			//  Creating our button in JS for smaller screens
+			var menuElements = document.getElementById('menu');
+			menuElements.insertAdjacentHTML('afterBegin','<button type="button" id="menutoggle" class="navtoogle" aria-hidden="true"><i aria-hidden="true" class="icon-menu"> </i> Menu</button>');
+
+			//  Toggle the class on click to show / hide the menu
+			document.getElementById('menutoggle').onclick = function() {
+				changeClass(this, 'navtoogle active', 'navtoogle');
+			}
+
+			// http://tympanus.net/codrops/2013/05/08/responsive-retina-ready-menu/comment-page-2/#comment-438918
+			document.onclick = function(e) {
+				var mobileButton = document.getElementById('menutoggle'),
+					buttonStyle =  mobileButton.currentStyle ? mobileButton.currentStyle.display : getComputedStyle(mobileButton, null).display;
+
+				if(buttonStyle === 'block' && e.target !== mobileButton && new RegExp(' ' + 'active' + ' ').test(' ' + mobileButton.className + ' ')) {
+					changeClass(mobileButton, 'navtoogle active', 'navtoogle');
+				}
+			}
+		</script>
+		<script type="text/javascript">
+<!--
+  document.login.username.focus();
+//-->
+</script>
+	</body>
+</html>

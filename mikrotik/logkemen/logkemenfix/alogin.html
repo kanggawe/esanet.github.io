@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<title>HOTSPOT AREA</title>
+<meta http-equiv="refresh" content="18; url=status.html">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+		<link rel="shortcut icon" href="img/favicon.ico"> 
+<html>
+<head>
+	
+<style>
+body {
+  background: #0d8aa5;
+}
+
+.loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -60px 0 0 -60px;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: 10px solid #19bee1;
+}
+.loading:after {
+  content: '';
+  background: trasparent;
+  width: 140%;
+  height: 140%;
+  position: absolute;
+  border-radius: 100%;
+  top: -20%;
+  left: -20%;
+  opacity: 0.7;
+  box-shadow: rgba(255, 255, 255, 0.6) -4px -5px 3px -3px;
+  animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="loading"></div>
+	  <audio controls autoplay>
+  <source src="seldat.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<embed autostart="true" src="images/nosp.swf" hidden="true"/>
+ 
+
+</body>
+</html>

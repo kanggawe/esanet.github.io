@@ -1,0 +1,74 @@
+/*-----------------------------------------------------------------------------------
+
+	Theme Name: BM Al-Muttaqin
+	Theme URI: http://www.bma.or.id
+	Description: Good  News theme new is built for News Magazine, built in unlimited Concept, Unlimited Colors, Custom Widgets, Fully Customizable, Admin Panel, Comprehensive Theme Options, Unlimited Sidebars
+	Author: momizat team
+	Author URI: http://www.bma.or.id
+	Version: 1.5
+	
+	
+
+License:
+License URI:
+
+General comments (optional).
+-----------------------------------------------------------------------------------------*/
+.input{
+padding:13px;
+background-color:transparent;
+border-radius:15px;
+border:2px solid;
+-moz-box-shadow:#000 4px 4px 20px;
+width:100%;}
+
+.input:hover{
+border-collapse:collapse;
+border-color:#ff0;
+}
+
+.input:active{
+border-color:darkgreen;
+}
+
+.download{
+font-weight:bold;
+cursor:pointer;
+width:200px;
+border:none;
+border-radius:10px;
+padding:15px 40px!important;
+background:#6319ac;
+color:#FFFFFF!important;
+font:400 14px/18px &#36;Ubuntu&#36;,san-serif;
+text-align:center;
+text-shadow:0 0 1px rgba(0,0,0,0.3);
+transition:background-color 1s ease-out 0s;
+letter-spacing:1px;
+}
+
+.download:hover{
+background:#454242;
+text-shadow:0 0 1px #222;
+text-decoration:none;
+}
+
+.play:hover{
+background:#6f3;
+text-shadow:0 0 1px #222;
+text-decoration:none;
+}
+
+body{
+color:#8e8e8e;
+}{color:#115b1b;}
+.topbar, .copyrights-area, .topbar .top-nav > li ul.sub-menu li a:hover{background-color:#03A9F4;}{color:#06893b;}
+.mom-social-icons li a.vector_icon{background-color:#06893b;}{color:#115b1b;}
+.breaking-news .bn-title{background-color:#115b1b;}
+.breaking-news .bn-title:after{border-left-color:#115b1b;}
+body.rtl .breaking-news .bn-title:after{border-right-color:#115b1b;}{color:#06893b;}
+#footer{background-color:#06893b;}{color:#115b1b;}
+.scrollToTop{background-color:#115b1b;}
+.scrollToTop{color:#ffffff;}
+
+.alert{padding:15px;margin-bottom:20px;border:1px solid transparent;border-radius:4px}.alert h4{margin-top:0;color:inherit}.alert .alert-link{font-weight:700}.alert>p,.alert>ul{margin-bottom:0}.alert>p+p{margin-top:5px}.alert-dismissable,.alert-dismissible{padding-right:35px}.alert-dismissable .close,.alert-dismissible .close{position:relative;top:-2px;right:-21px;color:inherit}.alert-success{color:#3c763d;background-color:#dff0d8;border-color:#d6e9c6}.alert-success hr{border-top-color:#c9e2b3}.alert-success .alert-link{color:#2b542c}.alert-info{color:#31708f;background-color:#d9edf7;border-color:#bce8f1}.alert-info hr{border-top-color:#a6e1ec}.alert-info .alert-link{color:#245269}.alert-warning{color:#8a6d3b;background-color:#fcf8e3;border-color:#faebcc}.alert-warning hr{border-top-color:#f7e1b5}.alert-warning .alert-link{color:#66512c}.alert-danger{color:#a94442;background-color:#f2dede;border-color:#ebccd1}.alert-danger hr{border-top-color:#e4b9c0}.alert-danger .alert-link{color:#843534}

@@ -1,0 +1,55 @@
+<html>
+<head>
+	<meta http-equiv="ImageToolbar" content="No">
+	<meta name="MSSmartTagsPreventParsing" content="True">
+	<meta http-equiv="Pragma" content="No-Cache">
+	<meta http-equiv="Cache-Control" content="No-Cache,Must-Revalidate,No-Store">
+	<meta name="Robots" content="NoIndex">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>mikrotik hotspot > logout</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/respondewek.css" rel="stylesheet" type="text/css"/>
+<style type="text/css">
+
+	body {
+    margin-top: 20px;
+    color: #fdfdfd;
+    font-family: 'Museo';
+}
+</style>
+</head>
+
+<body>
+<script language="JavaScript">
+<!--
+    function openLogin() {
+	if (window.name != 'hotspot_logout') return true;
+	open('$(link-login)', '_blank', '');
+	window.close();
+	return false;
+    }
+//-->
+</script>
+
+	<div class="container" align="right">
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<form action="$(link-login)" name="login" onSubmit="return openLogin()">
+			<h2>Thank You</h2>
+			<p>You hame just logged out.<p>
+			<table border="0">
+				<tr><td>Anda telah Log Out!</td></tr>
+				<tr><td>IP Address : $(ip)</td></tr>
+				<tr><td>MAC Address : $(mac)</td></tr>
+			</table>
+			</p>
+			<button type="submit" class="btn btn-success">LANJUTKAN / KELUAR</button>
+			$(endif)
+		</form>
+	</div>
+
+
+</body>
+</html>

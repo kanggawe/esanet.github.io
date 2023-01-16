@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Pragma" content="No-Cache">
+	<meta http-equiv="Cache-Control" content="No-Cache,Must-Revalidate,No-Store">
+	<meta name="Robots" content="NoIndex">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="icon" href="img/favicon.png">
+    <title>WareonG / Hotspot</title>    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="css/gayamu.css" rel="stylesheet" type="text/css"/>
+  </head>
+<body>
+<div class="container">
+<div class="col-md-12 col-sm-12 col-xs-12 h">
+<div class="visible-xs visible-sm" aria-hidden="true">
+      <a href="login.html"><img src="img/header1.png"/></a>
+   </div>
+   <div class="hidden-xs hidden-sm">
+      <a href="login.html"><img src="img/header.png"/></a>
+   </div>
+</div>
+
+<div class="col-md-4 col-xs-12 l"id="tempatlogin">
+<!-- ujian cobaan -->
+<center>
+<br>
+            <b class="lg">
+<h3 style="margin:5px 0 5px 0;"><span style="color:#f00;  font-weight:bold;">LO</span><span style="color:#Fff; font-weight:bold;">GIN </span></h3></b>
+            	<!--starmik--> 
+					<form name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>					
+					<input type="hidden" name="dst" value="$(link-orig)"/>
+					<input type="hidden" name="popup" value="true" />
+					<div id="form-login">
+					<div id="form-field-wrap">
+					<div class="form-field" >
+					  <input style="text-transform: lowercase;" autocomplete="off" class="txt form-control" type="hidden" placeholder="username" name="username" id="textid1">
+					</div>
+					<div id="form-field" class="password-login">
+								
+					<input style="text-transform: lowercase;" autocomplete="off" class="form-control txt" type="text" placeholder="voucher id" name="password" id="textid2">	<br/>
+					</div>
+					</div>
+					<div id="login-btn" >
+					<button class="btn btn-warning" style="width:120px" data-loading-text="Loading..."> MASUK </button>&nbsp;&nbsp;
+					$(if trial == 'yes')
+					<a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)" class="btn btn-danger right">UJI KONEKSI</a>
+					$(endif)
+					</div>
+					</div>
+            </form>       
+  </center>			
+	<!-- akir ujian cobaan -->
+<div class="col-md-12 col-sm-12 i">
+					$(if error)
+						<div class="alert alert-danger alert-dismissible" role="alert" style="font-size:12px; alig:justify;">
+							<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+							<strong style="color: red">Error!</strong> 
+							<script type="text/javascript">
+									var error = "$(error)";
+									if (error == "Paket Anda Sudah Expire")
+									{window.location = "/expired.html";}else {document.write("$(error)");} 
+									</script>.
+						</div>
+						$(endif)
+	</div>
+</div>
+
+<div class="col-md-8 s hidden-xs hidden-sm" id="slid">
+   <!-- awal slider -->               
+                    <div id="splash-carousel" class="carousel slide slid" data-ride="carousel">
+
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#splash-carousel" data-slide-to="0" class=""></li>
+						<li data-target="#splash-carousel" data-slide-to="1" class=""></li>
+                      </ol>
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+					                        
+                        <div class="item">                          
+                          <a href="#" target="_blank">
+                            <img src="img/splash-sms-ri_captive.png" alt="SMS RI">
+                          </a>
+                          <div class="carousel-caption">
+                            ...
+                          </div>
+
+                        </div>
+                        
+                        <div class="item active">                         
+						<a href="#">
+                            <img src="img/indi-promo.jpg" alt="INDI PROMO">
+                          </a>
+                          <div class="carousel-caption">
+                            ...
+                          </div>
+                        </div>                       
+
+                      </div>
+
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#splash-carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#splash-carousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+<!--ahir slider-->                  
+</div>
+
+<div class="col-md-12 col-sm-12 col-xs-12 f">
+	<div class="col-md-3 col-sm-6 col-xs-6 thumbnail">
+	<center>
+	<img src="img/1.png"/></center>
+	 </div>
+	<div class="col-md-3 col-sm-6 col-xs-6 thumbnail">
+	<center>
+	<img src="img/2.png"/></center>
+	 </div>
+	<div class="col-md-3 col-sm-6 col-xs-6 thumbnail">
+	<center>
+	<img src="img/3.png"/></center>
+	 </div>
+	<div class="col-md-3 col-sm-6 col-xs-6 thumbnail">
+	<center>
+	<img src="img/4.png"/></center>
+	 </div
+	</div>
+
+ </div>
+ 
+</div>
+<footer>
+
+<div class="container">
+<div class="ft"></div>
+<p style="color:#fff">Copyright &copy; 2016 - created By Kangbajuri.id </p>
+</div>
+ </footer>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	  $(if chap-id)
+		<form name="sendin" action="$(link-login-only)" method="post">
+			<input type="hidden" name="username" />
+			<input type="hidden" name="password" />
+			<input type="hidden" name="dst" value="$(link-orig)" />
+			<input type="hidden" name="popup" value="true" />
+		</form>
+		<script type="text/javascript" src="md5.js"></script>
+		<script type="text/javascript">
+		<!--
+			function doLogin() {
+			document.sendin.username.value = document.login.username.value;
+			document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+			document.sendin.submit();
+			return false;
+			}
+		//-->
+		</script>
+	  $(endif)
+	  
+<script type="text/javascript">
+<!--
+  document.login.username.focus();
+//-->
+</script>
+</body>
+</html>

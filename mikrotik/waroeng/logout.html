@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>WaroenG hotspot > logout</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="css/gayamu.css" rel="stylesheet" type="text/css"/>
+		<style>
+		body {
+			color: #fff;
+			font-family: 'Museo';
+		}
+		.w{font-family: 'Panama Road';}
+	</style>
+
+</head>
+
+<body>
+<script language="JavaScript">
+<!--
+    function openLogin() {
+	if (window.name != 'hotspot_logout') return true;
+	open('$(link-login)', '_blank', '');
+	window.close();
+	return false;
+    }
+//-->
+</script>
+	<div class="container">
+<div class="col-md-12 col-sm-12 col-xs-12 h">
+<div class="visible-xs visible-sm" aria-hidden="true">
+      <a href="login.html"><img src="img/header1.png"/></a>
+   </div>
+   <div class="hidden-xs hidden-sm">
+      <a href="login.html"><img src="img/header.png"/></a>
+   </div>
+</div>
+
+
+
+	<div align="right">
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<form action="$(link-login)" name="login" onSubmit="return openLogin()">
+			<h2>Thank You</h2>
+			<p>You hame just logged out.<p>
+			<table border="0">
+				<tr><td colspan='2' align="center">Anda telah Log Out!</td></tr>
+				<tr><td>Pengguna &nbsp;</td><td>: $(username)</td></tr>
+				<tr><td>IP address &nbsp;</td><td>: $(ip)</td></tr>
+				<tr><td>MAC Address &nbsp;</td><td>: $(mac)</td></tr>
+			</table>
+			</p>
+			<button type="submit" class="btn btn-success">STOP / KELUAR</button>
+			$(endif)
+		</form>
+	</div>
+
+	</div>
+</div>
+	<footer>
+
+<div class="container">
+<div class="ft"></div>
+<p style="color:#fff">Copyright &copy; 2016 - created By Kangbajuri.id </p>
+</div>
+ </footer>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>Wanantara Hotspot - STATUS</title>
+$(if refresh-timeout)
+<meta http-equiv="refresh" content="$(refresh-timeout-secs)">
+$(endif)
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+<link rel="stylesheet" type="text/css" href="cw-12/css/grid.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="cw-12/css/cw-12.css" media="screen" />
+<style type="text/css">
+<!--
+textarea,input,select {
+	background-color: #FDFBFB;
+	border: 1px #BBBBBB solid;
+	padding: 2px;
+	margin: 1px;
+	font-size: 14px;
+	color: #808080;
+}
+
+.tabula{
+ 
+border-width: 1px; 
+border-collapse: collapse; 
+border-color: #c1c1c1; 
+background-color: transparent;
+font-family: verdana;
+font-size: 11px;
+}
+
+body{ 
+	color: #fff; font-size: 12px; font-family: verdana; 
+	background: url("cw-12/img/pattern.png") repeat;
+	text-shadow: 1px 1px 1px #000;
+	text-align:center;
+}
+
+a, a:link, a:visited, a:active { color: #AAAAAA; text-decoration: none; font-size: 12px; }
+a:hover { border-bottom: 1px dotted #c1c1c1; color: #AAAAAA; }
+img {border: none;}
+td { font-size: 12px; padding: 4px;}
+
+-->
+</style>
+<script language="JavaScript">
+<!--
+$(if advert-pending == 'yes')
+    var popup = '';
+    function focusAdvert() {
+	if (window.focus) popup.focus();
+    }
+    function openAdvert() {
+	popup = open('$(link-advert)', 'hotspot_advert', '');
+	setTimeout("focusAdvert()", 1000);
+    }
+$(endif)
+    function openLogout() {
+	if (window.name != 'hotspot_status') return true;
+        open('$(link-logout)', 'hotspot_logout', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=960,height=320');
+	window.close();
+	return false;
+    }
+//-->
+</script>
+</head>
+<body bottommargin="0" topmargin="0" leftmargin="0" rightmargin="0"
+$(if advert-pending == 'yes')
+	onLoad="openAdvert()"
+$(endif)
+>
+<div class="container_12">
+	<div id="wrapper-status">
+		<div class="blok">
+			<table width="100%" height="59%">
+
+			<tr>
+			<td align="center" valign="middle">
+			<form action="$(link-logout)" name="logout" onSubmit="return openLogout()">
+			<table border="1" class="tabula">
+			$(if login-by == 'trial')
+				<div style="text-align: center;">Selamat Datang Pelanggan Gratisan! Anda Telah Masuk</div>
+<br><div style="text-align: center;">Anda Sekarang Berada Pada Halaman Status Pemakaian dan Sisa Waktu Anda</div><br>
+<div style="text-align: center;">Untuk Info & Pembelian Voucher Bisa Langsung Ke 0822 1777 8800, 0895 0420 8008</div>
+<br><div style="text-align: center;">Buka Setiap Hari, Jam Kerja : 06:00 s/d 22.00</div><br>
+
+			$(elif login-by != 'mac')
+				<div style="text-align: center;"><h4>Selamat Datang $(username) Anda Berhasil Masuk<h4></div>
+<div style="text-align: center;"><blink><h3>Buka Tab Baru Di Browser Anda Untuk Mulai Internet<h3><blink></div>
+<div style="text-align: center;">Untuk Info & Pembelian Voucher Bisa Langsung Ke 0822 1777 8800, 0895 0420 8008</div>
+<div style="text-align: center;"><p>INFO & PROMO KLIK DI <blink><a href="http://192.168.234.1/login">Wanantara Hotspot</a><blink></p></div>
+			$(endif)
+				<tr><td align="right">IP address anda:</td><td>$(ip)</td></tr>
+				<tr><td align="right">upload/download:</td><td>$(bytes-in-nice) / $(bytes-out-nice)</td></tr>
+			$(if session-time-left)
+			<tr><td align="right" class="style1">sisa quota:</td><td class="style1">$(remain-bytes-out)$(if limit-bytes-out == '')Unlimited$(endif)</td></tr>
+				<tr><td align="right">sisa waktu anda:</td><td>$(session-time-left)</td></tr>
+			$(else)
+				<tr><td align="right">tersambung:</td><td>$(uptime)</td></tr>
+			$(endif)
+			$(if blocked == 'yes')
+				<tr><td align="right">status:</td><td><div style="color: #FF8080">
+			<a href="$(link-advert)" target="hotspot_advert">advertisement</a> required</div></td>
+			$(elif refresh-timeout)
+				<tr><td align="right">status refresh:</td><td>$(refresh-timeout)</td>
+			$(endif)
+
+			</table>
+			$(if login-by-mac != 'yes')
+			<br>
+			<!-- user manager link. if user manager resides on other router, replace $(hostname) by its address
+			<button onclick="document.location='http://$(hostname)/user?subs='; return false;">status</button>
+			<!-- end of user manager link -->
+<div style="text-align: center;"><blink>untuk berhenti, silahkan klik tombol keluar</blink></div>
+			<button onclick="document.location='http://$(hostname):81/user?subs='; return false;">Ganti Password</button><button onclick="document.location='http://$(hostname)/logout'; return false;">Keluar</button>
+			$(endif)
+			</form>
+
+			</td>
+		  </table>
+		</div>
+		<div id="shadow"></div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Page Mikrotik</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <!-- CSS  -->
+  <link href="css/font.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+ 
+</head>
+
+<body>
+
+<!--  Scripts-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/init.js"></script>
+  
+  <script>
+	$(document).ready(function() {
+	  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+	  $('.modal-trigger').leanModal();
+	});
+  </script>
+  
+  $(if error)
+  <script>
+  	Materialize.toast('<span>cxc</span>', 3000)
+  </script>
+  $(endif)
+
+ 
+	    <div class="container">
+	<br/>
+      <div class="row">
+	<div class="login">
+	
+			<form  name="login" action="$(link-login-only)" method="post" $(if chap-id) onsubmit="return doLogin()" $(endif)>
+			<input type="hidden" name="dst" value="$(link-orig)">
+			<input type="hidden" name="popup" value="false">	
+			<input name="username" type="text" autocomplete="off" class="form-control" placeholder="Username" required><br/> 
+			<input type="text" name="password" class="form-control lo" autocomplete="off" placeholder="Password">
+			<label checkbox>
+			<p class="text-danger text-center">						
+			   
+			</p>       
+			</label> 
+			<button name="submit" type="submit" value="Log In" class="bnt"> Masuk </button>
+			</form>
+
+</div>
+</div>
+</div>
+  
+  
+  <script type="text/javascript">
+	  <!--
+	  document.login.username.focus();
+	  //-->
+  </script>		
+</body>
+</html>

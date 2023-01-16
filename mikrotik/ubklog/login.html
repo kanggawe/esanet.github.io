@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+       
+    <title>UNBK Hotspot</title>
+    <meta name="generator" content="Bootply">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<script>var base_url = '/';</script>
+
+	<link rel="icon" type="image/png" href="./img/logo.png">
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- Font Awesome CSS -->
+    <link href="./css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <!-- Animate css -->
+    <link href="./css/animate.min.css" rel="stylesheet">
+    <!-- Bootstrap Datepicker CSS -->
+    <link href="./css/bootstrap-datepicker3.min.css" rel="stylesheet" media="screen">
+
+    <!-- Custom styles CSS -->
+    <link href="./css/custom.min.css" rel="stylesheet" media="screen">
+
+ <style>
+
+</style>
+	
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- Preloader -->
+		<div id="preloader" style="display: inline-table;">
+			<div id="preloader-status" style="display: none;">
+				<div id="preloader-msg">Loading Website</div>
+			</div>
+		</div>
+		
+		<header class="masthead">
+			<div class="container bg">
+				<div class="row">
+					<div class="col col-sm-3 col-md-2">
+						<img src="img/golo.png" class="logo hidden-xs">
+					</div>
+					<div class="col col-sm-9 col-md-10">
+						<h4 class="title">
+							<p class="wow bounceInDown visible" style="visibility: visible; animation-name: bounceInDown; font-size: 19px;font-style: italic; -webkit-font-smoothing: subpixel-antialiased; font-feature-settings: initial;font-family: cursive;">
+							<b>E - <span style='text-transform:uppercase;font-family: sans-serif;'>Media Hotspot</b></span></p>
+							<p class="wow bounceInDown visible" style="visibility: visible; animation-name: bounceInDown;"> <strong style='text-transform:uppercase'>Connecting Your Poeple</strong></p>
+							<p class="subtitle wow bounceInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: bounceInUp;"><i style='text-align:justify; font-size:14px'>Desa Bondan blok Lunggede RT16/08 Kec. Sukagumiwang</i></p>
+						</h4>	
+						
+				</div>
+			</div>
+		</header>
+
+		<nav class="navbar navbar-static" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+						<span class="fa fa-bars"></span>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="login.html"><i class="fa fa-home"></i>Home</a></li>
+						<li><a href="status.html"><i class="fa fa-info-circle"></i>Tentang</a></li>
+						<li><a href="logout.html"><i class="fa fa-briefcase"></i>Persyaratan</a></li>
+						<li><a href="#"><i class="fa fa-calendar"></i>Jadwal</a></li>
+						<li><a href="#"><i class="fa fa-building-o"></i>Daftar Sekolah</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Begin Body -->
+		<div class="container">
+			<div class="row">
+				<div class="col col-sm-5 col-md-4">
+					<div id="sidebar wow zoomInUp">
+						<div class="panel panel-danger">
+							<div class="panel-heading">
+								<h5 class="panel-title">Login</h5>
+							</div>
+							<div class="panel-body">
+								<form action="$(link-login-only)" method="post" $(if chap-id) onsubmit="return doLogin()" $(endif)>
+								
+									<div class="a form-group">
+										<label for="username" class="placeholder">Username</label>
+										<input type="text" tabindex="1" class="form-control" id="username" name="username" placeholder="Username" autocomplete='off' required>
+									</div>
+									<div class="a form-group">
+										<label for="password" class="placeholder">Password</label>
+										<input type="password" tabindex="2" class="form-control" id="password" name="password" placeholder="Password">
+									</div>
+	$(if error)<div class="alert alert-danger alert-dismissible" role="alert" style="font-size:12px; align:justify;">
+						<button type="button" class="close" data-dismiss="alert">&times;</button><script type="text/javascript">
+		       var error = "$(error)";
+		       if (error == "credit limit reached")
+		       {
+		       document.write("Maaf, Masa Aktif Voucher Anda Sudah Habis | ");
+		       }
+if (error == "uptime limit reached")
+		       {
+		       document.write("Maaf, Waktu Internet Voucher Anda Sudah Habis | ");
+		       }
+if (error == "download limit reached")
+		       {
+		       document.write("Kuota Voucher Anda Telah Habis | ");
+}
+if (error == "no valid profile found")
+		       {
+		       document.write("Maaf, Voucher Anda Sudah Habis Masa Aktif | ");
+		       }
+if (error == "invalid password")
+		       {
+		       document.write("Password Yang Anda Masukan Salah, Hubungi Kami Atau Coba Lagi | ");
+		       }
+if (error == "simultaneous session limit reached")
+		       {
+		       document.write("Username $(username) Sebelumnya Sudah Login atau Sedang Aktif Hubungi Kami Atau Tunggu 5 Menit dan Coba Lagi");
+		       }
+		       else {
+			       document.write("$(error)");
+		       }       
+		       </script></div>$(endif) 																		
+									<button type="submit" class="btn btn-success btn-login" id="btnLogin">Masuk</button><br><br>
+									
+								</form>
+							
+								<!--div class="alert alert-danger fade in" id="error" style="display:none;">
+									<button type="button" class="close">x</button>
+									<span class="error"></span>
+								</div-->
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="col col-sm-7 col-md-8">
+					<div class="panel">
+						<div class="panel-body">
+							
+		<div class="pengantar">
+			<div id="carousel-example-generic" class="carousel slide">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2" class="active"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<!-- First slide -->
+					<div class="item">
+						<img src="./img/slide-03.png" alt="Peninjauan Menteri Pendidikan dan Kebudayaan">
+						<div class="carousel-caption right">
+							<span data-animation="animated bounceInLeft" class="">
+								Statistik UNBK 2016
+							</span>
+							<h1 data-animation="animated fadeInDownBig" class="">
+								984 Sekolah Jenjang SMP/MTs
+							</h1>
+							<h2 data-animation="animated fadeInDownBig" class="">
+								1.298 Sekolah Jenjang SMA/MA/SMTK/SMAK
+							</h2>
+							<h3 data-animation="animated fadeInDownBig" class="">
+								2.100 Sekolah Jenjang SMK
+							</h3>
+							<h4 data-animation="animated fadeInUpBig" class="">
+								16.477 Server Sekolah
+							</h4>
+							<h5 data-animation="animated fadeInUpBig" class="">
+								922.447 Peserta
+							</h5>
+						</div>
+					</div>
+					<!-- Second slide -->
+					<div class="item skyblue">
+						<img src="./img/slide-02.png" alt="Pelaksanaan UNBK">
+						<div class="carousel-caption right">
+							<span data-animation="animated fadeInDownBig" class="text-right">
+								Apa Itu UNBK ?
+							</span>
+							<h1 data-animation="animated fadeInUpBig" class="text-right">
+								 Ujian Nasional Berbasis Komputer (UNBK) disebut juga Computer Based Test (CBT) adalah sistem pelaksanaan ujian nasional dengan menggunakan komputer sebagai media ujiannya. Dalam pelaksanaannya, UNBK berbeda dengan sistem ujian nasional berbasis kertas atau Paper Based Test (PBT) yang selama ini sudah berjalan. 
+							</h1>
+						</div>
+					</div>
+					<!-- Third slide -->
+					<div class="item darkerskyblue active">
+						<img src="./img/slide-01.png" alt="Pelaksanaan UNBK">
+						<div class="carousel-caption left">
+							<span data-animation="animated fadeInDownBig" class="text-left">
+								Pelaksanaan UNBK
+							</span>
+							<h1 data-animation="animated fadeInLeftBig" class="text-left">
+								 Penyelenggaraan UNBK saat ini menggunakan sistem semi-online yaitu soal dikirim dari server pusat secara online melalui jaringan (sinkronisasi) ke server lokal (sekolah), kemudian ujian siswa dilayani oleh server lokal (sekolah) secara offline. Selanjutnya hasil ujian dikirim kembali dari server lokal (sekolah) ke server pusat secara online (upload). 
+							</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+		</div>
+
+	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<footer>
+<div class="publik">
+<center><!-- jangan dihapus credit ini Sebuah Hak cipta-->
+Copyright &#169; 2015-<script type='text/javascript'>var creditsyear = new Date();document.write(creditsyear.getFullYear());</script> All Right Reserved. Design By: <strong><a href='http://www.kangbajuri.id/'><script>
+ var a='K'; var b='a'; var c='n'; var d='g'; var e='b'; var f='j'; var g='u'; var h='r'; var i='i'; var i='i';  var j='d';var k='.'; namasite=a+b+c+d+e+b+f+g+h+i+k+i+j;document.write(namasite);</script></a></strong>
+ </center>
+</footer>
+
+<div id="running-text"><marquee scrolldelay="100" onmouseover="this.stop();" onmouseout="this.start();"><strong style="font-size: 14px;"><strong><strong><strong style="font-size: 14px;"><strong><strong>:::: Follow twitter @Kangbajuri ::::</strong></strong><strong>:::: Follow IG @Kangbajuri.id ::::</strong></strong> Untuk melihat koleksi Login Page Mikrotik jika anda berminat Hubungi melalui email bagencocok@gmail.com :::: Info pemasangan iklan di Login Page yang kami buat, silahkan hubungi email  bagencocok@gmail.com atau telepon 081223221752 :::<strong>:::: website <script>
+ var a='K'; var b='a'; var c='n'; var d='g'; var e='b'; var f='j'; var g='u'; var h='r'; var i='i'; var i='i';  var j='d';var k='.'; ns=a+b+c+d+e+b+f+g+h+i+k+i+j;document.write(ns);</script> ::::</strong><strong><strong style="font-size: 14px;"><strong><strong></strong></strong></strong><strong> </strong></strong></strong></strong></strong></marquee></div>
+
+    <!-- Javascript -->
+	<!-- jQuery -->
+	<script src="./js/jquery-1.11.2.min.js"></script>
+
+	<!-- Bootstrap JS -->
+	<script src="./js/bootstrap.min.js"></script>
+	<!-- WOW - Reveal Animations When You Scroll -->
+	<script src="./js/wow.min.js"></script>
+	<!-- Custom Scripts -->
+	<script src="./js/custom.min.js"></script>
+	
+</body></html>

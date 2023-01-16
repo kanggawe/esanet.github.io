@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<title>Login | OXON HOTSPOT</title>
+<meta charset="UTF-8" />
+<link rel="shortcut icon" href="images/favicon.png" title="Favicon"/>
+<meta name="viewport" content="width=device-width" />
+
+<link rel='stylesheet' id='magz-style-css'  href='stylew.css' type='text/css' media='all' />
+<link rel='stylesheet' id='swipemenu-css'  href='css/swipemenu.css' type='text/css' media='all' />
+<link rel='stylesheet' id='flexslider-css'  href='css/flexslider.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='css/bootstrap.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-responsive-css'  href='css/bootstrap-responsive.css' type='text/css' media='all' />
+<link rel='stylesheet' id='simplyscroll-css'  href='css/jquery.simplyscroll.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jPages-css'  href='css/jPages.css' type='text/css' media='all' />
+<link rel='stylesheet' id='rating-css'  href='css/jquery.rating.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ie-styles-css'  href='css/ie.css' type='text/css' media='all' />
+<link rel='stylesheet' id='Roboto-css'  href='http://fonts.googleapis.com/css?family=Roboto' type='text/css' media='all' />
+
+<script type='text/javascript' src="js/jquery-1.10.2.min.js"></script>
+<script type='text/javascript' src='js/html5.js'></script>
+<script type='text/javascript' src='js/bootstrap.min.js'></script>
+<script type='text/javascript' src='js/jquery.flexslider.js'></script>
+<script type='text/javascript' src='js/jquery.flexslider.init.js'></script>
+<script type='text/javascript' src='js/jquery.bxslider.js'></script>
+<script type='text/javascript' src='js/jquery.bxslider.init.js'></script>
+<script type='text/javascript' src='js/jquery.rating.js'></script>
+<script type='text/javascript' src='js/jquery.idTabs.min.js'></script>
+<script type='text/javascript' src='js/jquery.simplyscroll.js'></script>
+<script type='text/javascript' src='js/fluidvids.min.js'></script>
+<script type='text/javascript' src='js/jPages.js'></script>
+<script type='text/javascript' src='js/jquery.sidr.min.js'></script>
+<script type='text/javascript' src='js/jquery.touchSwipe.min.js'></script>
+<script type='text/javascript' src='js/custom.js'></script>
+
+		<!-- END -->
+
+</head>
+
+<body onLoad="initTimer();">
+
+<div id="page">
+	<header id="header" class="container">
+	<div id="logo">
+			<marquee behavior="alternate" style="font-weight:bold;font-family: monospace;font-style: italic;font-size: x-large;font-variant: initial;font-stretch: semi-condensed;color: #fff;">SELAMAT DATANG DI OXON HOTSPOT DOT NET</marquee>
+		</div>
+	</header><!-- #masthead -->
+
+	<div id="headline" class="container">
+	<div class="row-fluid">
+		<div class="span12">
+		<center>
+				<img src="images/bgatas.png"/></center>
+				<br/>
+				<br/>
+		</div>
+		
+	</div>
+	</div>
+
+	<div id="intr" class="container">
+		<div class="row-fluid">
+			<div class="brnews span9">
+				<h3>Coba Gratis Yukk</h3>
+				<ul id="scroller">
+					<li><p>$(if trial == 'yes')Free trial available, <a style="color: #FF8080"href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)"><button class="btn btn-warning">click here</button></a>.$(endif)</p></li>
+				</ul>
+			</div>
+					<script>
+ function showTimer() {
+  var time=new Date();
+  var hour=time.getHours();
+  var minute=time.getMinutes();
+  var second=time.getSeconds();
+  if(hour<10)   hour  ="0"+hour;
+  if(minute<10) minute="0"+minute;
+  if(second<10) second="0"+second;
+  var st=hour+":"+minute+":"+second;
+  document.getElementById("timer").innerHTML=st; 
+ }
+ function initTimer() {
+  setInterval(showTimer,1000);
+ }
+          </script>
+					<p><span class="current_time" id="timer"> JAM TERKINI </span></p>
+			</div>
+	</div>
+
+<div id="content" class="container">
+	<div id="main" class="row-fluid">
+			<div id="main-left" class="span8">
+				<div id="slider" class="clearfix">
+					<div id="slide-right" class="span4">
+					<h3>Internet Login Hotspot</h3>
+					<div style="  background:#f2f2f2;  margin:0;  padding:5px;  counter-reset:li;">	
+						<form name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
+						<input type="hidden" name="dst" value="$(link-orig)" />
+						<input type="hidden" name="popup" value="true" />
+
+								<label for="login">
+								<div align="center"><strong>User name</strong></div>
+								</label>
+								<div align="center">
+											<input id="field1"class="input" type="text" name="username" value="$(username)"/>
+									</div>
+								<div class="clear"></div>
+			
+								<label for="password">
+								<div align="center"><strong>Password</strong></div>
+								</label>
+								<div align="center">
+								  <input id="field2" class="input" name="password" type="password">
+								  </div>
+								 <div align="center">
+								  <input type="hidden" name="login" value="login"> 
+									  <button type="submit" class="download"value=" Masuk" width="height=">MASUK</button>
+								</div>
+						</form>
+		$(if error)<div style="color: #FF8080; font-size: 12px">$(error)</div>$(endif)
+							<div class="clear"></div>
+					</div>
+					</div>
+					<div id="slide-left" class="flexslider span8">
+						<ul class="slides">
+							<li data-thumb="images/dummy/photodune-3834701-laughing-girl-xs-546x291.jpg">
+								<a href="#" title="Permalink to Morbi est est lectus non rutrum commodo felis quis tortor" rel="bookmark">
+								<img width="546" height="291" src="images/dummy/photodune-3834701-laughing-girl-xs-546x291.jpg" alt="photodune-3834701-laughing-girl-xs" />
+								</a>
+								<div class="entry">
+									<h4>Morbi est est lectus non rutrum commodo felis quis tortor...</h4>
+									<p>Fusce aliquet non ipsum vitae scelerisque. Nullam ultricies adipiscing erat, qui...</p>
+								</div>
+							</li>
+
+							<li data-thumb="images/dummy/photodune-2043745-college-student-s-546x291.jpg">
+								<a href="#" title="Permalink to Donec consectetuer ligula vulputate sem tristique cursus" rel="bookmark">
+								<img width="546" height="291" src="images/dummy/photodune-2043745-college-student-s-546x291.jpg" alt="photodune-2043745-college-student-s" />
+								</a>
+								<div class="entry">
+									<h4>Donec consectetuer ligula vulputate sem tristique cursus...</h4>
+									<p>Nam nibh arcu, tristique eget pretium sed, porta id quam. Praesent dignissim ant...</p>
+								</div>
+							</li>
+							
+							<li data-thumb="images/dummy/shutterstock_123603871-546x291.jpg">
+								<a href="#" title="Permalink to Quisque sodales viverra ornare vitae libero ac risus" rel="bookmark">
+								<img width="546" height="291" src="images/dummy/shutterstock_123603871-546x291.jpg" alt="gallery-1" />
+								</a>
+								<div class="entry">
+									<h4>Quisque sodales viverra ornare vitae libero ac risus...</h4>
+									<p>Quisque sodales viverra ornare. Aenean posuere lacus sed facilisis gravida. Morb...</p>
+								</div>
+							</li>
+							
+							<li data-thumb="images/dummy/shutterstock_109209743-546x291.jpg">
+								<a href="#" title="Permalink to Vestibulum auctor dapibus neque pulvinar urna leo" rel="bookmark">
+								<img width="546" height="291" src="images/dummy/shutterstock_109209743-546x291.jpg" alt="shutterstock_109209743" />
+								</a>
+								<div class="entry">
+									<h4>Vestibulum auctor dapibus neque pulvinar urna leo...</h4>
+									<p>Fusce aliquet non ipsum vitae scelerisque. Nullam ultricies adipiscing erat, qui...</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					
+				</div>
+			</div><!-- #main-left -->
+
+				
+			
+
+		<div id="sidebar" class="span4">
+
+			<div id="tabwidget" class="widget tab-container"> 
+				<ul id="tabnav" class="clearfix"> 
+					<li><h3><a href="#tab1" class="selected"><img src="images/view-white-bg.png" alt="Popular">Voucher</a></h3></li>
+					<li><h3><a href="#tab2"><img src="images/time-white.png" alt="Recent">Paket Internet</a></h3></li>
+				    <li><h3><a href="#tab3"><img src="images/komen-putih.png" alt="Comments">Chat Disini</a></h3></li>
+				</ul> 
+
+			<div id="tab-content">
+			
+	 		<div id="tab1" style="display: block; ">
+				<ul id="itemContainer2" class="recent-tab">
+
+					<li>
+						<a href="#"><img width="225" height="136" src="images/voucher1.png" class="thumb" alt="photodune-2043745-college-student-s" /></a>
+						<h4 class="post-title"><a href="#">Donec consectetuer ligula vulpu...</a></h4>
+						<p>Nam nibh arcu, tristique eget pretium sed, porta id quam. Praesent dig...</p>
+						<div class="clearfix"></div>				
+					</li>
+					<li>
+						<a href="#"><img width="225" height="136" src="images/voucher2.png" class="thumb" alt="photodune-3517559-idea-s" /></a>
+						<h4 class="post-title"><a href="#">Nam nibh arcu tristique eget pr...</a></h4>
+						<p>Nam nibh arcu, tristique eget pretium sed, porta id quam. Praesent dig...</p>
+						<div class="clearfix"></div>				
+					</li>
+					<li>
+						<a href="#"><img width="225" height="136" src="images/voucher4.png" class="thumb" alt="photodune-2043745-college-student-s" /></a>
+						<h4 class="post-title"><a href="#">Donec consectetuer ligula vulpu...</a></h4>
+						<p>Nam nibh arcu, tristique eget pretium sed, porta id quam. Praesent dig...</p>
+						<div class="clearfix"></div>				
+					</li>
+
+						
+				</ul> 	 
+
+			<!-- End most viewed post -->		  
+
+			</div><!-- /#tab1 -->
+ 
+			<div id="tab2" style="display: none;">	
+				<ul id="itemContainer2" class="recent-tab">
+					<li>
+						<a href="#"><img width="225" height="136" src="images/duduk.gif" class="thumb" alt="shutterstock_70184773" /></a>
+						<h4 class="post-title"><a href="#">Suspen disse auctor dapibus neq...</a></h4>
+						<p>Fusce aliquet non ipsum vitae scelerisque. Nullam ultricies adipiscing...</p>
+						<div class="clearfix"></div>	
+					</li>
+					<li>
+						<a href="#"><img width="225" height="136" src="images/jaringan.gif" class="thumb" alt="shutterstock_70787161" /></a>
+						<h4 class="post-title"><a href="#">Porta lorem ipsum dolor sit ame...</a></h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer place...</p>
+						<div class="clearfix"></div>	
+					</li>
+						
+				</ul> 	 
+			</div><!-- /#tab2 --> 
+
+			<div id="tab3" style="display: none; ">
+				<ul>
+					<iframe title="kedai_internet_hotspot" src="http://easyhotspot.freeshoutbox.net/" width="100%" height="400" frameborder="0" scrolling="auto"><a href="http://easyhotspot.freeshoutbox.net/">View shoutbox</a></iframe><br /><a href="http://www.freeshoutbox.net/" title="Get your own free shoutbox chat widget at ShoutMix!"></a>
+				</ul>
+			</div><!-- /#tab2 --> 
+	
+			</div><!-- /#tab-content -->
+
+			</div><!-- /#tab-widget --> 
+
+		</div><!-- sidebar -->
+		
+					<!-- #main-left -->
+<!-- #main-left -->
+		</div><!-- #main -->
+</div>
+	
+	<footer id="footer" class="row-fluid">
+		<div id="footer-widgets" class="container">
+
+		</div><!-- footer-widgets -->
+
+	
+		<div id="site-info" class="container">
+		
+			<div id="footer-nav" class="fr">
+				
+			</div>
+
+			<div id="credit" class="fl">
+				<p>All Right Reserved by KM NETWORK</p>
+			</div>
+
+		</div><!-- .site-info -->
+		
+	</footer>
+
+</div><!-- #wrapper -->
+$(if chap-id)
+	<form name="sendin" action="$(link-login-only)" method="post">
+		<input type="hidden" name="username" />
+		<input type="hidden" name="password" />
+		<input type="hidden" name="dst" value="$(link-orig)" />
+		<input type="hidden" name="popup" value="true" />
+	</form>	
+	<script type="text/javascript" src="/md5.js"></script>
+	<script type="text/javascript">
+	<!--
+	    function doLogin() {
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+		document.sendin.submit();
+		return false;
+	    }
+	//-->
+	</script>
+$(endif)
+<script type="text/javascript">
+<!--
+  document.login.username.focus();
+//-->
+</script>
+</body>
+</html>

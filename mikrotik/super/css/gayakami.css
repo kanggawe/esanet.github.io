@@ -1,0 +1,205 @@
+@charset "utf-8";
+body {
+        margin: 0;
+        padding: 20px 0 0 0;
+		background: url(../img/twr.png) repeat fixed;
+		/*background-size: cover;
+		background-repeat:repeat-y;
+		-webkit-background-size: cover; 
+		-moz-background-size: cover; 
+		-o-background-size: cover;*/
+}
+.section-title {
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #f9ca3a;
+    font-size: 24px;
+    text-align: center;
+}
+.divider {
+    border-top: 1px solid #eee;
+    margin: 20px 0px;
+    box-shadow: 0px 1px 0px rgb(255, 255, 255) inset;
+    overflow: visible;
+}
+ 
+.divider > title {
+    width: 180px;
+    background: #fff;
+    height: 20px;
+    display: block;
+    margin: -20px auto 0px;
+}
+.input {
+
+	padding:13px;
+	background-color:transparent;
+	border-radius:9px;
+	border:2px solid;
+	color:#fff;
+	-moz-box-shadow: #000 4px 4px 20px;
+	font-weight:bold;
+	width:100%;}
+.input:hover{
+	border-collapse:collapse;
+	border-color: #FF0;
+}
+.input:active{
+border-color: darkgreen ;
+} 
+.download{
+	font-weight:bold; 
+	cursor: pointer; 
+	width:200px; 
+	border:none;
+	border-radius:10px;
+	padding:15px 40px!important;
+	background:/*#6319AC*/#c3dc00;
+	color:#fff!important;
+	font:400 14px/18px &#39;Ubuntu&#39;,sans-serif;
+	text-align:center;
+	text-shadow:0 0 1px rgba(0,0,0,0.3);
+	transition:background-color 1s ease-out 0s;
+	letter-spacing:1px}
+
+.current_time {
+    height: 40px;
+	padding-bottom:20px;
+     text-align: center;
+    font-weight: bold;
+    position: absolute;
+   }
+
+.download:hover{background:#66FF33;text-shadow:0 0 1px #222;text-decoration:none}
+
+.play:hover{background:#66FF33;text-shadow:0 0 1px #222;text-decoration:none}
+
+@font-face {
+	font-family: 'Museo';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Museo'), url(../fonts/Museo300-Regular.woff) format('woff');
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+*{margin: 0;padding: 0;}
+
+html {
+	
+	position: relative;
+	min-height: 100%;
+}
+body {
+	/* Margin bottom by footer height */
+	padding-top: 60px;
+	margin-bottom: 60px;
+	font-family:'Museo';
+	}
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 60px;
+	}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+.title-head{
+	background-color: #0181D5;
+	font-size: 14px;
+	color: white;
+	padding:5px;
+}
+
+.container {
+	width: auto;
+	max-width: 1024px;
+	padding: 0 15px;
+	
+}
+.container .text-muted {
+	margin: 20px 0;
+	float: right;
+}
+.section-title {
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #f9ca3a;
+    font-size: 24px;
+    text-align: center;
+}
+.divider {
+    border-top: 1px solid #eee;
+    margin: 20px 0px;
+    box-shadow: 0px 1px 0px rgb(255, 255, 255) inset;
+    overflow: visible;
+}
+.divider > span {
+    width: 46px;
+    background: url('../img/divider-center.png') no-repeat scroll center center #fff;
+    height: 8px;
+    display: block;
+    margin: -4px auto 0px;
+}
+.divider > title {
+    width: 180px;
+    background: #fff;
+    height: 20px;
+    display: block;
+    margin: -20px auto 0px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.42857;
+    color: #fd0707;
+    background-color: #FFF;
+    background-image: none;
+    border: 1px solid #CCC;
+    border-radius: 0px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+.has-success .form-control:focus {
+    border-color: #f9ca3a;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 6px #006EB7;
+}
+.btn-success {
+	font-size: 16px;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open > .dropdown-toggle.btn-success {
+    color: #FFF;
+    background-color: #006EB7;
+    border-color: #fff;
+}
+.row {
+	margin-bottom:10px;
+}
+
+.title {
+	width:50px;
+	height:50px;
+	margin: 10px;
+}
+	
+.no	{ 
+	font-size:40px;
+	color: white;
+	text-align: center;
+	background-color: #0099FF;
+	border-radius: 100em;
+	border: 0px; box-shadow: 0px 0px 0px 5px #f9ca3a;
+	padding:5px;
+	}
+.isi {
+}
+
+/* */

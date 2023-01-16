@@ -1,0 +1,45 @@
+<html>
+<head>
+<!----------------------------------------------------------------------------------------------------->
+<script>
+function createsoundbite(e){
+var t=document.createElement("audio");
+	if(t.canPlayType){for(var n=0;n<arguments.length;n++){
+		var r=document.createElement("source");
+			r.setAttribute("src",arguments[n]);
+				if(arguments[n].match(/\.(\w+)$/i))r.setAttribute("type",html5_audiotypes[RegExp.$1]);
+					t.appendChild(r)}t.load();t.playclip=function(){t.pause();
+					t.currentTime=0;t.play()};
+				return t
+				}
+				else{
+					return{
+						playclip:function(){
+						throw new Error("Your browser doesn't support HTML5 audio unfortunately")}}}
+						}
+						var html5_audiotypes={
+						mp3:"audio/mpeg",
+						mp4:"audio/mp4",
+						ogg:"audio/ogg",
+						wav:"audio/wav"
+						}; 
+var mouseoversound=createsoundbite("sms.wav", " boink.mp3"); 
+var clicksound=createsoundbite(" boink.mp3","sms.wav");
+var clicksoundtrack=createsoundbite("sms.wav");
+</script>
+<script> var message="Hayo...! Mau copas ya? Boleh, tapi cantumkan sumber!";
+///////////////////////////////////
+function clickIE4(){if (event.button==2){alert(message);return false;}} function clickNS4(e){if (document.layers||document.getElementById&&!document.all){if (e.which==2||e.which==3){alert(message);return false;}}} if (document.layers){document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS4;} else if (document.all&&!document.getElementById){document.onmousedown=clickIE4;} document.oncontextmenu=new Function("alert(message);return false")</script>
+
+</head>
+<body>
+
+<a href="#" onmouseover="mouseoversound.playclip()">Web to Learning</a>
+
+<a href="#current" onclick="clicksound.playclip()">Web to Learning</a>
+<a href="#current" onclick="clicksoundtrack.playclip()">Web to Learning</a>
+
+<a href="#" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">Teks untuk CLICK & HOVER LINK WITH SOUND</a>
+
+</body>
+</html>

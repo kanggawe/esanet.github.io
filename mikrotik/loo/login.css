@@ -1,0 +1,363 @@
+.lang-btn{
+	position: absolute;
+	width: 100px;
+	top: 5px;
+	right: 10px;
+}
+.lang-btn ul li{
+	list-style:none;
+	display:inline;
+}
+body{
+	width: 100%;
+	background: url("img/bgbody.jpg") repeat;
+}
+.kmlogin{
+	background: #419816;
+	width: 300px;
+	height: 250px;	
+	margin: 0 auto;
+	padding: 20px;
+	color: #FFF;
+	margin-left: -5px;
+}
+
+.btn-primary {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 15px;
+    background-color: #FFC107;
+    border-color: #FFC107;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+.lblusername, .lblpassword {
+    width: 80px;
+}
+
+.kmmain, .kmheader{
+width: 980px;
+    margin: 0 auto;
+}
+
+.kmcontent{
+	padding: 5px 10px;
+}
+
+.kmwhite-line {
+    height: 1px;
+    background-color: #fff;
+    margin: 10px 0;
+}
+
+.kmlogin-input {
+    margin: 10px 0;
+    height: 30px;
+}
+.kmlogin-input > div {
+    float: left;
+}
+
+.div-log{
+	width:78px;
+}
+
+.kmlogin-btn {
+    float: left;
+    padding: 5px 20px;
+    margin-right: 20px;
+    background-color: #5b5c57;
+    font-weight: bold;
+    border: none;
+}
+/*slider*/
+.kmnews-wrap{
+	margin-top: 10px;
+	background: #FFF;
+	padding-top: 10px; 
+	width: 620px;
+	height: 180px;
+}
+.kmbanner-mobile{
+	display: none;
+}
+.kmbanner{
+	width: 100%;
+}
+
+/*tabharga*/
+.kmlogin-de {
+    background: #337ab7;
+    height: 250px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #FFF;
+    margin-left: -5px;
+}
+.de {
+    background: #a842a9;
+	width: 300px;
+    height: 250px;
+}
+.red-line{
+	margin-left: -15px;
+	margin-bottom: 5px;
+}
+
+.rl-mobile{
+	margin-top: 10px !important;
+}
+.red-line img{
+	width: 590px;
+}
+.main-pricing{
+	padding: 0px 0px !important;
+}
+
+.wrapper-pricing{
+	padding-right: 5px !important;
+	padding-left: 5px !important;
+}
+
+.pricing, .white{
+	padding: 5px 5px !important;
+	background: #ededed;
+}
+
+.white{
+	background: #FFF !important;
+}
+
+.durasi{
+	padding: 10px 0px !important;
+	font-weight: bold;
+	color: #C9302C;
+	font-size: 15px;
+}
+.harga{
+	padding: 10px 0px !important;
+	font-weight: bold;
+	text-align: right;
+	font-size: 15px;
+	color: black;
+}
+.garis{
+	border-top: 1px solid #cccccc;
+	margin-bottom: 10px;
+}
+.beli{
+	padding-top: 10px !important;
+	padding-right: 15px !important;
+	padding-left: 15px !important;
+	background-color: #e32213;
+	color: #FFF;
+	font-size: 13px;
+	padding-bottom: 10px;
+	margin-bottom: 3px;
+	cursor: pointer;
+}
+.glyphicon{
+	left: 110px !important;
+}
+.span-beli{
+	margin-top: 3px;
+	/*float: right;*/
+}
+.btn{
+	border-radius: 0 !important;
+}
+.btn-sm{
+	border-radius: 0 !important;
+}
+.btn-danger {
+  color: #fff;
+  background-color: #E32213;
+  border-color: #d43f3a;
+}
+/*footer*/
+
+footer{
+
+}
+.kmfooter{
+	color: #999999;
+	background-color: #1d1d1b;
+	width: 980px;
+    margin: 0 auto;	
+}
+.footer{
+	background-color: #1d1d1b;
+	padding: 10px 10px;
+	margin-top: 20px;
+	height: 40px;
+}
+.footer-mobile{
+	display: none;
+}
+
+.facebook, .twitter{
+	opacity: 0.6;
+    filter: alpha(opacity=60);
+    filter: grayscale(20%);
+}
+
+/*harga versi*/
+.kmharga{
+	color: #999999;
+	width: 980px;
+    margin: 0 auto;	
+}
+.hargaa{
+	background-color: #7a5cb8;
+	padding: 10px 10px;
+	margin-top: 20px;
+	height: 40px;
+}
+.harga-mobile{
+	display: none;
+}
+
+/*versi mobile responsive */
+@media (max-width: 1024px) {
+	.kmheader, .kmmain {
+    width: 100%;
+	}
+	.kmlogo {
+    width: 208px;
+    margin: 0 auto !important;
+}	
+	.footer{
+		margin-right: 8px;
+	}
+	.hargaa{
+		margin-right: 8px;
+	}
+	.kmlogin{
+		margin-left: -10px;
+	}
+	}
+@media (max-width: 960px) {
+	.kmheader, .kmmain {
+    width: 100%;
+	}
+	.kmlogo {
+    width: 208px;
+    margin: 0 auto !important;
+}
+	.kmfooter{
+		width: 300px;
+		margin: 10px auto !important;
+	}
+	.footer{
+		display: none;
+	}
+	.footer-mobile{
+		width: 300px;
+		display: block;
+		background-color: #1d1d1b;
+		padding: 10px 10px;
+		text-align: center;
+		margin-left: -15px;
+	}
+	.kmharga{
+		width: 300px;
+		margin: 10px auto !important;
+	}
+	.hargaa{
+		display: none;
+	}
+	.harga-mobile{
+	width: 300px;
+    display: block;
+    padding: 10px 10px;
+    text-align: center;
+    margin-left: -15px
+	}
+	.sw{
+	background-color: #bfbf66;
+	}
+	.header-ne{
+		color:#000;
+	}
+	}
+@media (max-width: 890px) {
+
+	}
+@media (max-width: 950px) {
+	.kmlogin-de {
+   display:none;
+}
+	.kmlogo{
+		width: 208px;
+		margin: 0 auto !important;
+	}
+	.kmcontent{
+		background: #fff !important;
+
+	}
+	.kmlogin{
+		margin-top: 10px;
+		width: 300px;
+		margin: 5px auto !important;
+}
+	.blocker{
+		width: 300px !important;
+		margin: 0 auto !important;
+	}	
+
+}
+@media (max-width: 640px) {
+	.login-desktop{
+		display: none;
+	}	
+}
+@media (max-width: 420px) {
+	.kmheader{
+		margin-right: 0px !important;
+	}
+	.kmcontent{
+		background: #fff !important;
+
+	}
+	.kmlogin{
+		margin-top: 10px;
+		width: 300px;
+		margin: 5px auto !important;
+	}
+}
+@media (max-width: 320px) {
+	.kmcontent{
+		background: #fff !important;
+	}
+}
+
+.tabs{
+	margin-left: -40px;
+}
+
+.tabs li {
+	list-style:none;
+	display:inline;
+}
+
+.tabs a {
+	padding:5px 10px;
+	display:inline-block;
+	background:#666;
+	color:#fff;
+	text-decoration:none;
+}
+
+.tabs a.active {
+	background:#fff;
+	color:#000;
+}
+
+.form-control{
+	border-radius: 0 !important;
+	display: inline;
+}
+

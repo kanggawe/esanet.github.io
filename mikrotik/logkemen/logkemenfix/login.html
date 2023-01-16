@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://kemdikbud.go.id/ -->
+<html lang="en" style="display: block;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>e-Media Hotspot</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./css/stylee.css">
+  <link rel="stylesheet prefetch" href="css/bootstrap.min.css">
+ <style>
+img{min-height:100%;
+max-height:100%}
+.alert-danger {
+    background-color: #FF5722;
+    border-color: #ebccd1;
+    color: #FFFDE7;
+	border-radius: 20px 0;
+}
+#single ol li,p{font-size:large }
+#a ol li.xs{font-size:16px }
+ol.two-columns {
+    display: block;
+    height: 180px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    /* column-count: 2; */}
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
+    display: inline-block;
+    height: 3em;
+    padding: 8px 10px;
+    margin-bottom: 4px;
+    line-height: 1.6;
+    vertical-align: middle;
+    border: 3px solid #ff9800;
+    border-top: 2px solid crimson;
+    border-radius: 15px 15px 0 0;
+    border-style: dashed;
+	background: #ddd;}
+input[type="text"]:focus, input[type="password"]:focus{
+    outline: 0;
+    outline: thin dotted \9;
+    color: #fb0202;
+    font-size: 20px;
+    background: #FFEB3B;}
+.alert{
+margin-bottom:2px}
+</style>
+  </head>
+<body>
+  <div class="pagespan container">
+    <div class="wrap row">
+      <div class="col-md-12" style="padding-top:4px;">
+	  <div class="col-xs-12 visible-xs ">
+			<img src="img/kemdikbud.png" class='hidden-sm visible-xs' height="100">
+        <h2><span style='font-size: 40px;font-style: italic; -webkit-font-smoothing: subpixel-antialiased; font-feature-settings: initial;font-family: cursive;' class="hidden-xs">e - </span><span style='text-transform:uppercase;font-size: 26px; font-family: sans-serif;'class="hidden-xs">>Media Hotspot</span><br> 
+          <strong style='text-transform:uppercase'>Connecting Your Poeple</strong><br><i style='text-align:justify;font-size:14px'>Desa Bondan blok Lunggede RT16/08 Kec. Sukagumiwang</i></h2>
+		</div>	  
+		<div class="col-sm-12 hidden-xs">
+			<img src="./img/kemdikbud_64x64.png" height="100">
+        <h2><a><span style='font-size: 35px;font-style: italic; -webkit-font-smoothing: subpixel-antialiased; font-feature-settings: initial;font-family: cursive;'>e -</span> <span style='text-transform:uppercase;font-family: sans-serif;'><b>Media Hotspot</b></span></a><br> 
+          <strong style='text-transform:uppercase'>Connecting Your Poeple</strong><br><i style='text-align:justify; font-size:14px'>Desa Bondan blok Lunggede RT16/08 Kec. Sukagumiwang</i></h2>
+		</div>
+      </div>      
+    </div>
+    <div class="wrap">
+
+    <div class="bs-example bs-example-tabs " role="tabpanel" data-example-id="togglable-tabs">
+
+        
+    <div id="myTabContent" class="tab-content">
+
+		
+	        <div role="tabpanel" class="tab-pane fade active in" id="peserta-didik" aria-labelledby="peserta-didik-tab">
+	          <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="thumbnail">
+              <!---img src="./img/siswa.JPG" class="col-lg-12"-->
+			  <center><h2 style="color:#000">Silahkan Login</h2></center><hr>
+ 	<form class="form-" id='forme' name="login" action="$(link-login-only)" method="post" $(if chap-id) onsubmit="return doLogin()" $(endif)>
+	<input type="hidden" name="dst" value="$(link-orig)">
+	<input type="hidden" name="popup" value="false">	  
+    <input name="username" type="text" autocomplete="off" class="form-control input" placeholder="Username" required><br/><br/>
+    <input type="password" name="password" class="form-control input" autocomplete="off" placeholder="Password"><hr>
+	</form>
+	$(if error)<div class="alert alert-danger alert-dismissible" role="alert" style="font-size:12px; align:justify;">
+						<button type="button" class="close" data-dismiss="alert">&times;</button><script type="text/javascript">
+		       var error = "$(error)";
+		       if (error == "credit limit reached")
+		       {
+		       document.write("Maaf, Masa Aktif Voucher Anda Sudah Habis | ");
+		       }
+if (error == "uptime limit reached")
+		       {
+		       document.write("Maaf, Waktu Internet Voucher Anda Sudah Habis | ");
+		       }
+if (error == "download limit reached")
+		       {
+		       document.write("Kuota Voucher Anda Telah Habis | ");
+}
+if (error == "no valid profile found")
+		       {
+		       document.write("Maaf, Voucher Anda Sudah Habis Masa Aktif | ");
+		       }
+if (error == "invalid password")
+		       {
+		       document.write("Password Yang Anda Masukan Salah, Hubungi Kami Atau Coba Lagi | ");
+		       }
+if (error == "simultaneous session limit reached")
+		       {
+		       document.write("Username $(username) Sebelumnya Sudah Login atau Sedang Aktif Hubungi Kami Atau Tunggu 5 Menit dan Coba Lagi");
+		       }
+		       else {
+			       document.write("$(error)");
+		       }       
+		       </script></div>$(endif)   
+    
+	<button name="submit" form='forme' type="submit" value="Log In" class="btn btn-lg btn-block btn-info"> Masuk </button>
+    
+              <!---img src="./img/siswa.JPG" class="col-lg-12"-->
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-6">
+            <section class="panel panel-global">
+            <header class="panel-heading">
+              <center><h1 class="panel-title">
+                Layanan
+              </h1></center>
+            </header>
+           <div id="single" class="panel-body hidden-sm hidden-xs">
+              <ol class="two-columns">
+		
+									<li>Seharian Full</li>
+									<li>Seminggu Full</li>
+									<li>2 Minggu Full</li>
+									<li>Sebulan  Full</li>
+									
+									<li><a>: Rp.&nbsp;&nbsp; 5.000</a></li>
+									<li><a>: Rp. 20.000</a></li>
+									<li><a>: Rp. 35.000</a></li>
+									<li><a>: Rp. 70.000</a></li>
+								
+				              </ol>
+				<li><p>paket semuanya serba full, full browsing, download, streaming,gaming dan lain lain</p>	</li>
+            </div>
+			
+			<div id="a" class="panel-body visible-xs visible-sm">
+              <ul>
+		
+									<li class='xs'>Seharian Full <a>: Rp.&nbsp; 5.000</a></li>
+									<li class='xs'>Seminggu Full <a>: Rp. 20.000</a></li>
+									<li class='xs'>2 Minggu Full <a>: Rp. 35.000</a></li>
+									<li class='xs'>Sebulan  Full <a>: Rp. 70.000</a></li>
+									
+				              </ul>
+				<p>paket semuanya serba full, full browsing, download, streaming,gaming dan lain lain</p>
+            </div>
+	  </section>
+          </div>
+        </div>
+      </div>
+			 	
+ 
+
+    </div>
+    <div class="link">
+      <!--button class="btn btn-primary" onclick="location.href=&#39;main/?lang=id&#39;;">Portal Utama</button-->
+    </div>
+    
+
+  </div>	  
+
+  <footer>
+<center>
+<!-- jangan dihapus credit ini Sebuah Hak cipta-->
+Copyright &#169; 2015-<script type='text/javascript'>var creditsyear = new Date();document.write(creditsyear.getFullYear());</script> All Right Reserved. Design By: <strong><a href='http://www.kangbajuri.id/'><script>
+ var a='K'; var b='a'; var c='n'; var d='g'; var e='b'; var f='j'; var g='u'; var h='r'; var i='i'; var i='i';  var j='d';var k='.'; namasite=a+b+c+d+e+b+f+g+h+i+k+i+j;document.write(namasite);</script></a></strong></center>
+</footer>
+  <!-- Scripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  
+$(if chap-id)
+	<form name="sendin" action="$(link-login-only)" method="post">
+		<input type="hidden" name="username" />
+		<input type="hidden" name="password" />
+		<input type="hidden" name="dst" value="$(link-orig)" />
+		<input type="hidden" name="popup" value="true" />
+	</form>
+	
+	<script type="text/javascript" src="/md5.js"></script>
+	<script type="text/javascript">
+	<!--
+	    function doLogin() {
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+		document.sendin.submit();
+		return false;
+	    }
+	//-->
+	</script>
+$(endif)
+</div></div>
+		<script type="text/javascript">
+<!--
+  document.login.username.focus();
+//-->
+</script>
+  </body></html>

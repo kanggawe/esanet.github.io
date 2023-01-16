@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>KANGBAJURI | Login..</title>
+        
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" >
+<META name="ROBOTS" content="INDEX,FOLLOW" />
+
+	<link rel="stylesheet" type="text/css" href="sstyles.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.theme.css">
+	<link rel="shortcut icon" href="img/signal.gif" />
+	
+<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="js/html5.js" type="text/javascript"></script>
+<script src="js/script.js" type="text/javascript"></script>
+<link href="css/responsive.css" rel="stylesheet" media="only screen and (max-width: 1200px)" >
+
+</head>
+<body>
+$(if chap-id)
+	<form name="sendin" action="$(link-login-only)" method="post">
+		<input type="hidden" name="username" />
+		<input type="hidden" name="password" />
+		<input type="hidden" name="dst" value="$(link-orig)" />
+		<input type="hidden" name="popup" value="true" />
+	</form>
+	
+	<script type="text/javascript" src="/md5.js"></script>
+	<script type="text/javascript">
+	<!--
+	    function doLogin() {
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+		document.sendin.submit();
+		return false;
+	    }
+//-->	
+	</script>
+<div class="main-wrap">
+
+<header id="header">
+
+<!-- container start -->
+<div class="container">
+
+<div class="row">
+	<div class="col-xs-12">
+<div class="brand">	
+	<a href="login.html"> 
+	<img src="img/logo.png" class="logo" alt="Site home page" title="Site logo" /></a>
+	<div class="band-text">
+	<h1>Hotspote Wong Dewek</h1>
+	<h2>The heroes Conecting People</h2>
+	</div>
+
+</div>
+	</div>
+	     
+</div><!-- row //  -->
+
+</div><!-- container //  -->
+    
+</header>
+
+<div class="content">
+
+<!-- container start -->
+<div class="container">
+
+<!-- login hotspot dan banner -->
+<div class="col-xs-12 col-sm-6"id="login" >
+<div class="thumbnail">
+<div class="title-bg"> <center><h1>LOGIN MEMBER</h1></center> </div>
+<form class="form-signin" role="form" name="login" action="$(link-login-only)" method="post"
+$(if chap-id) onSubmit="return doLogin()" $(endif)>
+<input type="hidden" name="dst" value="$(link-orig)" />
+<input type="hidden" name="popup" value="true" />
+<label class="grey" for="signup">User ID:</label><br/>
+<input class="field form-control" type="text"  id="inputEmail" name="username" value="$(username)" size="25" placeholder="Email address" required autofocus>
+<label class="grey" for="email">Password:</label><br/>
+<input class="field form-control" type="password" name="password" size="25" />
+<label></label><br/>
+<button class="btn btn-lg btn-primary btn-block" name="submit" type="submit" value="LOGIN">LOGIN</button>
+</form>			
+</div>
+</div>
+<div class="col-xs-12 col-sm-6" id="gmlogin">
+
+<div class="thumbnail">
+      <img src="img/beli.jpg" alt="...">
+    	</div></div></div></div>
+<!-- end login hotspot dan banner -->
+
+<div class="content">
+
+<!-- container start -->
+<div class="container">
+
+<!-- paket hotspot -->
+<div class="col-sm-6 col-md-8" id="ph">    	
+         <div class="caption">
+		 <h2 style="color: #ffffff!important;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;">Daftar Paket Hotspot</h2>
+                    <p style="color:#ffffff;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;">
+                    1. Paket 10 Jam  = Rp.  5.000,- <h style="font-size: 10px;font-family: 'Lucida Sans';">Masa Tenggang 2 Hari</h><br/>
+                    2. Paket 24 Jam  = Rp. 10.000,- <h style="font-size: 10px;font-family: 'Lucida Sans';">Masa Tenggang 2 Hari</h><br/>
+                    3. Paket 7 Hari = Rp. 30.000,- <br/>
+                    4. Paket 15 Hari = Rp. 55.000,-<br/>
+                    5. Paket 30 Hari = Rp.100.000,-<br/>
+                    </p>
+					<center><h href="#" style="color: #ffffff;font-size: 13px;line-height: 14px;text-decoration: none;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;">Semua paket Unlimited dan tidak dibatasi Quota</h></center>
+      </div>
+  	</div>
+  	<div class="col-sm-6 col-md-4" id="gph">
+    	<div class="thumbnail">
+      <img src="img/sehat.jpg" alt="...">
+    	</div>
+  	</div>
+<!-- end hotspot -->
+
+<!-- gambar layanan -->
+<div class="row">
+  		<div class="col-xs-6 col-md-2" >
+    		<a href="#" class="thumbnail">
+      		<img src="img/jaringan.gif" alt="...">
+    		</a>
+			
+  		</div>
+  		<div class="col-xs-6 col-md-2">
+    		<a href="#" class="thumbnail">
+      		<img src="img/mail.gif" alt="...">
+    		</a>
+  		</div>
+  		<div class="col-xs-12 col-md-4">
+    		<a href="#" class="thumbnail">
+      		<img src="img/logo.png" alt="..." height="100%" width="100%">
+    		</a>
+  		</div>
+		<div class="col-xs-6 col-md-2">
+    		<a href="#" class="thumbnail">
+      		<img src="img/duduk.gif" alt="...">
+			</a>
+  		</div>
+  		<div class="col-xs-6 col-md-2">
+    		<a href="#" class="thumbnail">
+      		<img src="img/kopi.gif" alt="...">
+    		</a>
+  		</div>
+	</div>
+
+<!-- end gambar layanan -->
+<!-- paketan warnet -->
+<div class="col-sm-6 col-md-4" id="gph">
+    	<div class="thumbnail">
+      <img src="img/logos.jpg" alt="...">
+    	</div>
+  	</div>
+<div class="col-sm-6 col-md-8" id="pw">    	
+         <div class="caption">
+		 <h2 style="color: #ffffff!important;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;">Daftar Paket Warnet</h2>
+                    <p style="color:#ffffff;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;">
+                    1. Paket 20 Menit = Rp. 1.000,- <br/>
+                    2. Paket 30 Menit = Rp. 2.000,- <br/>
+                    3. Paket  1 Jam   = Rp. 3.000,- <br/>
+                    4. Paket  2 Jam   = Rp. 5.000,- <br/>
+                    5. Paket  5 Jam   = Rp.10.000,- <br/>
+                    </p>
+					<center><h href="#" style="color: #ffffff;font-size: 13px;line-height: 14px;text-decoration: none;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;">Semua paket Unlimited dan tidak dibatasi Quota</h></center>
+      </div>
+  	</div>
+  	
+	</div>
+	</div>
+<!-- end paketan warnet -->
+
+<!-- layanan internet -->
+<div class="content">
+
+<!-- container start -->
+<div class="container">
+<div class="col-sm-6 col-md-7" id="ln">    	
+         <div class="caption">
+		 <h2 style="color: #ffffff!important;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;">Layanan KM Net Hotspote Wong Dewek</h2>
+            <p style="color:#ffffff;margin-top: 0;margin-bottom: 0;padding: 0;min-height: 100px; font-size: 16px;line-height:18px;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;">
+                    1. Instalasi Jaringan. 
+                       <h style="font-size: 10px;font-family: 'Lucida Sans';">LAN, Wifi, Router, dll.</h><br/>
+                    2. Instalasi PC/Laptop. 
+                       <h style="font-size: 10px;font-family: 'Lucida Sans';">Full Software</h><br/>
+                    3. Pembuatan Website. <br/>
+                    4. Other:
+                       <h style="font-size: 10px;font-family: 'Lucida Sans';">Pengetikan, Print Out, Data Burning</h><br/>
+            </p>
+      </div>
+  	</div>
+  	<div class="col-sm-6 col-md-5"">
+    	<div class="thumbnail">
+      <img src="img/trims.jpg" alt="...">
+    	</div>
+  	</div>
+<!-- end layanan internet -->
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+	<section class="footer-top">
+	<div class="container">
+	<div class="row">
+		<div class="col-xs-4 col-sm-3">
+		<h5 class="title">Sitename</h5>
+		<ul class="list-footer fs12 lh20 ml10">
+			<li><a href="#">Help</a></li>
+		</ul>
+		</div>
+		<div class="col-xs-4 col-sm-3">
+		<h5 class="title">Information</h5>
+		<ul class="list-footer fs12 lh20 ml10">
+			<li><a href="#">Home page</a></li>
+		</ul>
+		
+		</div>
+		<div class="col-xs-3 col-sm-3">
+		
+		<h5 class="title">Contacts</h5>
+		<ul class="list-footer fs12 lh20 ml10">
+			<li>Email: info@kangbajuri.com</li>
+			<li>Lunggede bondan indramayu </li>
+		</ul>
+		
+		</div>
+		<div class="col-xs-3 col-sm-3">
+		
+		<h5 class="title">Social</h5>
+		sdhmn
+		
+		
+		</div>
+	</div><!-- //row -->
+	</div><!-- //container -->
+	</section>
+	<section class="footer-bottom">
+	<div class="container">
+		<div class="footer-txt">
+		All rights reserved. Copyright &copy; 2015 <?php echo $_SERVER['HTTP_HOST']; ?> <br />
+		Developed by: <a href="http://kangbajuri.com">Kangbajuri.com</a> | Email: info@kangbajuri.com
+		</div>
+	</div><!-- //container -->
+	</section>	
+</footer>
+<script type="text/javascript">
+<!--
+  document.login.username.focus();
+//-->
+</script>
+
+</body></html>

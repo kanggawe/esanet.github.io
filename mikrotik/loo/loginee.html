@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>KM Hotspot - Karya Mandiri</title>
+	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-tabs.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script src="js/ng.js"></script> 
+    <script src="js/aipps.js"></script> 
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="expires" content="-1" />
+</head>
+<body>
+$(if chap-id)
+	<form name="sendin" action="$(link-login-only)" method="post">
+		<input type="hidden" name="username" />
+		<input type="hidden" name="password" />
+		<input type="hidden" name="dst" value="$(link-orig)" />
+		<input type="hidden" name="popup" value="true" />
+	</form>
+	<script type="text/javascript" src="/md5.js"></script>
+	<script type="text/javascript">
+	<!--
+	    function doLogin() {
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+		document.sendin.submit();
+		return false;
+	    }
+	//-->
+	</script>
+$(endif)
+        <div class="kmcontent col-xs-12">
+            <div class="lang-btn" style="z-index:100;">
+                <ul>
+                    <li><a href="login.html#en"><img src="img/en.gif" alt="english"></a></li>
+                    <li><a href="login.html#id"><img src="img/in.png" alt="indonesia"></a></li>
+                </ul>
+            </div>        
+            <div class="kmheader">
+                <div class="col-md-12 col-sm-12">
+                    <div class="kmlogo">
+                        <a href="login.html"><img src="img/logo2.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div class="container-fluid">
+    <div class="row">
+		<div class="kmmain">        
+	<div class="col-xs-12 col-md-4 " id="klas1">
+                <div class="kmlogin">
+                  <center><span style="font-weight:bold;font-family: monospace;font-style: italic;font-size: xx-large;font-variant: initial;font-stretch: semi-condensed;color: #fff;">Login Wifi</span></center>
+				  
+                        <form name="login" action="$(link-login-only)" method="post"
+					    $(if chap-id) onSubmit="return doLogin()" $(endif) id="form_login_spin" novalidate="novalidate">
+						<input type="hidden" name="dst" value="$(link-orig)" />
+						<input type="hidden" name="popup" value="true" />
+                            <div class="kmtitle-login-box">
+                                User Login
+                            </div>
+                            <div class="kmwhite-line"></div>
+                            <div class="kmlogin-input">
+                                <div class="lblusername"> Username  </div>
+                                <div><input style="color: #000;width: 160px;" class="form-control" type="text" id="username_form" name="username" value="$(username)"></div>
+                            </div>
+                            <div class="kmlogin-input">
+                                <div class="lblpassword">Password </div>
+                                <div><input style="color: #000;width: 160px;" class="form-control" type="password" id="password_form" name="password"></div>
+                            </div>
+                            <div class="kmwhite-line"></div>
+                            <div>
+                                <div style="height: 28px;float:left;width: 86px;">
+                                    <button type="submit" class="btn btn-primary btn-block" name="Submit"> LOGIN </button> 
+                                </div>
+                                <div style="font-size: 10px;float: right; width: 164px;">Silahkan membeli paket wifi harian dengan menghubungi saudara XX nomor : 08977009647</div>
+                            </div>
+                        </form>
+                </div>
+	</div>
+	<div class="col-xs-12 col-md-8 login-desktop">
+                          
+                <div class="kmlogin-de">
+                    <ul class="tabs">
+                        <li><a href="#tab1" class="active">Paket Internet</a></li>
+                        <li><a href="#tab2">Coverage</a></li>
+						<li><a href="#tab3">Tentang</a></li>
+						<li><a href="#tab4">Contact Us</a></li>
+                    </ul>
+                    <div id="tab1">
+                        <div class="s-news-wrap col-md-12 col-sm-12 col-xs-12 ">
+                            <div class="wrap-header-news col-md-12 col-sm-12 col-xs-12">
+                                <div class="header-news col-md-12 col-sm-12 col-xs-12">
+                                    Mogo dipilih Paketnya, jika cocok silahkan hubungi kami</div>
+                            </div>
+                            <div class="red-line col-md-12 col-sm-12 col-xs-12">
+                                <img src="img/redline.png">
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12 wrapper-pricing">
+                                <!-- HARGA PERTAMA -->
+                                <div class="col-md-4 col-sm-4 col-xs-12 pricing">
+                                    <div class="col-md-6 col-sm-6 col-xs-6 durasi">
+                                        1 MINGGU                                   </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6 harga">
+                                        Rp. 5.000,-
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 garis"></div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 beli" onclick="paket(5000, &#39;12 JAM&#39;)" id="paket">
+                                        BELI
+                                    </div>
+                                </div>
+                                <!-- END OF HARGA PERTAMA -->
+                                <!-- HARGA KEDUA -->
+                                <div class="col-md-4 col-sm-4 col-xs-12 pricing white">
+                                    <div class="col-md-6 col-sm-6 col-xs-6 durasi">
+                                        2 MINGGU                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6 harga">
+                                        Rp. 20.000,-
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 garis"></div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 beli" onclick="paket(20000, &#39;MINGGU&#39;)" id="paket">
+                                        BELI
+                                    </div>
+                                </div>
+                                <!-- END OF HARGA KEDUA -->
+                                <!-- HARGA KETIGA -->
+                                <div class="col-md-4 col-sm-4 col-xs-12 pricing">
+                                    <div class="col-md-6 col-sm-6 col-xs-6 durasi">
+                                        BULANAN                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6 harga">
+                                        Rp. 50.000,-
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 garis"></div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 beli" onclick="paket(50000, &#39;BULANAN&#39;)" id="paket">
+                                        BELI
+                                    </div>
+                                </div>
+                                <!-- END OF HARGA KETIGA -->
+                            </div>
+                        </div>
+                    
+				   </div>
+                    <div id="tab2" style="display: none;">
+                        <h5>COVERAGE AREA</h5>
+                        <div class="kmwhite-line"></div>
+						<p>kami akan terus memperluas jaringan kami sehingga masyarakat dapat menikmati internet murah dari kami.<br/>
+						wilayah yang tercover antara lain:- munjul - buntet - mertapada.</p>
+                        <div class="kmwhite-line"></div>
+                    </div>
+                    <div id="tab3" style="display: none;">
+                        <h5>TENTANG KAMI</h5>
+                        <div class="kwhite-line"></div>
+                        <P>Internet adalah Media Sarana Komunikasi & Pengetahuan Yang Berkembang Cepat. dari internet kita dapat menemukan segala informasi, baik yang bersifat mendidik atau yang sebaliknya. Dulu Buku Adalah Jendela Dunia, Sekarang Internet Adalah Jendela Dunia.
+
+						KM Net Hotspot adalah layanan internet untuk masyarakat kami hanya membantu anda supaya terhubung dengan yang lainya. sebuah usaha yang dirintis secara bersama - sama dan mengedepankan kualitas layanan yang diberikan kepada semua pelanggan yang kami miliki.
+
+						Kami meyediakan 2 Opsi layanan Internet for free of charge. Validate Paket Internet & Voucher.</p>
+                    </div>
+                    <div id="tab4" style="display: none;">
+                        <h5>CONTACK US</h5>
+                        <div class="kmwhite-line"></div>
+                        <P>Telkomsel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 0852 2482 8422<br/>
+		Three dan WA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 0897 7009 647<br/>
+		BBM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 		
+		<div class="cleaner_h20">
+        </div>
+        Jl. Merdeka no. 111 Blok Lunggede DS Bondan Kec. Sukagumiwang Kab. Indramayu 45274
+        <br/>
+        Tel: 0234-888-0870<br/>
+
+        Jam Kerja :
+		08:00 s/d 21:00
+</p>
+                    </div>					
+                </div>
+            </div>  
+		</div>
+	</div>
+	<div class="row">
+        <div class="col-md-12">
+            <div class="kmharga">
+                <div class="col-md-12 col-sm-12">
+                    <div class="harga-mobile">
+                        <div class="sw col-md-12 col-sm-12 col-xs-12 ">
+						    <div class="wrap-header-news col-md-12 col-sm-12 col-xs-12">
+                                <div class="header-ne col-md-12 col-sm-12 col-xs-12">
+								Mogo dipilih Paketnya, jika cocok silahkan hubungi kami</div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12 wrapper-pricing">
+                                <!-- HARGA PERTAMA -->
+                                <div class="col-md-4 col-sm-4 col-xs-12 pricing">
+                                    <div class="col-md-6 col-sm-6 col-xs-6 durasi">
+                                        12 JAM                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6 harga">
+                                        Rp. 5.000,-
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 garis"></div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 beli" onclick="paket(5000, &#39;12 JAM&#39;)" id="paket">
+                                        BELI<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                                <!-- END OF HARGA PERTAMA -->
+                                <!-- HARGA KEDUA -->
+                                <div class="col-md-4 col-sm-4 col-xs-12 pricing white">
+                                    <div class="col-md-6 col-sm-6 col-xs-6 durasi">
+                                        1 MINGGU                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6 harga">
+                                        Rp. 20.000,-
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 garis"></div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 beli" onclick="paket(20000, &#39;MINGGU&#39;)" id="paket">
+                                        BELI<span class="span-beli glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                                <!-- END OF HARGA KEDUA -->
+                                <!-- HARGA KETIGA -->
+                                <div class="col-md-4 col-sm-4 col-xs-12 pricing">
+                                    <div class="col-md-6 col-sm-6 col-xs-6 durasi">
+                                        1 BULANAN                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6 harga">
+                                        Rp. 50.000,-
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 garis"></div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 beli" onclick="paket(50000, &#39;BULANAN&#39;)" id="paket">
+                                        BELI<span class="span-beli glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                                <!-- END OF HARGA KETIGA -->
+                            </div>
+						    <div class="wrap-header-news col-md-12 col-sm-12 col-xs-12">
+                                <div class="header-news col-md-12 col-sm-12 col-xs-12">
+                                    &nbsp;</div>
+                            </div>
+                        </div>
+ 
+                    </div>
+                </div>
+            </div>
+        </div>			
+	</div>		
+		
+	<div class="row">
+        <div class="col-md-12">
+            <div class="kmfooter">
+                <div class="col-md-12 col-sm-12">
+                    <div class="footer">
+                        <div class="col-md-9">2015, KaryaMandiri.com, All Rights Reserved&nbsp;&nbsp;&nbsp;
+                            <a href="http://facebook.com/"> <img class="facebook" src="img/facebook.png"></a>
+                            <a href="http://twitter.com/"> <img class="twitter" src="img/twitter.png"></a>
+                        </div>
+                        <div class="col-md-3">
+                            Powered by &nbsp;<a href="#"><img src="img/metranet.png"></a>
+                        </div>
+                    </div>
+                    <div class="footer-mobile">2015, KaryaMandiri.com, All Rights Reserved<br><br>
+                        <a href="http://facebook.com/"> <img class="facebook" src="img/facebook.png"></a>
+                        <a href="http://twitter.com/"> <img class="twitter" src="img/twitter.png"></a><br><br>
+                        Powered by:<br>
+                        <a href="#"><img src="img/metranet.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>			
+	</div>		
+	</div>		
+  <script type="text/javascript">
+<!--
+  document.login.username.focus();
+//-->
+</script>
+	
+	</body>
+</html>

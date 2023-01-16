@@ -1,0 +1,49 @@
+body#indischool{background:#608BA4;}
+body#indischool .container{max-width:940px}
+body#indischool .banner-ads-300{margin:20px 0}
+body#indischool .banner-ads-300 img{width:90%}
+body#indischool .modal.modal-package .modal-content{border-radius:0px}
+body#indischool .modal.modal-package .modal-content .modal-header{background:#19BA84;color:#fff}
+body#indischool .modal.modal-indi .modal-content{border-radius:0px}
+body#indischool .modal.modal-indi .modal-content .modal-header{background:#31b0d5;color:#fff}
+body#indischool header #head-desktop{
+	background:url(../img/estetic-element.png) no-repeat left #ede832;
+	border-bottom:2px solid #768080
+}
+body#indischool header #head-mobile{background:#ede832;padding:10px 0 10px 0;border-bottom:2px solid #768080}
+body#indischool header #head-mobile .banner-ads-468 img{width:100%}
+body#indischool footer .foot-block{background:#60617b;color:#fff;font-size:12px;font-weight:normal}
+body#indischool footer .foot-block .foot-block-inner{padding:15px}
+body#indischool footer .foot-block .foot-block-inner.text-center{border-right:2px solid #70151c;border-left:2px solid #70151c}
+body#indischool footer .foot-block .foot-block-inner.text-left{padding-left:38px;padding-right:0px;font-style:italic}
+body#indischool footer .foot-block .foot-block-inner.text-right{background:url(../img/telkom-logo.jpg) no-repeat right;padding:16.2px;-webkit-padding-before:16.2px;-webkit-padding-after:17px;padding-right:100px;padding-left:0px;font-size:10px}
+body#indischool footer .foot-block a{color:#fff}
+body#indischool footer .foot-block-m{background:#ae212a;color:#fff;font-size:12px;font-weight:normal}
+body#indischool footer .foot-block-m .foot-block-inner{padding:15px}
+body#indischool footer #shadow-foot{background:url(../img/shadow-foot.png) no-repeat top center;display:block;height:22px}
+body#indischool #welcome.torso #perface-top{margin-top:5px}
+body#indischool #welcome.torso #perface-top #perface-top-inner #splash.col-md-8{padding:0px}
+body#indischool #welcome.torso #perface-top #perface-top-inner #splash.col-md-8 img{width:100%}
+body#indischool #welcome.torso #perface-top #perface-top-inner .col-md-8{background:#e6e5ea}
+body#indischool #welcome.torso #perface-top #perface-top-inner .col-md-8 .banner-ads-300.text-center{margin-top:0px;margin-bottom:0px;padding-top:20px;padding-bottom:20px}
+body#indischool #welcome.torso #perface-top #perface-top-inner #login-area.col-md-4{display:block;background:#ede832;height:253px;padding-top:10px}
+body#indischool #welcome.torso #perface-top #perface-top-inner #login-area.col-md-4 .well{background:#fff;height:210px;margin-bottom:0px;}
+body#indischool #welcome.torso #perface-top #perface-top-inner #login-area.col-md-4 .well .input-group-addon{color:#c6c5c3}
+body#indischool #welcome.torso #perface-top #perface-top-inner #login-area.col-md-4 .well .help-block.help-block-error{font-weight:bold;font-size:12px;font-style:italic}
+body#indischool #welcome.torso #perface-top #perface-top-inner #registration-btn .btn{border-radius:0px 0px 8px 8px}
+body#indischool #welcome.torso #perface-bottom-inner{background:#ede832;margin-bottom:2px}
+body#indischool #welcome.torso #perface-bottom-inner .exp-package{color:#545454;padding:10px 0;font-size:11px;font-weight:bold}
+body#indischool #welcome.torso #perface-bottom-inner #package .package-list{padding:0 10%}
+body#indischool #welcome.torso #perface-bottom-inner #package .package-list .col-md-6{padding:0 5px}
+body#indischool #welcome.torso #perface-bottom-inner #package .package-list .package-item .package-banner{background:#373634;width:100%;display:block;max-height:91px;margin-bottom:10px;overflow:hidden}
+body#indischool #welcome.torso #perface-bottom-inner #package .package-list .package-item .package-banner .btn-buy{position:relative;padding-left:20px;padding-right:20px;padding-top:3px;padding-bottom:3px;font-weight:bold;margin-left:8px;margin-right:8px;margin-top:-40px}
+body#indischool #welcome.torso #perface-bottom-inner #package .package-list .package-item .package-banner .btn-buy.btn-left{float:left}
+body#indischool #welcome.torso #perface-bottom-inner #package .package-list .package-item .package-banner .btn-buy.btn-right{float:right}
+body#indischool #welcome.torso #perface-bottom-inner #package .package-list .package-item .package-banner .btn-buy.hidden-lg{width:30%;margin-top:16px;padding-top:20px;padding-bottom:20px}
+body#indischool #welcome.torso #perface-bottom-inner #package .package-list .package-item .package-banner .btn-buy.btn-left.hidden-lg{float:right}
+body#indischool #welcome.torso #perface-bottom-inner #package .package-list .package-item .package-banner .btn-buy.btn-right.hidden-lg{float:left}
+body#indischool #welcome.torso .form-group.has-feedback span.glyphicon{color:#c6c5c3;float:right;margin-top:-37px;margin-right:8px;z-index:999}
+@media only screen and (max-width:767px)
+{body#indischool .banner-ads-300{margin:20px 0}
+body#indischool .banner-ads-300 img{width:inherit}
+}

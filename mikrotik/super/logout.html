@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>H@N</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+	<link rel="shortcut icon" href="favicon.ico" />
+		
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="css/gayakami.css" rel="stylesheet">
+	
+	<style>
+		body {
+			margin-top: 20px;
+			color: #fff;
+			font-family: 'Museo';
+		}
+	</style>
+		
+<script language="JavaScript">
+<!--
+    function openLogin() {
+	if (window.name != 'hotspot_logout') return true;
+	open('$(link-login)', '_blank', '');
+	window.close();
+	return false;
+    }
+//-->
+</script>
+</head>
+
+<body onLoad="startClock()">
+	<div class="container" align="right">
+		<form action="$(link-login)" name="login" onSubmit="return openLogin()">
+			<h2>Thank You</h2>
+			<p>You hame just logged out.<p>
+			<table border="0">
+				<tr><td>Anda telah Log Out!</td></tr>
+				<tr><td>IP Address : $(ip)</td></tr>
+				<tr><td>MAC Address : $(mac)</td></tr>
+			</table>
+			</p>
+			<button type="submit" class="btn btn-success">Login</button>
+			$(endif)
+		</form>
+	</div>			
+</body>
+</html>
+
+

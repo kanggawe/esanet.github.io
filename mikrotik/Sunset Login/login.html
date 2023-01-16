@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Login Version - Ramadhan</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="body">
+<div class="container">
+<div class="col-md-12 col-sm-12 col-xs-12 header">
+<div class="visible-xs visible-sm" aria-hidden="true">
+      <a href="login.html"><img src="img/header1.png"/></a>
+   </div>
+   <div class="hidden-xs hidden-sm">      
+   <img src="img/vcr.png"/></a>
+   <!--center> <h1><span style="color:#f00; text-align:center;  font-weight:bold;">INTERNET ACCESS 24 HOURS </span> <span style="color:#Fff; font-weight:bold;"></span></h1></center-->
+   </div>
+</div>
+		</div>
+<div class="container">
+		<div class="col-md-12 col-sm-12 col-xs-12 login">
+		$(if error)
+						<div class="alert alert-danger alert-dismissible" role="alert" style="font-size:12px; align:justify;">
+							<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+							<strong style="color: red">Error!</strong> 
+							<script type="text/javascript">
+									var error = "$(error)";
+									if (error == "simulaneous session limit reached"){
+										document.write("simulaneous session limit reached");
+										}
+										else if (error == "invalid password"){
+										document.write("Oups Kata Sandi Salah")
+										}else if (error == "no valid profile found"){
+										document.write("Oups tidak ditemukan profile")
+										}else if (error.search("not found")!=-1){
+										document.write("Oups, user $(username) tidak ada di database kami")
+										}else document.write("$(error)")
+									</script>.
+						</div>
+						$(endif)<br/><br/><br/><br/><br/>
+		<center>
+		         	
+			<form class="form-signin" name="login" action="$(link-login-only)" method="post" $(if chap-id) onsubmit="return doLogin()" $(endif)>
+			<input type="hidden" name="dst" value="$(link-orig)">
+			<input type="hidden" name="popup" value="false">	
+			<input name="username" type="text" autocomplete="off" class="form-control" placeholder="Username" required><br/> 
+			<input type="text" name="password" class="form-control lo" autocomplete="off" placeholder="Password" required>
+			<label class="checkbox">
+			<p class="text-danger text-center">						
+			   
+			</p>       
+			</label> 
+			<button name="submit" type="submit" value="Log In" class="bnt"> Masuk </button>
+			</form>
+			</center>
+	</div>
+ $(if chap-id)
+	<form name="sendin" action="$(link-login-only)" method="post">
+		<input type="hidden" name="username" />
+		<input type="hidden" name="password" />
+		<input type="hidden" name="dst" value="$(link-orig)" />
+		<input type="hidden" name="popup" value="true" />
+	</form>
+	
+	<script type="text/javascript" src="/md5.js"></script>
+	<script type="text/javascript">
+	    function doLogin() {
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+		document.sendin.submit();
+		return false;
+	    }
+	</script>
+$(endif)
+	</div>
+	
+<div class="container">
+<footer class="footer">
+    <p>© 2016 KM.NET <br><a href="#">Copyrights All rights reserved.</a></p>
+</footer>
+</div>
+<div id="running-text"><marquee scrolldelay="100" onmouseover="this.stop();" onmouseout="this.start();"><strong style="font-size: 14px;"><strong><strong><strong style="font-size: 14px;"><strong><strong>:::: Follow twitter @Kangbajuri ::::</strong></strong><strong>:::: Follow IG @Kangbajuri.id ::::</strong></strong> Untuk melihat koleksi Login Page Mikrotik jika anda berminat Hubungi melalui email bagencocok@gmail.com :::: Info pemasangan iklan di Login Page yang kami buat, silahkan hubungi email  bagencocok@gmail.com atau telepon 081223221752 :::<strong><strong style="font-size: 14px;"><strong><strong></strong></strong></strong><strong> </strong></strong></strong></strong></strong></marquee></div>
+  <script src='js/jquery-1.7.1.min.js'></script>
+  <script src='js/bootstrap.min.js'></script>
+</body>
+</html>
